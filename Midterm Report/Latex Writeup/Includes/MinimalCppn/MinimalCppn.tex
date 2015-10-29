@@ -1,0 +1,40 @@
+\documentclass{standalone}
+
+\usepackage{tikz}
+\begin{document}
+\pagestyle{empty}
+
+\def\layersep{2.5cm}
+
+\begin{tikzpicture}[shorten >=1pt,->,draw=black!50, node distance=\layersep]
+    \tikzstyle{every pin edge}=[<-,shorten <=1pt]
+    \tikzstyle{neuron}=[circle,fill=black!25,minimum size=17pt,inner sep=0pt]
+    \tikzstyle{input neuron}=[neuron, fill=green!50];
+    \tikzstyle{output neuron}=[neuron, fill=red!50];
+    \tikzstyle{hidden neuron}=[neuron, fill=blue!50];
+    \tikzstyle{annot} = [text width=4em, text centered]
+
+	% Draw the CPPN input nodes
+	\node[input neuron, pin=left:$X_1$] (I-1) at (0,-1) {};
+	\node[input neuron, pin=left:$Y_1$] (I-2) at (0,-2) {};
+	\node[input neuron, pin=left:$X_2$] (I-3) at (0,-3) {};
+	\node[input neuron, pin=left:$Y_2$] (I-4) at (0,-4) {};
+
+	% Draw the CPPN output nodes
+	\node[output neuron, pin={[pin edge={->}]right:$Input->Hidden_w$}, right of=I-1] (O-1) {};
+	\node[output neuron, pin={[pin edge={->}]right:$Input_b->Hidden_w$}, right of=I-2] (O-2) {};
+	\node[output neuron, pin={[pin edge={->}]right:$Hidden->Output_w$}, right of=I-3] (O-3) {};
+	\node[output neuron, pin={[pin edge={->}]right:$Hidden_b->Output_w$}, right of=I-4] (O-4) {};
+
+    % Connect every node in the input layer with every node in the
+    % output layer.
+    \foreach \source in {1,...,4}
+        \foreach \dest in {1,...,4}
+            \path (I-\source) edge (O-\dest);
+
+    % Annotate the layers
+	\node[annot,above of=I-1, node distance=1cm] (il) {CPPN Inputs};
+    \node[annot,right of=il] {CPPN Outputs};
+\end{tikzpicture}
+% End of code
+\end{document}

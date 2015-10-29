@@ -1,0 +1,682 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.13)  29 OCT 2015 02:28
+entering extended mode
+**MidtermReport.tex
+(MidtermReport.tex
+LaTeX2e <2015/01/01> patch level 2
+Babel <3.9m> and hyphenation patterns for 69 languages loaded.
+(acm_proc_article-sp.cls
+("F:\Programs (x86)\MiKTeX 2.9\tex\latex\graphics\epsfig.sty"
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+
+("F:\Programs (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+("F:\Programs (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("F:\Programs (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+("F:\Programs (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("F:\Programs (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 94.
+
+("F:\Programs (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("F:\Programs (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("F:\Programs (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count79
+))
+\Gin@req@height=\dimen102
+\Gin@req@width=\dimen103
+)
+\epsfxsize=\dimen104
+\epsfysize=\dimen105
+)
+("F:\Programs (x86)\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+("F:\Programs (x86)\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks15
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+("F:\Programs (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip41
+
+For additional information on amsmath, use the `?' option.
+("F:\Programs (x86)\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01
+
+("F:\Programs (x86)\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks16
+\ex@=\dimen106
+))
+("F:\Programs (x86)\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen107
+)
+("F:\Programs (x86)\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count80
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count81
+\leftroot@=\count82
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count83
+\DOTSCASE@=\count84
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen108
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count85
+\c@MaxMatrixCols=\count86
+\dotsspace@=\muskip10
+\c@parentequation=\count87
+\dspbrk@lvl=\count88
+\tag@help=\toks17
+\row@=\count89
+\column@=\count90
+\maxfields@=\count91
+\andhelp@=\toks18
+\eqnshift@=\dimen109
+\alignsep@=\dimen110
+\tagshift@=\dimen111
+\tagwidth@=\dimen112
+\totwidth@=\dimen113
+\lineht@=\dimen114
+\@envbody=\toks19
+\multlinegap=\skip42
+\multlinetaggap=\skip43
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+Document Class 'acm_proc_article-sp' <22nd. April '09>. Modified by G.K.M. Tobi
+n
+Based in part upon document Style `acmconf' <22 May 89>. Hacked 4/91 by
+shivers@cs.cmu.edu, 4/93 by theobald@cs.mcgill.ca
+Excerpts were taken from (Journal Style) 'esub2acm.cls'.
+****** Bugs/comments/suggestions to Gerry Murray -- murray@hq.acm.org ******
+\footheight=\dimen115
+\@maxsep=\dimen116
+\@dblmaxsep=\dimen117
+\aucount=\count92
+\originalaucount=\count93
+\auwidth=\dimen118
+\auskip=\dimen119
+\auskipcount=\count94
+\auskip=\dimen120
+\allauboxes=\dimen121
+\addauthors=\toks21
+\addauflag=\count95
+\subtitletext=\toks22
+\savesection=\count96
+\sectioncntr=\count97
+\c@figure=\count98
+\c@table=\count99
+\titleboxnotes=\toks23
+\titleboxnoteflag=\count100
+Document Class: acm_proc_article-sp 2009/04/22 - V3.2SP - based on esub2acm.sty
+ <23 April 96>
+("F:\Programs (x86)\MiKTeX 2.9\tex\latex\base\latexsym.sty"
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
+)
+\@acmtitlebox=\box28
+\titlenotecount=\count101
+\tntoks=\toks24
+\tntokstwo=\toks25
+\tntoksthree=\toks26
+\tntoksfour=\toks27
+\tntoksfive=\toks28
+\catcount=\count102
+\copyrightnotice=\toks29
+\conf=\toks30
+\confinfo=\toks31
+\c@part=\count103
+\c@section=\count104
+\c@subsection=\count105
+\c@subsubsection=\count106
+\c@paragraph=\count107
+
+Using 'Abbrev' bibliography style
+LaTeX Info: Redefining \cite on input line 1236.
+\bibindent=\dimen122
+\colcntr=\count108
+\saveb@x=\box29
+\copyrtyr=\toks32
+\acmcopyr=\toks33
+\boilerplate=\toks34
+\copyrightetc=\toks35
+("F:\Programs (x86)\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+("F:\Programs (x86)\MiKTeX 2.9\tex\latex\base\t1enc.def"
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+)
+LaTeX Font Info:    Try loading font information for T1+aer on input line 105.
+
+("F:\Programs (x86)\MiKTeX 2.9\tex\latex\ae\t1aer.fd"
+File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
+)))
+("F:\Programs (x86)\MiKTeX 2.9\tex\latex\oberdiek\epstopdf.sty"
+Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
+
+("F:\Programs (x86)\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+("F:\Programs (x86)\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+("F:\Programs (x86)\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+("F:\Programs (x86)\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+("F:\Programs (x86)\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+("F:\Programs (x86)\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+
+("F:\Programs (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+("F:\Programs (x86)\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+("F:\Programs (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+))
+(C:\Users\Jonathan\AppData\Roaming\MiKTeX\2.9\tex\latex\auto-pst-pdf\auto-pst-p
+df.sty
+Package: auto-pst-pdf 2009/04/26 v0.6 Wrapper for pst-pdf
+ ("F:\Programs (x86)\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+("F:\Programs (x86)\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
+("F:\Programs (x86)\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.tex"
+\XKV@toks=\toks36
+\XKV@tempa@toks=\toks37
+)
+\XKV@depth=\count109
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(C:\Users\Jonathan\AppData\Roaming\MiKTeX\2.9\tex\latex\ifplatform\ifplatform.s
+ty
+Package: ifplatform 2010/10/22 v0.4 Testing for the operating system
+ ("F:\Programs (x86)\MiKTeX 2.9\tex\generic\oberdiek\catchfile.sty"
+Package: catchfile 2011/03/01 v1.6 Catch the contents of a file (HO)
+))
+\c@app@runs=\count110
+runsystem(echo " ")...executed.
+
+runsystem(echo "-------------------------------------------------")...executed.
+
+runsystem(echo "auto-pst-pdf: Auxiliary LaTeX compilation")...executed.
+
+runsystem(echo "-------------------------------------------------")...executed.
+
+runsystem(del "MidtermReport-autopp.log")...executed.
+
+runsystem(latex -disable-write18 -jobname="MidtermReport-autopp" -interaction=b
+atchmode  "\let \APPmakepictures \empty \input  MidtermReport.tex")...executed.
+
+
+
+Package auto-pst-pdf Warning: 
+    Creation of MidtermReport-autopp.dvi failed.
+This warning occured on input line 124.
+
+
+Package auto-pst-pdf Warning: 
+    Could not create MidtermReport-pics.pdf. Auxiliary files not deleted.
+This warning occured on input line 124.
+
+runsystem(echo "-------------------------------------------------")...executed.
+
+runsystem(echo "auto-pst-pdf: End auxiliary LaTeX compilation")...executed.
+
+runsystem(echo "-------------------------------------------------")...executed.
+
+(C:\Users\Jonathan\AppData\Roaming\MiKTeX\2.9\tex\latex\pst-pdf\pst-pdf.sty
+Package: pst-pdf 2008/10/09 v1.1v PS graphics for pdfLaTeX (RN,HjG)
+\c@pspicture=\count111
+Package pst-pdf Info: MODE: 1 (pdfTeX mode) on input line 214.
+
+("F:\Programs (x86)\MiKTeX 2.9\tex\latex\pstricks\pstricks.sty"
+Package: pstricks 2013/12/12 v0.60 LaTeX wrapper for `PSTricks' (RN,HV)
+
+("F:\Programs (x86)\MiKTeX 2.9\tex\generic\pstricks\base\pstricks.tex"
+("F:\Programs (x86)\MiKTeX 2.9\tex\generic\xkeyval\pst-xkey.tex"
+File: pst-xkey.tex 2005/11/25 v1.6 PSTricks specialization of xkeyval (HA)
+)
+("F:\Programs (x86)\MiKTeX 2.9\tex\generic\pstricks\base\pst-fp.tex"
+`pst-fp' v0.05, 2010/01/17 (hv)
+\pstFP@xs=\count112
+\pstFP@xia=\count113
+\pstFP@xib=\count114
+\pstFP@xfa=\count115
+\pstFP@xfb=\count116
+\pstFP@rega=\count117
+\pstFP@regb=\count118
+\pstFP@regs=\count119
+\pstFP@times=\count120
+)
+(C:\Users\Jonathan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfutil
+-common.tex
+\pgfutil@everybye=\toks38
+\pgfutil@tempdima=\dimen123
+\pgfutil@tempdimb=\dimen124
+
+(C:\Users\Jonathan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfutil
+-common-lists.tex))
+(C:\Users\Jonathan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfkeys
+.code.tex
+\pgfkeys@pathtoks=\toks39
+\pgfkeys@temptoks=\toks40
+
+(C:\Users\Jonathan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfkeys
+filtered.code.tex
+\pgfkeys@tmptoks=\toks41
+))
+(C:\Users\Jonathan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgffor.
+code.tex
+(C:\Users\Jonathan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmath.code
+.tex
+(C:\Users\Jonathan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathcalc.
+code.tex
+(C:\Users\Jonathan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathutil.
+code.tex
+\pgf@x=\dimen125
+\pgf@xa=\dimen126
+\pgf@xb=\dimen127
+\pgf@xc=\dimen128
+\pgf@y=\dimen129
+\pgf@ya=\dimen130
+\pgf@yb=\dimen131
+\pgf@yc=\dimen132
+\c@pgf@counta=\count121
+\c@pgf@countb=\count122
+\c@pgf@countc=\count123
+\c@pgf@countd=\count124
+\pgfutil@tempcnta=\count125
+\pgfutil@tempcntb=\count126
+)
+(C:\Users\Jonathan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathparse
+r.code.tex
+\pgfmath@dimen=\dimen133
+\pgfmath@count=\count127
+\pgfmath@box=\box30
+\pgfmath@toks=\toks42
+\pgfmath@stack@operand=\toks43
+\pgfmath@stack@operation=\toks44
+)
+(C:\Users\Jonathan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunct
+ions.code.tex
+(C:\Users\Jonathan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunct
+ions.basic.code.tex)
+(C:\Users\Jonathan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunct
+ions.trigonometric.code.tex)
+(C:\Users\Jonathan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunct
+ions.random.code.tex)
+(C:\Users\Jonathan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunct
+ions.comparison.code.tex)
+(C:\Users\Jonathan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunct
+ions.base.code.tex)
+(C:\Users\Jonathan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunct
+ions.round.code.tex)
+(C:\Users\Jonathan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunct
+ions.misc.code.tex)
+(C:\Users\Jonathan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunct
+ions.integerarithmetics.code.tex)))
+(C:\Users\Jonathan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfloat
+.code.tex
+\c@pgfmathroundto@lastzeros=\count128
+))
+\pgffor@iter=\dimen134
+\pgffor@skip=\dimen135
+\pgffor@stack=\toks45
+\pgffor@toks=\toks46
+)
+\psLoopIndex=\count129
+
+`PSTricks' v2.62  <2015/07/25> (tvz)
+\pst@dima=\dimen136
+\pst@dimb=\dimen137
+\pst@dimc=\dimen138
+\pst@dimd=\dimen139
+\pst@dimg=\dimen140
+\pst@dimh=\dimen141
+\pst@dimm=\dimen142
+\pst@dimn=\dimen143
+\pst@dimo=\dimen144
+\pst@dimp=\dimen145
+\pst@hbox=\box31
+\pst@ibox=\box32
+\pst@boxg=\box33
+\pst@cnta=\count130
+\pst@cntb=\count131
+\pst@cntc=\count132
+\pst@cntd=\count133
+\pst@cntg=\count134
+\pst@cnth=\count135
+\pst@cntm=\count136
+\pst@cntn=\count137
+\pst@cnto=\count138
+\pst@cntp=\count139
+\@zero=\count140
+\pst@toks=\toks47
+("F:\Programs (x86)\MiKTeX 2.9\tex\generic\pstricks\base\pstricks.con")
+\psunit=\dimen146
+\psxunit=\dimen147
+\psyunit=\dimen148
+\pst@C@@rType=\count141
+\pslinewidth=\dimen149
+\psk@startLW=\dimen150
+\psk@endLW=\dimen151
+\pst@customdefs=\toks48
+\pslinearc=\dimen152
+\pst@symbolStep=\dimen153
+\pst@symbolWidth=\dimen154
+\pst@symbolLinewidth=\dimen155
+\everypsbox=\toks49
+\psframesep=\dimen156
+\pslabelsep=\dimen157
+\sh@wgridXunit=\dimen158
+\sh@wgridYunit=\dimen159
+\pst@shift=\dimen160
+)
+File: pstricks.tex 2015/07/25 v2.62 `PSTricks' (tvz,hv)
+
+("F:\Programs (x86)\MiKTeX 2.9\tex\generic\pstricks\base\pst-fp.tex")
+File: pst-fp.tex 2015/07/25 v2.62 `PST-fp' (hv)
+
+(C:\Users\Jonathan\AppData\Roaming\MiKTeX\2.9\tex\latex\xcolor\xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+("F:\Programs (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+))
+\ppf@output=\toks50
+
+(C:\Users\Jonathan\AppData\Roaming\MiKTeX\2.9\tex\latex\preview\preview.sty
+Package: preview 2010/02/14 11.88 (AUCTeX/preview-latex)
+\pr@snippet=\count142
+\pr@box=\box34
+\pr@output=\toks51
+)
+("F:\Programs (x86)\MiKTeX 2.9\tex\latex\graphics\dvips.def"
+File: dvips.def 2014/10/14 v3.0j Driver-dependent file (DPC,SPQR)
+)
+(C:\Users\Jonathan\AppData\Roaming\MiKTeX\2.9\tex\latex\environ\environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(C:\Users\Jonathan\AppData\Roaming\MiKTeX\2.9\tex\latex\trimspaces\trimspaces.s
+ty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))))
+(C:\Users\Jonathan\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption.sty
+Package: caption 2015/09/17 v3.3-111 Customizing captions (AR)
+
+(C:\Users\Jonathan\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.sty
+Package: caption3 2015/09/20 v1.7-115 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen161
+\captionmargin@=\dimen162
+\captionwidth=\dimen163
+\caption@tempdima=\dimen164
+\caption@indent=\dimen165
+\caption@parindent=\dimen166
+\caption@hangindent=\dimen167
+\abovecaptionskip=\skip44
+\belowcaptionskip=\skip45
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+)
+
+Package caption Warning: Unsupported document class (or package) detected,
+(caption)                usage of the caption package is not recommended.
+See the caption package documentation for explanation.
+
+Package caption Info: \@makecaption = \long macro:#1#2-> \vskip \baselineskip \
+setbox \@tempboxa \hbox {\textbf {#1: #2}} \ifdim \wd \@tempboxa >\hsize \textb
+f {#1: #2}\par \else \hbox to\hsize {\hfil \box \@tempboxa \hfil }\par \fi .
+\c@ContinuedFloat=\count143
+) (MidtermReport.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+
+(C:\Users\Jonathan\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count144
+\scratchdimen=\dimen168
+\scratchbox=\box35
+\nofMPsegments=\count145
+\nofMParguments=\count146
+\everyMPshowfont=\toks52
+\MPscratchCnt=\count147
+\MPscratchDim=\dimen169
+\MPnumerator=\count148
+\makeMPintoPDFobject=\count149
+\everyMPtoPDFconversion=\toks53
+)
+Preview: Fontsize 9pt
+Preview: PDFoutput 1
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Try loading font information for U+msa on input line 25.
+("F:\Programs (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 25.
+
+("F:\Programs (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+lasy on input line 25.
+
+("F:\Programs (x86)\MiKTeX 2.9\tex\latex\base\ulasy.fd"
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+
+LaTeX Warning: Citation `Temp' on page \thepage  undefined on input line 28.
+
+
+LaTeX Warning: Citation `Temp' on page \thepage  undefined on input line 28.
+
+
+LaTeX Warning: Citation `Author' on page \thepage  undefined on input line 39.
+
+
+LaTeX Warning: Citation `Author' on page \thepage  undefined on input line 41.
+
+
+LaTeX Warning: Citation `Author' on page \thepage  undefined on input line 44.
+
+
+LaTeX Warning: Citation `Author' on page \thepage  undefined on input line 44.
+
+<Includes/ExampleAutoencoder.png, id=1, 301.125pt x 335.00156pt>
+File: Includes/ExampleAutoencoder.png Graphic file (type png)
+
+<use Includes/ExampleAutoencoder.png>
+Package pdftex.def Info: Includes/ExampleAutoencoder.png used on input line 46.
+
+(pdftex.def)             Requested size: 240.90031pt x 268.0016pt.
+
+Overfull \hbox (0.90031pt too wide) in paragraph at lines 46--47
+ [][] 
+ []
+
+
+LaTeX Warning: Citation `Author' on page \thepage  undefined on input line 50.
+
+[1{C:/Users/Jonathan/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+
+ <./Includes/ExampleAutoencoder.png>]
+Overfull \hbox (3.62485pt too wide) in paragraph at lines 56--57
+\T1/aer/m/n/9 uniquely iden-tify each struc-tural in-no-va-tion. His-tor-i-cal 
+mark-
+ []
+
+
+LaTeX Warning: Citation `Author' on page \thepage  undefined on input line 61.
+
+
+LaTeX Warning: Citation `Author' on page \thepage  undefined on input line 63.
+
+
+LaTeX Warning: Citation `Author' on page \thepage  undefined on input line 66.
+
+
+LaTeX Warning: Citation `Author' on page \thepage  undefined on input line 66.
+
+<Includes/StateSpaceSandwichSubstrate.png, id=11, 197.98969pt x 219.06844pt>
+File: Includes/StateSpaceSandwichSubstrate.png Graphic file (type png)
+
+<use Includes/StateSpaceSandwichSubstrate.png>
+Package pdftex.def Info: Includes/StateSpaceSandwichSubstrate.png used on input
+ line 68.
+(pdftex.def)             Requested size: 158.39195pt x 175.25497pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 2698) has occurred while \output is active []
+
+
+
+LaTeX Warning: Citation `Author' on page \thepage  undefined on input line 74.
+
+
+<Includes/SubstrateConfiguration/AutoencoderSubstrate.pdf, id=12, 371.02617pt x
+ 542.27092pt>
+File: Includes/SubstrateConfiguration/AutoencoderSubstrate.pdf Graphic file (ty
+pe pdf)
+ <use Includes/SubstrateConfiguration/AutoencoderSubstrate.pdf>
+Package pdftex.def Info: Includes/SubstrateConfiguration/AutoencoderSubstrate.p
+df used on input line 81.
+(pdftex.def)             Requested size: 204.06502pt x 298.24992pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[2 <./Includes/StateSpaceSandwichSubstrate.png>]
+
+LaTeX Warning: Citation `Author' on page \thepage  undefined on input line 86.
+
+<Includes/MinimalCppn/MinimalCppn.pdf, id=16, 244.382pt x 136.03322pt>
+File: Includes/MinimalCppn/MinimalCppn.pdf Graphic file (type pdf)
+
+<use Includes/MinimalCppn/MinimalCppn.pdf>
+Package pdftex.def Info: Includes/MinimalCppn/MinimalCppn.pdf used on input lin
+e 91.
+(pdftex.def)             Requested size: 195.50586pt x 108.8267pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (1.03961pt too wide) in paragraph at lines 96--97
+[]\T1/aer/m/n/9 In this way, Hy-per-NEAT is gen-er-at-ing the au-toen-coder sta
+rt-
+ []
+
+[3 <./Includes/SubstrateConfiguration/AutoencoderSubstrate.pdf> <./Includes/Min
+imalCppn/MinimalCppn.pdf>] (MidtermReport.aux) ) 
+Here is how much of TeX's memory you used:
+ 11239 strings out of 493673
+ 192038 string characters out of 3143546
+ 261890 words of memory out of 3000000
+ 14377 multiletter control sequences out of 15000+200000
+ 44832 words of font info for 61 fonts, out of 3000000 for 9000
+ 1025 hyphenation exceptions out of 8191
+ 53i,11n,92p,793b,375s stack positions out of 5000i,500n,10000p,200000b,50000s
+{F:/Programs (x86)/MiKTeX 2.9/f
+onts/enc/dvips/fontname/8r.enc}<F:/Programs (x86)/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmbx9.pfb><F:/Programs (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmmi10.pfb><F:/Programs (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+mi7.pfb><F:/Programs (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+<F:/Programs (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><F:/Progr
+ams (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><F:/Programs (x86)
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><F:/Programs (x86)/MiKTeX
+ 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><F:/Programs (x86)/MiKTeX 2.9/fonts/ty
+pe1/urw/helvetic/uhvr8a.pfb><F:/Programs (x86)/MiKTeX 2.9/fonts/type1/urw/times
+/utmb8a.pfb>
+Output written on MidtermReport.pdf (3 pages, 328065 bytes).
+PDF statistics:
+ 72 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+

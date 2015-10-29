@@ -1,0 +1,3211 @@
+% Interaction diagram
+% Author: Pascal Seppecher
+% Based on diagram from Marco Miani.
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{verbatim}
+
+\usetikzlibrary{positioning}
+\newcommand{\InputSubstrate}{Input Substrate}
+\newcommand{\HiddenSubstrate}{Hidden Substrate}
+\newcommand{\OutputSubstrate}{Output Substrate}
+
+\newcommand{\yslant}{0.5}
+\newcommand{\xslant}{-0.6}
+\begin{document}
+\begin{tikzpicture}[scale=1.1,every node/.style={minimum size=1cm},on grid]
+
+	% Input Layer
+	\begin{scope}[
+		yshift=-120,
+		every node/.append style={yslant=\yslant,xslant=\xslant},
+		yslant=\yslant,xslant=\xslant
+	] 
+		% The frame:
+		\draw[black, dashed, thin] (0,0) rectangle (7,7); 
+		% Agents:
+		\draw[fill=red]
+			% First Row (Input layer)		
+			(0.25,0.25) circle [radius=0.1] node (I1a) {}
+			(0.75,0.25) circle [radius=0.1] node (I1b) {}
+			(1.25,0.25) circle [radius=0.1] node (I1c) {}
+			(1.75,0.25) circle [radius=0.1] node (I1d) {}
+			(2.25,0.25) circle [radius=0.1] node (I1e) {}
+			(2.75,0.25) circle [radius=0.1] node (I1f) {}
+			(3.25,0.25) circle [radius=0.1] node (I1g) {}
+			(3.75,0.25) circle [radius=0.1] node (I1h) {}
+			(4.25,0.25) circle [radius=0.1] node (I1i) {}
+			(4.75,0.25) circle [radius=0.1] node (I1j) {}
+			(5.25,0.25) circle [radius=0.1] node (I1k) {}
+			(5.75,0.25) circle [radius=0.1] node (I1l) {}
+			(6.25,0.25) circle [radius=0.1] node (I1m) {}
+			(6.75,0.25) circle [radius=0.1] node (I1n) {}
+			
+			% Second Row (Input layer)		
+			(0.25,0.75) circle [radius=0.1] node (I2a) {}
+			(0.75,0.75) circle [radius=0.1] node (I2b) {}
+			(1.25,0.75) circle [radius=0.1] node (I2c) {}
+			(1.75,0.75) circle [radius=0.1] node (I2d) {}
+			(2.25,0.75) circle [radius=0.1] node (I2e) {}
+			(2.75,0.75) circle [radius=0.1] node (I2f) {}
+			(3.25,0.75) circle [radius=0.1] node (I2g) {}
+			(3.75,0.75) circle [radius=0.1] node (I2h) {}
+			(4.25,0.75) circle [radius=0.1] node (I2i) {}
+			(4.75,0.75) circle [radius=0.1] node (I2j) {}
+			(5.25,0.75) circle [radius=0.1] node (I2k) {}
+			(5.75,0.75) circle [radius=0.1] node (I2l) {}
+			(6.25,0.75) circle [radius=0.1] node (I2m) {}
+			(6.75,0.75) circle [radius=0.1] node (I2n) {}
+			
+			% Third Row (Input layer)		
+			(0.25,1.25) circle [radius=0.1] node (I3a) {}
+			(0.75,1.25) circle [radius=0.1] node (I3b) {}
+			(1.25,1.25) circle [radius=0.1] node (I3c) {}
+			(1.75,1.25) circle [radius=0.1] node (I3d) {}
+			(2.25,1.25) circle [radius=0.1] node (I3e) {}
+			(2.75,1.25) circle [radius=0.1] node (I3f) {}
+			(3.25,1.25) circle [radius=0.1] node (I3g) {}
+			(3.75,1.25) circle [radius=0.1] node (I3h) {}
+			(4.25,1.25) circle [radius=0.1] node (I3i) {}
+			(4.75,1.25) circle [radius=0.1] node (I3j) {}
+			(5.25,1.25) circle [radius=0.1] node (I3k) {}
+			(5.75,1.25) circle [radius=0.1] node (I3l) {}
+			(6.25,1.25) circle [radius=0.1] node (I3m) {}
+			(6.75,1.25) circle [radius=0.1] node (I3n) {}
+			
+			% Fourth Row (Input layer)		
+			(0.25,1.75) circle [radius=0.1] node (I4a) {}
+			(0.75,1.75) circle [radius=0.1] node (I4b) {}
+			(1.25,1.75) circle [radius=0.1] node (I4c) {}
+			(1.75,1.75) circle [radius=0.1] node (I4d) {}
+			(2.25,1.75) circle [radius=0.1] node (I4e) {}
+			(2.75,1.75) circle [radius=0.1] node (I4f) {}
+			(3.25,1.75) circle [radius=0.1] node (I4g) {}
+			(3.75,1.75) circle [radius=0.1] node (I4h) {}
+			(4.25,1.75) circle [radius=0.1] node (I4i) {}
+			(4.75,1.75) circle [radius=0.1] node (I4j) {}
+			(5.25,1.75) circle [radius=0.1] node (I4k) {}
+			(5.75,1.75) circle [radius=0.1] node (I4l) {}
+			(6.25,1.75) circle [radius=0.1] node (I4m) {}
+			(6.75,1.75) circle [radius=0.1] node (I4n) {}
+			
+			% Fifth Row (Input layer)		
+			(0.25,2.25) circle [radius=0.1] node (I5a) {}
+			(0.75,2.25) circle [radius=0.1] node (I5b) {}
+			(1.25,2.25) circle [radius=0.1] node (I5c) {}
+			(1.75,2.25) circle [radius=0.1] node (I5d) {}
+			(2.25,2.25) circle [radius=0.1] node (I5e) {}
+			(2.75,2.25) circle [radius=0.1] node (I5f) {}
+			(3.25,2.25) circle [radius=0.1] node (I5g) {}
+			(3.75,2.25) circle [radius=0.1] node (I5h) {}
+			(4.25,2.25) circle [radius=0.1] node (I5i) {}
+			(4.75,2.25) circle [radius=0.1] node (I5j) {}
+			(5.25,2.25) circle [radius=0.1] node (I5k) {}
+			(5.75,2.25) circle [radius=0.1] node (I5l) {}
+			(6.25,2.25) circle [radius=0.1] node (I5m) {}
+			(6.75,2.25) circle [radius=0.1] node (I5n) {}
+			
+			% Sixth Row (Input layer)		
+			(0.25,2.75) circle [radius=0.1] node (I6a) {}
+			(0.75,2.75) circle [radius=0.1] node (I6b) {}
+			(1.25,2.75) circle [radius=0.1] node (I6c) {}
+			(1.75,2.75) circle [radius=0.1] node (I6d) {}
+			(2.25,2.75) circle [radius=0.1] node (I6e) {}
+			(2.75,2.75) circle [radius=0.1] node (I6f) {}
+			(3.25,2.75) circle [radius=0.1] node (I6g) {}
+			(3.75,2.75) circle [radius=0.1] node (I6h) {}
+			(4.25,2.75) circle [radius=0.1] node (I6i) {}
+			(4.75,2.75) circle [radius=0.1] node (I6j) {}
+			(5.25,2.75) circle [radius=0.1] node (I6k) {}
+			(5.75,2.75) circle [radius=0.1] node (I6l) {}
+			(6.25,2.75) circle [radius=0.1] node (I6m) {}
+			(6.75,2.75) circle [radius=0.1] node (I6n) {}
+			
+			% Seventh Row (Input layer)		
+			(0.25,3.25) circle [radius=0.1] node (I7a) {}
+			(0.75,3.25) circle [radius=0.1] node (I7b) {}
+			(1.25,3.25) circle [radius=0.1] node (I7c) {}
+			(1.75,3.25) circle [radius=0.1] node (I7d) {}
+			(2.25,3.25) circle [radius=0.1] node (I7e) {}
+			(2.75,3.25) circle [radius=0.1] node (I7f) {}
+			(3.25,3.25) circle [radius=0.1] node (I7g) {}
+			(3.75,3.25) circle [radius=0.1] node (I7h) {}
+			(4.25,3.25) circle [radius=0.1] node (I7i) {}
+			(4.75,3.25) circle [radius=0.1] node (I7j) {}
+			(5.25,3.25) circle [radius=0.1] node (I7k) {}
+			(5.75,3.25) circle [radius=0.1] node (I7l) {}
+			(6.25,3.25) circle [radius=0.1] node (I7m) {}
+			(6.75,3.25) circle [radius=0.1] node (I7n) {}
+			
+			% Eighth Row (Input layer)		
+			(0.25,3.75) circle [radius=0.1] node (I8a) {}
+			(0.75,3.75) circle [radius=0.1] node (I8b) {}
+			(1.25,3.75) circle [radius=0.1] node (I8c) {}
+			(1.75,3.75) circle [radius=0.1] node (I8d) {}
+			(2.25,3.75) circle [radius=0.1] node (I8e) {}
+			(2.75,3.75) circle [radius=0.1] node (I8f) {}
+			(3.25,3.75) circle [radius=0.1] node (I8g) {}
+			(3.75,3.75) circle [radius=0.1] node (I8h) {}
+			(4.25,3.75) circle [radius=0.1] node (I8i) {}
+			(4.75,3.75) circle [radius=0.1] node (I8j) {}
+			(5.25,3.75) circle [radius=0.1] node (I8k) {}
+			(5.75,3.75) circle [radius=0.1] node (I8l) {}
+			(6.25,3.75) circle [radius=0.1] node (I8m) {}
+			(6.75,3.75) circle [radius=0.1] node (I8n) {}
+			
+			% Ninth Row (Input layer)		
+			(0.25,4.25) circle [radius=0.1] node (I9a) {}
+			(0.75,4.25) circle [radius=0.1] node (I9b) {}
+			(1.25,4.25) circle [radius=0.1] node (I9c) {}
+			(1.75,4.25) circle [radius=0.1] node (I9d) {}
+			(2.25,4.25) circle [radius=0.1] node (I9e) {}
+			(2.75,4.25) circle [radius=0.1] node (I9f) {}
+			(3.25,4.25) circle [radius=0.1] node (I9g) {}
+			(3.75,4.25) circle [radius=0.1] node (I9h) {}
+			(4.25,4.25) circle [radius=0.1] node (I9i) {}
+			(4.75,4.25) circle [radius=0.1] node (I9j) {}
+			(5.25,4.25) circle [radius=0.1] node (I9k) {}
+			(5.75,4.25) circle [radius=0.1] node (I9l) {}
+			(6.25,4.25) circle [radius=0.1] node (I9m) {}
+			(6.75,4.25) circle [radius=0.1] node (I9n) {}			
+			
+			% Tenth Row (Input layer)		
+			(0.25,4.75) circle [radius=0.1] node (I10a) {}
+			(0.75,4.75) circle [radius=0.1] node (I10b) {}
+			(1.25,4.75) circle [radius=0.1] node (I10c) {}
+			(1.75,4.75) circle [radius=0.1] node (I10d) {}
+			(2.25,4.75) circle [radius=0.1] node (I10e) {}
+			(2.75,4.75) circle [radius=0.1] node (I10f) {}
+			(3.25,4.75) circle [radius=0.1] node (I10g) {}
+			(3.75,4.75) circle [radius=0.1] node (I10h) {}
+			(4.25,4.75) circle [radius=0.1] node (I10i) {}
+			(4.75,4.75) circle [radius=0.1] node (I10j) {}
+			(5.25,4.75) circle [radius=0.1] node (I10k) {}
+			(5.75,4.75) circle [radius=0.1] node (I10l) {}
+			(6.25,4.75) circle [radius=0.1] node (I10m) {}
+			(6.75,4.75) circle [radius=0.1] node (I10n) {}
+			
+			% Eleventh Row (Input layer)		
+			(0.25,5.25) circle [radius=0.1] node (I11a) {}
+			(0.75,5.25) circle [radius=0.1] node (I11b) {}
+			(1.25,5.25) circle [radius=0.1] node (I11c) {}
+			(1.75,5.25) circle [radius=0.1] node (I11d) {}
+			(2.25,5.25) circle [radius=0.1] node (I11e) {}
+			(2.75,5.25) circle [radius=0.1] node (I11f) {}
+			(3.25,5.25) circle [radius=0.1] node (I11g) {}
+			(3.75,5.25) circle [radius=0.1] node (I11h) {}
+			(4.25,5.25) circle [radius=0.1] node (I11i) {}
+			(4.75,5.25) circle [radius=0.1] node (I11j) {}
+			(5.25,5.25) circle [radius=0.1] node (I11k) {}
+			(5.75,5.25) circle [radius=0.1] node (I11l) {}
+			(6.25,5.25) circle [radius=0.1] node (I11m) {}
+			(6.75,5.25) circle [radius=0.1] node (I11n) {}
+			
+			% Twelfth Row (Input layer)		
+			(0.25,5.75) circle [radius=0.1] node (I12a) {}
+			(0.75,5.75) circle [radius=0.1] node (I12b) {}
+			(1.25,5.75) circle [radius=0.1] node (I12c) {}
+			(1.75,5.75) circle [radius=0.1] node (I12d) {}
+			(2.25,5.75) circle [radius=0.1] node (I12e) {}
+			(2.75,5.75) circle [radius=0.1] node (I12f) {}
+			(3.25,5.75) circle [radius=0.1] node (I12g) {}
+			(3.75,5.75) circle [radius=0.1] node (I12h) {}
+			(4.25,5.75) circle [radius=0.1] node (I12i) {}
+			(4.75,5.75) circle [radius=0.1] node (I12j) {}
+			(5.25,5.75) circle [radius=0.1] node (I12k) {}
+			(5.75,5.75) circle [radius=0.1] node (I12l) {}
+			(6.25,5.75) circle [radius=0.1] node (I12m) {}
+			(6.75,5.75) circle [radius=0.1] node (I12n) {}
+			
+			% Thirteenth Row (Input layer)		
+			(0.25,6.25) circle [radius=0.1] node (I13a) {}
+			(0.75,6.25) circle [radius=0.1] node (I13b) {}
+			(1.25,6.25) circle [radius=0.1] node (I13c) {}
+			(1.75,6.25) circle [radius=0.1] node (I13d) {}
+			(2.25,6.25) circle [radius=0.1] node (I13e) {}
+			(2.75,6.25) circle [radius=0.1] node (I13f) {}
+			(3.25,6.25) circle [radius=0.1] node (I13g) {}
+			(3.75,6.25) circle [radius=0.1] node (I13h) {}
+			(4.25,6.25) circle [radius=0.1] node (I13i) {}
+			(4.75,6.25) circle [radius=0.1] node (I13j) {}
+			(5.25,6.25) circle [radius=0.1] node (I13k) {}
+			(5.75,6.25) circle [radius=0.1] node (I13l) {}
+			(6.25,6.25) circle [radius=0.1] node (I13m) {}
+			(6.75,6.25) circle [radius=0.1] node (I13n) {}
+
+			% Fourteenth Row (Input layer)		
+			(0.25,6.75) circle [radius=0.1] node (I14a) {}
+			(0.75,6.75) circle [radius=0.1] node (I14b) {}
+			(1.25,6.75) circle [radius=0.1] node (I14c) {}
+			(1.75,6.75) circle [radius=0.1] node (I14d) {}
+			(2.25,6.75) circle [radius=0.1] node (I14e) {}
+			(2.75,6.75) circle [radius=0.1] node (I14f) {}
+			(3.25,6.75) circle [radius=0.1] node (I14g) {}
+			(3.75,6.75) circle [radius=0.1] node (I14h) {}
+			(4.25,6.75) circle [radius=0.1] node (I14i) {}
+			(4.75,6.75) circle [radius=0.1] node (I14j) {}
+			(5.25,6.75) circle [radius=0.1] node (I14k) {}
+			(5.75,6.75) circle [radius=0.1] node (I14l) {}
+			(6.25,6.75) circle [radius=0.1] node (I14m) {}
+			(6.75,6.75) circle [radius=0.1] node (I14n) {};
+			
+		 % Labels:
+		\fill[black]
+			(0.5,7.2) node[right, scale=.7] {\InputSubstrate};	
+	\end{scope}
+	
+	% 2 vertical lines for linking agents on the 2 levels
+	%\draw[ultra thin](3.8,4) to (3.8,-0.32);
+	%\draw[ultra thin](.8,2.4) to (.8,-1.8);
+	
+	% Test lines
+	%\draw[ultra thin,opacity=.75](0.4,1.3) to (0.1,-3.8);	
+	%\draw[ultra thin](0.8,1.3) to (0.1,-3.8);
+	
+	% Hidden Layer
+	\begin{scope}[
+		yshift=0,
+		every node/.append style={yslant=\yslant,xslant=\xslant},
+		yslant=\yslant,xslant=\xslant
+	]
+		% The frame:
+		\fill[white,fill opacity=.75] (0,0) rectangle (7,7); % Opacity
+		\draw[black, dashed, thin] (0,0) rectangle (7,7); 
+		 % Agents:
+		\draw [fill=blue]
+			%(5,2) circle (.1) % Firms
+			%(2,2) circle (.1) % Households
+			%(3.5,5) circle (.1) % Banks
+			
+			% First Row (Hidden layer)		
+			(1.0,1.0) circle [radius=0.1] node (H1a) {}
+			(2.0,1.0) circle [radius=0.1] node (H1b) {}
+			(3.0,1.0) circle [radius=0.1] node (H1c) {}
+			(4.0,1.0) circle [radius=0.1] node (H1d) {}
+			(5.0,1.0) circle [radius=0.1] node (H1e) {}
+			(6.0,1.0) circle [radius=0.1] node (H1f) {}
+			
+			% Second Row (Hidden layer)		
+			(1.0,2.0) circle [radius=0.1] node (H2a) {}
+			(2.0,2.0) circle [radius=0.1] node (H2b) {}
+			(3.0,2.0) circle [radius=0.1] node (H2c) {}
+			(4.0,2.0) circle [radius=0.1] node (H2d) {}
+			(5.0,2.0) circle [radius=0.1] node (H2e) {}
+			(6.0,2.0) circle [radius=0.1] node (H2f) {}		
+
+			% Third Row (Hidden layer)		
+			(1.0,3.0) circle [radius=0.1] node (H3a) {}
+			(2.0,3.0) circle [radius=0.1] node (H3b) {}
+			(3.0,3.0) circle [radius=0.1] node (H3c) {}
+			(4.0,3.0) circle [radius=0.1] node (H3d) {}
+			(5.0,3.0) circle [radius=0.1] node (H3e) {}
+			(6.0,3.0) circle [radius=0.1] node (H3f) {}
+
+			% Fourth Row (Hidden layer)		
+			(1.0,4.0) circle [radius=0.1] node (H4a) {}
+			(2.0,4.0) circle [radius=0.1] node (H4b) {}
+			(3.0,4.0) circle [radius=0.1] node (H4c) {}
+			(4.0,4.0) circle [radius=0.1] node (H4d) {}
+			(5.0,4.0) circle [radius=0.1] node (H4e) {}
+			(6.0,4.0) circle [radius=0.1] node (H4f) {}
+		
+			% Fifth Row (Hidden layer)		
+			(1.0,5.0) circle [radius=0.1] node (H5a) {}
+			(2.0,5.0) circle [radius=0.1] node (H5b) {}
+			(3.0,5.0) circle [radius=0.1] node (H5c) {}
+			(4.0,5.0) circle [radius=0.1] node (H5d) {}
+			(5.0,5.0) circle [radius=0.1] node (H5e) {}
+			(6.0,5.0) circle [radius=0.1] node (H5f) {}						
+
+			% Sixth Row (Hidden layer)		
+			(1.0,6.0) circle [radius=0.1] node (H6a) {}
+			(2.0,6.0) circle [radius=0.1] node (H6b) {}
+			(3.0,6.0) circle [radius=0.1] node (H6c) {}
+			(4.0,6.0) circle [radius=0.1] node (H6d) {}
+			(5.0,6.0) circle [radius=0.1] node (H6e) {}
+			(6.0,6.0) circle [radius=0.1] node (H6f) {};
+
+		 % Labels:
+		\fill[black]
+			(0.5,7.2) node[right, scale=.7] {\HiddenSubstrate};
+	\end{scope} 
+
+	% Input-Hidden lines
+	\draw[ultra thin,color=gray,opacity=.5]
+		(I1a) -- (H1a)
+		(I1a) -- (H1b)
+		(I1a) -- (H1c)
+		(I1a) -- (H1d)
+		(I1a) -- (H1e)
+		(I1a) -- (H1f)
+
+		(I1b) -- (H1a)
+		(I1b) -- (H1b)
+		(I1b) -- (H1c)
+		(I1b) -- (H1d)
+		(I1b) -- (H1e)
+		(I1b) -- (H1f)
+
+		(I1c) -- (H1a)
+		(I1c) -- (H1b)
+		(I1c) -- (H1c)
+		(I1c) -- (H1d)
+		(I1c) -- (H1e)
+		(I1c) -- (H1f)
+
+		(I1d) -- (H1a)
+		(I1d) -- (H1b)
+		(I1d) -- (H1c)
+		(I1d) -- (H1d)
+		(I1d) -- (H1e)
+		(I1d) -- (H1f)
+
+		(I1e) -- (H1a)
+		(I1e) -- (H1b)
+		(I1e) -- (H1c)
+		(I1e) -- (H1d)
+		(I1e) -- (H1e)
+		(I1e) -- (H1f)
+
+		(I1f) -- (H1a)
+		(I1f) -- (H1b)
+		(I1f) -- (H1c)
+		(I1f) -- (H1d)
+		(I1f) -- (H1e)
+		(I1f) -- (H1f)
+
+		(I1g) -- (H1a)
+		(I1g) -- (H1b)
+		(I1g) -- (H1c)
+		(I1g) -- (H1d)
+		(I1g) -- (H1e)
+		(I1g) -- (H1f)
+
+		(I1h) -- (H1a)
+		(I1h) -- (H1b)
+		(I1h) -- (H1c)
+		(I1h) -- (H1d)
+		(I1h) -- (H1e)
+		(I1h) -- (H1f)
+
+		(I1i) -- (H1a)
+		(I1i) -- (H1b)
+		(I1i) -- (H1c)
+		(I1i) -- (H1d)
+		(I1i) -- (H1e)
+		(I1i) -- (H1f)
+
+		(I1j) -- (H1a)
+		(I1j) -- (H1b)
+		(I1j) -- (H1c)
+		(I1j) -- (H1d)
+		(I1j) -- (H1e)
+		(I1j) -- (H1f)
+
+		(I1k) -- (H1a)
+		(I1k) -- (H1b)
+		(I1k) -- (H1c)
+		(I1k) -- (H1d)
+		(I1k) -- (H1e)
+		(I1k) -- (H1f)
+
+		(I1l) -- (H1a)
+		(I1l) -- (H1b)
+		(I1l) -- (H1c)
+		(I1l) -- (H1d)
+		(I1l) -- (H1e)
+		(I1l) -- (H1f)
+
+		(I1m) -- (H1a)
+		(I1m) -- (H1b)
+		(I1m) -- (H1c)
+		(I1m) -- (H1d)
+		(I1m) -- (H1e)
+		(I1m) -- (H1f)
+
+		(I1n) -- (H1a)
+		(I1n) -- (H1b)
+		(I1n) -- (H1c)
+		(I1n) -- (H1d)
+		(I1n) -- (H1e)
+		(I1n) -- (H1f)
+
+		(I2a) -- (H1a)
+		(I2a) -- (H1b)
+		(I2a) -- (H1c)
+		(I2a) -- (H1d)
+		(I2a) -- (H1e)
+		(I2a) -- (H1f)
+
+		(I2b) -- (H1a)
+		(I2b) -- (H1b)
+		(I2b) -- (H1c)
+		(I2b) -- (H1d)
+		(I2b) -- (H1e)
+		(I2b) -- (H1f)
+
+		(I2c) -- (H1a)
+		(I2c) -- (H1b)
+		(I2c) -- (H1c)
+		(I2c) -- (H1d)
+		(I2c) -- (H1e)
+		(I2c) -- (H1f)
+
+		(I2d) -- (H1a)
+		(I2d) -- (H1b)
+		(I2d) -- (H1c)
+		(I2d) -- (H1d)
+		(I2d) -- (H1e)
+		(I2d) -- (H1f)
+
+		(I2e) -- (H1a)
+		(I2e) -- (H1b)
+		(I2e) -- (H1c)
+		(I2e) -- (H1d)
+		(I2e) -- (H1e)
+		(I2e) -- (H1f)
+
+		(I2f) -- (H1a)
+		(I2f) -- (H1b)
+		(I2f) -- (H1c)
+		(I2f) -- (H1d)
+		(I2f) -- (H1e)
+		(I2f) -- (H1f)
+
+		(I2g) -- (H1a)
+		(I2g) -- (H1b)
+		(I2g) -- (H1c)
+		(I2g) -- (H1d)
+		(I2g) -- (H1e)
+		(I2g) -- (H1f)
+
+		(I2h) -- (H1a)
+		(I2h) -- (H1b)
+		(I2h) -- (H1c)
+		(I2h) -- (H1d)
+		(I2h) -- (H1e)
+		(I2h) -- (H1f)
+
+		(I2i) -- (H1a)
+		(I2i) -- (H1b)
+		(I2i) -- (H1c)
+		(I2i) -- (H1d)
+		(I2i) -- (H1e)
+		(I2i) -- (H1f)
+
+		(I2j) -- (H1a)
+		(I2j) -- (H1b)
+		(I2j) -- (H1c)
+		(I2j) -- (H1d)
+		(I2j) -- (H1e)
+		(I2j) -- (H1f)
+
+		(I2k) -- (H1a)
+		(I2k) -- (H1b)
+		(I2k) -- (H1c)
+		(I2k) -- (H1d)
+		(I2k) -- (H1e)
+		(I2k) -- (H1f)
+
+		(I2l) -- (H1a)
+		(I2l) -- (H1b)
+		(I2l) -- (H1c)
+		(I2l) -- (H1d)
+		(I2l) -- (H1e)
+		(I2l) -- (H1f)
+
+		(I2m) -- (H1a)
+		(I2m) -- (H1b)
+		(I2m) -- (H1c)
+		(I2m) -- (H1d)
+		(I2m) -- (H1e)
+		(I2m) -- (H1f)
+
+		(I2n) -- (H1a)
+		(I2n) -- (H1b)
+		(I2n) -- (H1c)
+		(I2n) -- (H1d)
+		(I2n) -- (H1e)
+		(I2n) -- (H1f)
+
+		(I3a) -- (H1a)
+		(I3a) -- (H1b)
+		(I3a) -- (H1c)
+		(I3a) -- (H1d)
+		(I3a) -- (H1e)
+		(I3a) -- (H1f)
+
+		(I3b) -- (H1a)
+		(I3b) -- (H1b)
+		(I3b) -- (H1c)
+		(I3b) -- (H1d)
+		(I3b) -- (H1e)
+		(I3b) -- (H1f)
+
+		(I3c) -- (H1a)
+		(I3c) -- (H1b)
+		(I3c) -- (H1c)
+		(I3c) -- (H1d)
+		(I3c) -- (H1e)
+		(I3c) -- (H1f)
+
+		(I3d) -- (H1a)
+		(I3d) -- (H1b)
+		(I3d) -- (H1c)
+		(I3d) -- (H1d)
+		(I3d) -- (H1e)
+		(I3d) -- (H1f)
+
+		(I3e) -- (H1a)
+		(I3e) -- (H1b)
+		(I3e) -- (H1c)
+		(I3e) -- (H1d)
+		(I3e) -- (H1e)
+		(I3e) -- (H1f)
+
+		(I3f) -- (H1a)
+		(I3f) -- (H1b)
+		(I3f) -- (H1c)
+		(I3f) -- (H1d)
+		(I3f) -- (H1e)
+		(I3f) -- (H1f)
+
+		(I3g) -- (H1a)
+		(I3g) -- (H1b)
+		(I3g) -- (H1c)
+		(I3g) -- (H1d)
+		(I3g) -- (H1e)
+		(I3g) -- (H1f)
+
+		(I3h) -- (H1a)
+		(I3h) -- (H1b)
+		(I3h) -- (H1c)
+		(I3h) -- (H1d)
+		(I3h) -- (H1e)
+		(I3h) -- (H1f)
+
+		(I3i) -- (H1a)
+		(I3i) -- (H1b)
+		(I3i) -- (H1c)
+		(I3i) -- (H1d)
+		(I3i) -- (H1e)
+		(I3i) -- (H1f)
+
+		(I3j) -- (H1a)
+		(I3j) -- (H1b)
+		(I3j) -- (H1c)
+		(I3j) -- (H1d)
+		(I3j) -- (H1e)
+		(I3j) -- (H1f)
+
+		(I3k) -- (H1a)
+		(I3k) -- (H1b)
+		(I3k) -- (H1c)
+		(I3k) -- (H1d)
+		(I3k) -- (H1e)
+		(I3k) -- (H1f)
+
+		(I3l) -- (H1a)
+		(I3l) -- (H1b)
+		(I3l) -- (H1c)
+		(I3l) -- (H1d)
+		(I3l) -- (H1e)
+		(I3l) -- (H1f)
+
+		(I3m) -- (H1a)
+		(I3m) -- (H1b)
+		(I3m) -- (H1c)
+		(I3m) -- (H1d)
+		(I3m) -- (H1e)
+		(I3m) -- (H1f)
+
+		(I3n) -- (H1a)
+		(I3n) -- (H1b)
+		(I3n) -- (H1c)
+		(I3n) -- (H1d)
+		(I3n) -- (H1e)
+		(I3n) -- (H1f)
+		
+		(I4a) -- (H2a)
+		(I4a) -- (H2b)
+		(I4a) -- (H2c)
+		(I4a) -- (H2d)
+		(I4a) -- (H2e)
+		(I4a) -- (H2f)
+
+		(I4b) -- (H2a)
+		(I4b) -- (H2b)
+		(I4b) -- (H2c)
+		(I4b) -- (H2d)
+		(I4b) -- (H2e)
+		(I4b) -- (H2f)
+
+		(I4c) -- (H2a)
+		(I4c) -- (H2b)
+		(I4c) -- (H2c)
+		(I4c) -- (H2d)
+		(I4c) -- (H2e)
+		(I4c) -- (H2f)
+
+		(I4d) -- (H2a)
+		(I4d) -- (H2b)
+		(I4d) -- (H2c)
+		(I4d) -- (H2d)
+		(I4d) -- (H2e)
+		(I4d) -- (H2f)
+
+		(I4e) -- (H2a)
+		(I4e) -- (H2b)
+		(I4e) -- (H2c)
+		(I4e) -- (H2d)
+		(I4e) -- (H2e)
+		(I4e) -- (H2f)
+
+		(I4f) -- (H2a)
+		(I4f) -- (H2b)
+		(I4f) -- (H2c)
+		(I4f) -- (H2d)
+		(I4f) -- (H2e)
+		(I4f) -- (H2f)
+
+		(I4g) -- (H2a)
+		(I4g) -- (H2b)
+		(I4g) -- (H2c)
+		(I4g) -- (H2d)
+		(I4g) -- (H2e)
+		(I4g) -- (H2f)
+
+		(I4h) -- (H2a)
+		(I4h) -- (H2b)
+		(I4h) -- (H2c)
+		(I4h) -- (H2d)
+		(I4h) -- (H2e)
+		(I4h) -- (H2f)
+
+		(I4i) -- (H2a)
+		(I4i) -- (H2b)
+		(I4i) -- (H2c)
+		(I4i) -- (H2d)
+		(I4i) -- (H2e)
+		(I4i) -- (H2f)
+
+		(I4j) -- (H2a)
+		(I4j) -- (H2b)
+		(I4j) -- (H2c)
+		(I4j) -- (H2d)
+		(I4j) -- (H2e)
+		(I4j) -- (H2f)
+
+		(I4k) -- (H2a)
+		(I4k) -- (H2b)
+		(I4k) -- (H2c)
+		(I4k) -- (H2d)
+		(I4k) -- (H2e)
+		(I4k) -- (H2f)
+
+		(I4l) -- (H2a)
+		(I4l) -- (H2b)
+		(I4l) -- (H2c)
+		(I4l) -- (H2d)
+		(I4l) -- (H2e)
+		(I4l) -- (H2f)
+
+		(I4m) -- (H2a)
+		(I4m) -- (H2b)
+		(I4m) -- (H2c)
+		(I4m) -- (H2d)
+		(I4m) -- (H2e)
+		(I4m) -- (H2f)
+
+		(I4n) -- (H2a)
+		(I4n) -- (H2b)
+		(I4n) -- (H2c)
+		(I4n) -- (H2d)
+		(I4n) -- (H2e)
+		(I4n) -- (H2f)
+
+		(I5a) -- (H2a)
+		(I5a) -- (H2b)
+		(I5a) -- (H2c)
+		(I5a) -- (H2d)
+		(I5a) -- (H2e)
+		(I5a) -- (H2f)
+
+		(I5b) -- (H2a)
+		(I5b) -- (H2b)
+		(I5b) -- (H2c)
+		(I5b) -- (H2d)
+		(I5b) -- (H2e)
+		(I5b) -- (H2f)
+
+		(I5c) -- (H2a)
+		(I5c) -- (H2b)
+		(I5c) -- (H2c)
+		(I5c) -- (H2d)
+		(I5c) -- (H2e)
+		(I5c) -- (H2f)
+
+		(I5d) -- (H2a)
+		(I5d) -- (H2b)
+		(I5d) -- (H2c)
+		(I5d) -- (H2d)
+		(I5d) -- (H2e)
+		(I5d) -- (H2f)
+
+		(I5e) -- (H2a)
+		(I5e) -- (H2b)
+		(I5e) -- (H2c)
+		(I5e) -- (H2d)
+		(I5e) -- (H2e)
+		(I5e) -- (H2f)
+
+		(I5f) -- (H2a)
+		(I5f) -- (H2b)
+		(I5f) -- (H2c)
+		(I5f) -- (H2d)
+		(I5f) -- (H2e)
+		(I5f) -- (H2f)
+
+		(I5g) -- (H2a)
+		(I5g) -- (H2b)
+		(I5g) -- (H2c)
+		(I5g) -- (H2d)
+		(I5g) -- (H2e)
+		(I5g) -- (H2f)
+
+		(I5h) -- (H2a)
+		(I5h) -- (H2b)
+		(I5h) -- (H2c)
+		(I5h) -- (H2d)
+		(I5h) -- (H2e)
+		(I5h) -- (H2f)
+
+		(I5i) -- (H2a)
+		(I5i) -- (H2b)
+		(I5i) -- (H2c)
+		(I5i) -- (H2d)
+		(I5i) -- (H2e)
+		(I5i) -- (H2f)
+
+		(I5j) -- (H2a)
+		(I5j) -- (H2b)
+		(I5j) -- (H2c)
+		(I5j) -- (H2d)
+		(I5j) -- (H2e)
+		(I5j) -- (H2f)
+
+		(I5k) -- (H2a)
+		(I5k) -- (H2b)
+		(I5k) -- (H2c)
+		(I5k) -- (H2d)
+		(I5k) -- (H2e)
+		(I5k) -- (H2f)
+
+		(I5l) -- (H2a)
+		(I5l) -- (H2b)
+		(I5l) -- (H2c)
+		(I5l) -- (H2d)
+		(I5l) -- (H2e)
+		(I5l) -- (H2f)
+
+		(I5m) -- (H2a)
+		(I5m) -- (H2b)
+		(I5m) -- (H2c)
+		(I5m) -- (H2d)
+		(I5m) -- (H2e)
+		(I5m) -- (H2f)
+
+		(I5n) -- (H2a)
+		(I5n) -- (H2b)
+		(I5n) -- (H2c)
+		(I5n) -- (H2d)
+		(I5n) -- (H2e)
+		(I5n) -- (H2f)
+
+		(I6a) -- (H2a)
+		(I6a) -- (H2b)
+		(I6a) -- (H2c)
+		(I6a) -- (H2d)
+		(I6a) -- (H2e)
+		(I6a) -- (H2f)
+
+		(I6b) -- (H2a)
+		(I6b) -- (H2b)
+		(I6b) -- (H2c)
+		(I6b) -- (H2d)
+		(I6b) -- (H2e)
+		(I6b) -- (H2f)
+
+		(I6c) -- (H2a)
+		(I6c) -- (H2b)
+		(I6c) -- (H2c)
+		(I6c) -- (H2d)
+		(I6c) -- (H2e)
+		(I6c) -- (H2f)
+
+		(I6d) -- (H2a)
+		(I6d) -- (H2b)
+		(I6d) -- (H2c)
+		(I6d) -- (H2d)
+		(I6d) -- (H2e)
+		(I6d) -- (H2f)
+
+		(I6e) -- (H2a)
+		(I6e) -- (H2b)
+		(I6e) -- (H2c)
+		(I6e) -- (H2d)
+		(I6e) -- (H2e)
+		(I6e) -- (H2f)
+
+		(I6f) -- (H2a)
+		(I6f) -- (H2b)
+		(I6f) -- (H2c)
+		(I6f) -- (H2d)
+		(I6f) -- (H2e)
+		(I6f) -- (H2f)
+
+		(I6g) -- (H2a)
+		(I6g) -- (H2b)
+		(I6g) -- (H2c)
+		(I6g) -- (H2d)
+		(I6g) -- (H2e)
+		(I6g) -- (H2f)
+
+		(I6h) -- (H2a)
+		(I6h) -- (H2b)
+		(I6h) -- (H2c)
+		(I6h) -- (H2d)
+		(I6h) -- (H2e)
+		(I6h) -- (H2f)
+
+		(I6i) -- (H2a)
+		(I6i) -- (H2b)
+		(I6i) -- (H2c)
+		(I6i) -- (H2d)
+		(I6i) -- (H2e)
+		(I6i) -- (H2f)
+
+		(I6j) -- (H2a)
+		(I6j) -- (H2b)
+		(I6j) -- (H2c)
+		(I6j) -- (H2d)
+		(I6j) -- (H2e)
+		(I6j) -- (H2f)
+
+		(I6k) -- (H2a)
+		(I6k) -- (H2b)
+		(I6k) -- (H2c)
+		(I6k) -- (H2d)
+		(I6k) -- (H2e)
+		(I6k) -- (H2f)
+
+		(I6l) -- (H2a)
+		(I6l) -- (H2b)
+		(I6l) -- (H2c)
+		(I6l) -- (H2d)
+		(I6l) -- (H2e)
+		(I6l) -- (H2f)
+
+		(I6m) -- (H2a)
+		(I6m) -- (H2b)
+		(I6m) -- (H2c)
+		(I6m) -- (H2d)
+		(I6m) -- (H2e)
+		(I6m) -- (H2f)
+
+		(I6n) -- (H2a)
+		(I6n) -- (H2b)
+		(I6n) -- (H2c)
+		(I6n) -- (H2d)
+		(I6n) -- (H2e)
+		(I6n) -- (H2f)
+
+		(I7a) -- (H3a)
+		(I7a) -- (H3b)
+		(I7a) -- (H3c)
+		(I7a) -- (H3d)
+		(I7a) -- (H3e)
+		(I7a) -- (H3f)
+
+		(I7b) -- (H3a)
+		(I7b) -- (H3b)
+		(I7b) -- (H3c)
+		(I7b) -- (H3d)
+		(I7b) -- (H3e)
+		(I7b) -- (H3f)
+
+		(I7c) -- (H3a)
+		(I7c) -- (H3b)
+		(I7c) -- (H3c)
+		(I7c) -- (H3d)
+		(I7c) -- (H3e)
+		(I7c) -- (H3f)
+
+		(I7d) -- (H3a)
+		(I7d) -- (H3b)
+		(I7d) -- (H3c)
+		(I7d) -- (H3d)
+		(I7d) -- (H3e)
+		(I7d) -- (H3f)
+
+		(I7e) -- (H3a)
+		(I7e) -- (H3b)
+		(I7e) -- (H3c)
+		(I7e) -- (H3d)
+		(I7e) -- (H3e)
+		(I7e) -- (H3f)
+
+		(I7f) -- (H3a)
+		(I7f) -- (H3b)
+		(I7f) -- (H3c)
+		(I7f) -- (H3d)
+		(I7f) -- (H3e)
+		(I7f) -- (H3f)
+
+		(I7g) -- (H3a)
+		(I7g) -- (H3b)
+		(I7g) -- (H3c)
+		(I7g) -- (H3d)
+		(I7g) -- (H3e)
+		(I7g) -- (H3f)
+
+		(I7h) -- (H3a)
+		(I7h) -- (H3b)
+		(I7h) -- (H3c)
+		(I7h) -- (H3d)
+		(I7h) -- (H3e)
+		(I7h) -- (H3f)
+
+		(I7i) -- (H3a)
+		(I7i) -- (H3b)
+		(I7i) -- (H3c)
+		(I7i) -- (H3d)
+		(I7i) -- (H3e)
+		(I7i) -- (H3f)
+
+		(I7j) -- (H3a)
+		(I7j) -- (H3b)
+		(I7j) -- (H3c)
+		(I7j) -- (H3d)
+		(I7j) -- (H3e)
+		(I7j) -- (H3f)
+
+		(I7k) -- (H3a)
+		(I7k) -- (H3b)
+		(I7k) -- (H3c)
+		(I7k) -- (H3d)
+		(I7k) -- (H3e)
+		(I7k) -- (H3f)
+
+		(I7l) -- (H3a)
+		(I7l) -- (H3b)
+		(I7l) -- (H3c)
+		(I7l) -- (H3d)
+		(I7l) -- (H3e)
+		(I7l) -- (H3f)
+
+		(I7m) -- (H3a)
+		(I7m) -- (H3b)
+		(I7m) -- (H3c)
+		(I7m) -- (H3d)
+		(I7m) -- (H3e)
+		(I7m) -- (H3f)
+
+		(I7n) -- (H3a)
+		(I7n) -- (H3b)
+		(I7n) -- (H3c)
+		(I7n) -- (H3d)
+		(I7n) -- (H3e)
+		(I7n) -- (H3f)
+
+		(I8a) -- (H3a)
+		(I8a) -- (H3b)
+		(I8a) -- (H3c)
+		(I8a) -- (H3d)
+		(I8a) -- (H3e)
+		(I8a) -- (H3f)
+
+		(I8b) -- (H3a)
+		(I8b) -- (H3b)
+		(I8b) -- (H3c)
+		(I8b) -- (H3d)
+		(I8b) -- (H3e)
+		(I8b) -- (H3f)
+
+		(I8c) -- (H3a)
+		(I8c) -- (H3b)
+		(I8c) -- (H3c)
+		(I8c) -- (H3d)
+		(I8c) -- (H3e)
+		(I8c) -- (H3f)
+
+		(I8d) -- (H3a)
+		(I8d) -- (H3b)
+		(I8d) -- (H3c)
+		(I8d) -- (H3d)
+		(I8d) -- (H3e)
+		(I8d) -- (H3f)
+
+		(I8e) -- (H3a)
+		(I8e) -- (H3b)
+		(I8e) -- (H3c)
+		(I8e) -- (H3d)
+		(I8e) -- (H3e)
+		(I8e) -- (H3f)
+
+		(I8f) -- (H3a)
+		(I8f) -- (H3b)
+		(I8f) -- (H3c)
+		(I8f) -- (H3d)
+		(I8f) -- (H3e)
+		(I8f) -- (H3f)
+
+		(I8g) -- (H3a)
+		(I8g) -- (H3b)
+		(I8g) -- (H3c)
+		(I8g) -- (H3d)
+		(I8g) -- (H3e)
+		(I8g) -- (H3f)
+
+		(I8h) -- (H3a)
+		(I8h) -- (H3b)
+		(I8h) -- (H3c)
+		(I8h) -- (H3d)
+		(I8h) -- (H3e)
+		(I8h) -- (H3f)
+
+		(I8i) -- (H3a)
+		(I8i) -- (H3b)
+		(I8i) -- (H3c)
+		(I8i) -- (H3d)
+		(I8i) -- (H3e)
+		(I8i) -- (H3f)
+
+		(I8j) -- (H3a)
+		(I8j) -- (H3b)
+		(I8j) -- (H3c)
+		(I8j) -- (H3d)
+		(I8j) -- (H3e)
+		(I8j) -- (H3f)
+
+		(I8k) -- (H3a)
+		(I8k) -- (H3b)
+		(I8k) -- (H3c)
+		(I8k) -- (H3d)
+		(I8k) -- (H3e)
+		(I8k) -- (H3f)
+
+		(I8l) -- (H3a)
+		(I8l) -- (H3b)
+		(I8l) -- (H3c)
+		(I8l) -- (H3d)
+		(I8l) -- (H3e)
+		(I8l) -- (H3f)
+
+		(I8m) -- (H3a)
+		(I8m) -- (H3b)
+		(I8m) -- (H3c)
+		(I8m) -- (H3d)
+		(I8m) -- (H3e)
+		(I8m) -- (H3f)
+
+		(I8n) -- (H3a)
+		(I8n) -- (H3b)
+		(I8n) -- (H3c)
+		(I8n) -- (H3d)
+		(I8n) -- (H3e)
+		(I8n) -- (H3f)
+
+		(I9a) -- (H4a)
+		(I9a) -- (H4b)
+		(I9a) -- (H4c)
+		(I9a) -- (H4d)
+		(I9a) -- (H4e)
+		(I9a) -- (H4f)
+
+		(I9b) -- (H4a)
+		(I9b) -- (H4b)
+		(I9b) -- (H4c)
+		(I9b) -- (H4d)
+		(I9b) -- (H4e)
+		(I9b) -- (H4f)
+
+		(I9c) -- (H4a)
+		(I9c) -- (H4b)
+		(I9c) -- (H4c)
+		(I9c) -- (H4d)
+		(I9c) -- (H4e)
+		(I9c) -- (H4f)
+
+		(I9d) -- (H4a)
+		(I9d) -- (H4b)
+		(I9d) -- (H4c)
+		(I9d) -- (H4d)
+		(I9d) -- (H4e)
+		(I9d) -- (H4f)
+
+		(I9e) -- (H4a)
+		(I9e) -- (H4b)
+		(I9e) -- (H4c)
+		(I9e) -- (H4d)
+		(I9e) -- (H4e)
+		(I9e) -- (H4f)
+
+		(I9f) -- (H4a)
+		(I9f) -- (H4b)
+		(I9f) -- (H4c)
+		(I9f) -- (H4d)
+		(I9f) -- (H4e)
+		(I9f) -- (H4f)
+
+		(I9g) -- (H4a)
+		(I9g) -- (H4b)
+		(I9g) -- (H4c)
+		(I9g) -- (H4d)
+		(I9g) -- (H4e)
+		(I9g) -- (H4f)
+
+		(I9h) -- (H4a)
+		(I9h) -- (H4b)
+		(I9h) -- (H4c)
+		(I9h) -- (H4d)
+		(I9h) -- (H4e)
+		(I9h) -- (H4f)
+
+		(I9i) -- (H4a)
+		(I9i) -- (H4b)
+		(I9i) -- (H4c)
+		(I9i) -- (H4d)
+		(I9i) -- (H4e)
+		(I9i) -- (H4f)
+
+		(I9j) -- (H4a)
+		(I9j) -- (H4b)
+		(I9j) -- (H4c)
+		(I9j) -- (H4d)
+		(I9j) -- (H4e)
+		(I9j) -- (H4f)
+
+		(I9k) -- (H4a)
+		(I9k) -- (H4b)
+		(I9k) -- (H4c)
+		(I9k) -- (H4d)
+		(I9k) -- (H4e)
+		(I9k) -- (H4f)
+
+		(I9l) -- (H4a)
+		(I9l) -- (H4b)
+		(I9l) -- (H4c)
+		(I9l) -- (H4d)
+		(I9l) -- (H4e)
+		(I9l) -- (H4f)
+
+		(I9m) -- (H4a)
+		(I9m) -- (H4b)
+		(I9m) -- (H4c)
+		(I9m) -- (H4d)
+		(I9m) -- (H4e)
+		(I9m) -- (H4f)
+
+		(I9n) -- (H4a)
+		(I9n) -- (H4b)
+		(I9n) -- (H4c)
+		(I9n) -- (H4d)
+		(I9n) -- (H4e)
+		(I9n) -- (H4f)
+
+		(I10a) -- (H4a)
+		(I10a) -- (H4b)
+		(I10a) -- (H4c)
+		(I10a) -- (H4d)
+		(I10a) -- (H4e)
+		(I10a) -- (H4f)
+
+		(I10b) -- (H4a)
+		(I10b) -- (H4b)
+		(I10b) -- (H4c)
+		(I10b) -- (H4d)
+		(I10b) -- (H4e)
+		(I10b) -- (H4f)
+
+		(I10c) -- (H4a)
+		(I10c) -- (H4b)
+		(I10c) -- (H4c)
+		(I10c) -- (H4d)
+		(I10c) -- (H4e)
+		(I10c) -- (H4f)
+
+		(I10d) -- (H4a)
+		(I10d) -- (H4b)
+		(I10d) -- (H4c)
+		(I10d) -- (H4d)
+		(I10d) -- (H4e)
+		(I10d) -- (H4f)
+
+		(I10e) -- (H4a)
+		(I10e) -- (H4b)
+		(I10e) -- (H4c)
+		(I10e) -- (H4d)
+		(I10e) -- (H4e)
+		(I10e) -- (H4f)
+
+		(I10f) -- (H4a)
+		(I10f) -- (H4b)
+		(I10f) -- (H4c)
+		(I10f) -- (H4d)
+		(I10f) -- (H4e)
+		(I10f) -- (H4f)
+
+		(I10g) -- (H4a)
+		(I10g) -- (H4b)
+		(I10g) -- (H4c)
+		(I10g) -- (H4d)
+		(I10g) -- (H4e)
+		(I10g) -- (H4f)
+
+		(I10h) -- (H4a)
+		(I10h) -- (H4b)
+		(I10h) -- (H4c)
+		(I10h) -- (H4d)
+		(I10h) -- (H4e)
+		(I10h) -- (H4f)
+
+		(I10i) -- (H4a)
+		(I10i) -- (H4b)
+		(I10i) -- (H4c)
+		(I10i) -- (H4d)
+		(I10i) -- (H4e)
+		(I10i) -- (H4f)
+
+		(I10j) -- (H4a)
+		(I10j) -- (H4b)
+		(I10j) -- (H4c)
+		(I10j) -- (H4d)
+		(I10j) -- (H4e)
+		(I10j) -- (H4f)
+
+		(I10k) -- (H4a)
+		(I10k) -- (H4b)
+		(I10k) -- (H4c)
+		(I10k) -- (H4d)
+		(I10k) -- (H4e)
+		(I10k) -- (H4f)
+
+		(I10l) -- (H4a)
+		(I10l) -- (H4b)
+		(I10l) -- (H4c)
+		(I10l) -- (H4d)
+		(I10l) -- (H4e)
+		(I10l) -- (H4f)
+
+		(I10m) -- (H4a)
+		(I10m) -- (H4b)
+		(I10m) -- (H4c)
+		(I10m) -- (H4d)
+		(I10m) -- (H4e)
+		(I10m) -- (H4f)
+
+		(I10n) -- (H4a)
+		(I10n) -- (H4b)
+		(I10n) -- (H4c)
+		(I10n) -- (H4d)
+		(I10n) -- (H4e)
+		(I10n) -- (H4f)
+		
+		(I11a) -- (H5a)
+		(I11a) -- (H5b)
+		(I11a) -- (H5c)
+		(I11a) -- (H5d)
+		(I11a) -- (H5e)
+		(I11a) -- (H5f)
+
+		(I11b) -- (H5a)
+		(I11b) -- (H5b)
+		(I11b) -- (H5c)
+		(I11b) -- (H5d)
+		(I11b) -- (H5e)
+		(I11b) -- (H5f)
+
+		(I11c) -- (H5a)
+		(I11c) -- (H5b)
+		(I11c) -- (H5c)
+		(I11c) -- (H5d)
+		(I11c) -- (H5e)
+		(I11c) -- (H5f)
+
+		(I11d) -- (H5a)
+		(I11d) -- (H5b)
+		(I11d) -- (H5c)
+		(I11d) -- (H5d)
+		(I11d) -- (H5e)
+		(I11d) -- (H5f)
+
+		(I11e) -- (H5a)
+		(I11e) -- (H5b)
+		(I11e) -- (H5c)
+		(I11e) -- (H5d)
+		(I11e) -- (H5e)
+		(I11e) -- (H5f)
+
+		(I11f) -- (H5a)
+		(I11f) -- (H5b)
+		(I11f) -- (H5c)
+		(I11f) -- (H5d)
+		(I11f) -- (H5e)
+		(I11f) -- (H5f)
+
+		(I11g) -- (H5a)
+		(I11g) -- (H5b)
+		(I11g) -- (H5c)
+		(I11g) -- (H5d)
+		(I11g) -- (H5e)
+		(I11g) -- (H5f)
+
+		(I11h) -- (H5a)
+		(I11h) -- (H5b)
+		(I11h) -- (H5c)
+		(I11h) -- (H5d)
+		(I11h) -- (H5e)
+		(I11h) -- (H5f)
+
+		(I11i) -- (H5a)
+		(I11i) -- (H5b)
+		(I11i) -- (H5c)
+		(I11i) -- (H5d)
+		(I11i) -- (H5e)
+		(I11i) -- (H5f)
+
+		(I11j) -- (H5a)
+		(I11j) -- (H5b)
+		(I11j) -- (H5c)
+		(I11j) -- (H5d)
+		(I11j) -- (H5e)
+		(I11j) -- (H5f)
+
+		(I11k) -- (H5a)
+		(I11k) -- (H5b)
+		(I11k) -- (H5c)
+		(I11k) -- (H5d)
+		(I11k) -- (H5e)
+		(I11k) -- (H5f)
+
+		(I11l) -- (H5a)
+		(I11l) -- (H5b)
+		(I11l) -- (H5c)
+		(I11l) -- (H5d)
+		(I11l) -- (H5e)
+		(I11l) -- (H5f)
+
+		(I11m) -- (H5a)
+		(I11m) -- (H5b)
+		(I11m) -- (H5c)
+		(I11m) -- (H5d)
+		(I11m) -- (H5e)
+		(I11m) -- (H5f)
+
+		(I11n) -- (H5a)
+		(I11n) -- (H5b)
+		(I11n) -- (H5c)
+		(I11n) -- (H5d)
+		(I11n) -- (H5e)
+		(I11n) -- (H5f)
+
+		(I12a) -- (H5a)
+		(I12a) -- (H5b)
+		(I12a) -- (H5c)
+		(I12a) -- (H5d)
+		(I12a) -- (H5e)
+		(I12a) -- (H5f)
+
+		(I12b) -- (H5a)
+		(I12b) -- (H5b)
+		(I12b) -- (H5c)
+		(I12b) -- (H5d)
+		(I12b) -- (H5e)
+		(I12b) -- (H5f)
+
+		(I12c) -- (H5a)
+		(I12c) -- (H5b)
+		(I12c) -- (H5c)
+		(I12c) -- (H5d)
+		(I12c) -- (H5e)
+		(I12c) -- (H5f)
+
+		(I12d) -- (H5a)
+		(I12d) -- (H5b)
+		(I12d) -- (H5c)
+		(I12d) -- (H5d)
+		(I12d) -- (H5e)
+		(I12d) -- (H5f)
+
+		(I12e) -- (H5a)
+		(I12e) -- (H5b)
+		(I12e) -- (H5c)
+		(I12e) -- (H5d)
+		(I12e) -- (H5e)
+		(I12e) -- (H5f)
+
+		(I12f) -- (H5a)
+		(I12f) -- (H5b)
+		(I12f) -- (H5c)
+		(I12f) -- (H5d)
+		(I12f) -- (H5e)
+		(I12f) -- (H5f)
+
+		(I12g) -- (H5a)
+		(I12g) -- (H5b)
+		(I12g) -- (H5c)
+		(I12g) -- (H5d)
+		(I12g) -- (H5e)
+		(I12g) -- (H5f)
+
+		(I12h) -- (H5a)
+		(I12h) -- (H5b)
+		(I12h) -- (H5c)
+		(I12h) -- (H5d)
+		(I12h) -- (H5e)
+		(I12h) -- (H5f)
+
+		(I12i) -- (H5a)
+		(I12i) -- (H5b)
+		(I12i) -- (H5c)
+		(I12i) -- (H5d)
+		(I12i) -- (H5e)
+		(I12i) -- (H5f)
+
+		(I12j) -- (H5a)
+		(I12j) -- (H5b)
+		(I12j) -- (H5c)
+		(I12j) -- (H5d)
+		(I12j) -- (H5e)
+		(I12j) -- (H5f)
+
+		(I12k) -- (H5a)
+		(I12k) -- (H5b)
+		(I12k) -- (H5c)
+		(I12k) -- (H5d)
+		(I12k) -- (H5e)
+		(I12k) -- (H5f)
+
+		(I12l) -- (H5a)
+		(I12l) -- (H5b)
+		(I12l) -- (H5c)
+		(I12l) -- (H5d)
+		(I12l) -- (H5e)
+		(I12l) -- (H5f)
+
+		(I12m) -- (H5a)
+		(I12m) -- (H5b)
+		(I12m) -- (H5c)
+		(I12m) -- (H5d)
+		(I12m) -- (H5e)
+		(I12m) -- (H5f)
+
+		(I12n) -- (H5a)
+		(I12n) -- (H5b)
+		(I12n) -- (H5c)
+		(I12n) -- (H5d)
+		(I12n) -- (H5e)
+		(I12n) -- (H5f)
+		
+		(I13a) -- (H6a)
+		(I13a) -- (H6b)
+		(I13a) -- (H6c)
+		(I13a) -- (H6d)
+		(I13a) -- (H6e)
+		(I13a) -- (H6f)
+
+		(I13b) -- (H6a)
+		(I13b) -- (H6b)
+		(I13b) -- (H6c)
+		(I13b) -- (H6d)
+		(I13b) -- (H6e)
+		(I13b) -- (H6f)
+
+		(I13c) -- (H6a)
+		(I13c) -- (H6b)
+		(I13c) -- (H6c)
+		(I13c) -- (H6d)
+		(I13c) -- (H6e)
+		(I13c) -- (H6f)
+
+		(I13d) -- (H6a)
+		(I13d) -- (H6b)
+		(I13d) -- (H6c)
+		(I13d) -- (H6d)
+		(I13d) -- (H6e)
+		(I13d) -- (H6f)
+
+		(I13e) -- (H6a)
+		(I13e) -- (H6b)
+		(I13e) -- (H6c)
+		(I13e) -- (H6d)
+		(I13e) -- (H6e)
+		(I13e) -- (H6f)
+
+		(I13f) -- (H6a)
+		(I13f) -- (H6b)
+		(I13f) -- (H6c)
+		(I13f) -- (H6d)
+		(I13f) -- (H6e)
+		(I13f) -- (H6f)
+
+		(I13g) -- (H6a)
+		(I13g) -- (H6b)
+		(I13g) -- (H6c)
+		(I13g) -- (H6d)
+		(I13g) -- (H6e)
+		(I13g) -- (H6f)
+
+		(I13h) -- (H6a)
+		(I13h) -- (H6b)
+		(I13h) -- (H6c)
+		(I13h) -- (H6d)
+		(I13h) -- (H6e)
+		(I13h) -- (H6f)
+
+		(I13i) -- (H6a)
+		(I13i) -- (H6b)
+		(I13i) -- (H6c)
+		(I13i) -- (H6d)
+		(I13i) -- (H6e)
+		(I13i) -- (H6f)
+
+		(I13j) -- (H6a)
+		(I13j) -- (H6b)
+		(I13j) -- (H6c)
+		(I13j) -- (H6d)
+		(I13j) -- (H6e)
+		(I13j) -- (H6f)
+
+		(I13k) -- (H6a)
+		(I13k) -- (H6b)
+		(I13k) -- (H6c)
+		(I13k) -- (H6d)
+		(I13k) -- (H6e)
+		(I13k) -- (H6f)
+
+		(I13l) -- (H6a)
+		(I13l) -- (H6b)
+		(I13l) -- (H6c)
+		(I13l) -- (H6d)
+		(I13l) -- (H6e)
+		(I13l) -- (H6f)
+
+		(I13m) -- (H6a)
+		(I13m) -- (H6b)
+		(I13m) -- (H6c)
+		(I13m) -- (H6d)
+		(I13m) -- (H6e)
+		(I13m) -- (H6f)
+
+		(I13n) -- (H6a)
+		(I13n) -- (H6b)
+		(I13n) -- (H6c)
+		(I13n) -- (H6d)
+		(I13n) -- (H6e)
+		(I13n) -- (H6f)
+
+		(I14a) -- (H6a)
+		(I14a) -- (H6b)
+		(I14a) -- (H6c)
+		(I14a) -- (H6d)
+		(I14a) -- (H6e)
+		(I14a) -- (H6f)
+
+		(I14b) -- (H6a)
+		(I14b) -- (H6b)
+		(I14b) -- (H6c)
+		(I14b) -- (H6d)
+		(I14b) -- (H6e)
+		(I14b) -- (H6f)
+
+		(I14c) -- (H6a)
+		(I14c) -- (H6b)
+		(I14c) -- (H6c)
+		(I14c) -- (H6d)
+		(I14c) -- (H6e)
+		(I14c) -- (H6f)
+
+		(I14d) -- (H6a)
+		(I14d) -- (H6b)
+		(I14d) -- (H6c)
+		(I14d) -- (H6d)
+		(I14d) -- (H6e)
+		(I14d) -- (H6f)
+
+		(I14e) -- (H6a)
+		(I14e) -- (H6b)
+		(I14e) -- (H6c)
+		(I14e) -- (H6d)
+		(I14e) -- (H6e)
+		(I14e) -- (H6f)
+
+		(I14f) -- (H6a)
+		(I14f) -- (H6b)
+		(I14f) -- (H6c)
+		(I14f) -- (H6d)
+		(I14f) -- (H6e)
+		(I14f) -- (H6f)
+
+		(I14g) -- (H6a)
+		(I14g) -- (H6b)
+		(I14g) -- (H6c)
+		(I14g) -- (H6d)
+		(I14g) -- (H6e)
+		(I14g) -- (H6f)
+
+		(I14h) -- (H6a)
+		(I14h) -- (H6b)
+		(I14h) -- (H6c)
+		(I14h) -- (H6d)
+		(I14h) -- (H6e)
+		(I14h) -- (H6f)
+
+		(I14i) -- (H6a)
+		(I14i) -- (H6b)
+		(I14i) -- (H6c)
+		(I14i) -- (H6d)
+		(I14i) -- (H6e)
+		(I14i) -- (H6f)
+
+		(I14j) -- (H6a)
+		(I14j) -- (H6b)
+		(I14j) -- (H6c)
+		(I14j) -- (H6d)
+		(I14j) -- (H6e)
+		(I14j) -- (H6f)
+
+		(I14k) -- (H6a)
+		(I14k) -- (H6b)
+		(I14k) -- (H6c)
+		(I14k) -- (H6d)
+		(I14k) -- (H6e)
+		(I14k) -- (H6f)
+
+		(I14l) -- (H6a)
+		(I14l) -- (H6b)
+		(I14l) -- (H6c)
+		(I14l) -- (H6d)
+		(I14l) -- (H6e)
+		(I14l) -- (H6f)
+
+		(I14m) -- (H6a)
+		(I14m) -- (H6b)
+		(I14m) -- (H6c)
+		(I14m) -- (H6d)
+		(I14m) -- (H6e)
+		(I14m) -- (H6f)
+
+		(I14n) -- (H6a)
+		(I14n) -- (H6b)
+		(I14n) -- (H6c)
+		(I14n) -- (H6d)
+		(I14n) -- (H6e)
+		(I14n) -- (H6f);
+			
+	% Output Layer
+	\begin{scope}[
+		yshift=120,
+		every node/.append style={yslant=\yslant,xslant=\xslant},
+		yslant=\yslant,xslant=\xslant
+	] 
+		% The frame:
+		\fill[white,fill opacity=.75] (0,0) rectangle (7,7); % Opacity
+		\draw[black, dashed, thin] (0,0) rectangle (7,7); 
+		% Agents:
+		\draw[fill=red]
+		
+			% First Row (Output layer)
+			(0.25,0.25) circle [radius=0.1] node (O1a) {}
+			(0.75,0.25) circle [radius=0.1] node (O1b) {}
+			(1.25,0.25) circle [radius=0.1] node (O1c) {}
+			(1.75,0.25) circle [radius=0.1] node (O1d) {}
+			(2.25,0.25) circle [radius=0.1] node (O1e) {}
+			(2.75,0.25) circle [radius=0.1] node (O1f) {}
+			(3.25,0.25) circle [radius=0.1] node (O1g) {}
+			(3.75,0.25) circle [radius=0.1] node (O1h) {}
+			(4.25,0.25) circle [radius=0.1] node (O1i) {}
+			(4.75,0.25) circle [radius=0.1] node (O1j) {}
+			(5.25,0.25) circle [radius=0.1] node (O1k) {}
+			(5.75,0.25) circle [radius=0.1] node (O1l) {}
+			(6.25,0.25) circle [radius=0.1] node (O1m) {}
+			(6.75,0.25) circle [radius=0.1] node (O1n) {}
+			
+			% Second Row (Output layer)		
+			(0.25,0.75) circle [radius=0.1] node (O2a) {}
+			(0.75,0.75) circle [radius=0.1] node (O2b) {}
+			(1.25,0.75) circle [radius=0.1] node (O2c) {}
+			(1.75,0.75) circle [radius=0.1] node (O2d) {}
+			(2.25,0.75) circle [radius=0.1] node (O2e) {}
+			(2.75,0.75) circle [radius=0.1] node (O2f) {}
+			(3.25,0.75) circle [radius=0.1] node (O2g) {}
+			(3.75,0.75) circle [radius=0.1] node (O2h) {}
+			(4.25,0.75) circle [radius=0.1] node (O2i) {}
+			(4.75,0.75) circle [radius=0.1] node (O2j) {}
+			(5.25,0.75) circle [radius=0.1] node (O2k) {}
+			(5.75,0.75) circle [radius=0.1] node (O2l) {}
+			(6.25,0.75) circle [radius=0.1] node (O2m) {}
+			(6.75,0.75) circle [radius=0.1] node (O2n) {}
+			
+			% Third Row (Output layer)		
+			(0.25,1.25) circle [radius=0.1] node (O3a) {}
+			(0.75,1.25) circle [radius=0.1] node (O3b) {}
+			(1.25,1.25) circle [radius=0.1] node (O3c) {}
+			(1.75,1.25) circle [radius=0.1] node (O3d) {}
+			(2.25,1.25) circle [radius=0.1] node (O3e) {}
+			(2.75,1.25) circle [radius=0.1] node (O3f) {}
+			(3.25,1.25) circle [radius=0.1] node (O3g) {}
+			(3.75,1.25) circle [radius=0.1] node (O3h) {}
+			(4.25,1.25) circle [radius=0.1] node (O3i) {}
+			(4.75,1.25) circle [radius=0.1] node (O3j) {}
+			(5.25,1.25) circle [radius=0.1] node (O3k) {}
+			(5.75,1.25) circle [radius=0.1] node (O3l) {}
+			(6.25,1.25) circle [radius=0.1] node (O3m) {}
+			(6.75,1.25) circle [radius=0.1] node (O3n) {}
+			
+			% Fourth Row (Output layer)		
+			(0.25,1.75) circle [radius=0.1] node (O4a) {}
+			(0.75,1.75) circle [radius=0.1] node (O4b) {}
+			(1.25,1.75) circle [radius=0.1] node (O4c) {}
+			(1.75,1.75) circle [radius=0.1] node (O4d) {}
+			(2.25,1.75) circle [radius=0.1] node (O4e) {}
+			(2.75,1.75) circle [radius=0.1] node (O4f) {}
+			(3.25,1.75) circle [radius=0.1] node (O4g) {}
+			(3.75,1.75) circle [radius=0.1] node (O4h) {}
+			(4.25,1.75) circle [radius=0.1] node (O4i) {}
+			(4.75,1.75) circle [radius=0.1] node (O4j) {}
+			(5.25,1.75) circle [radius=0.1] node (O4k) {}
+			(5.75,1.75) circle [radius=0.1] node (O4l) {}
+			(6.25,1.75) circle [radius=0.1] node (O4m) {}
+			(6.75,1.75) circle [radius=0.1] node (O4n) {}
+			
+			% Fifth Row (Output layer)		
+			(0.25,2.25) circle [radius=0.1] node (O5a) {}
+			(0.75,2.25) circle [radius=0.1] node (O5b) {}
+			(1.25,2.25) circle [radius=0.1] node (O5c) {}
+			(1.75,2.25) circle [radius=0.1] node (O5d) {}
+			(2.25,2.25) circle [radius=0.1] node (O5e) {}
+			(2.75,2.25) circle [radius=0.1] node (O5f) {}
+			(3.25,2.25) circle [radius=0.1] node (O5g) {}
+			(3.75,2.25) circle [radius=0.1] node (O5h) {}
+			(4.25,2.25) circle [radius=0.1] node (O5i) {}
+			(4.75,2.25) circle [radius=0.1] node (O5j) {}
+			(5.25,2.25) circle [radius=0.1] node (O5k) {}
+			(5.75,2.25) circle [radius=0.1] node (O5l) {}
+			(6.25,2.25) circle [radius=0.1] node (O5m) {}
+			(6.75,2.25) circle [radius=0.1] node (O5n) {}
+			
+			% Sixth Row (Output layer)		
+			(0.25,2.75) circle [radius=0.1] node (O6a) {}
+			(0.75,2.75) circle [radius=0.1] node (O6b) {}
+			(1.25,2.75) circle [radius=0.1] node (O6c) {}
+			(1.75,2.75) circle [radius=0.1] node (O6d) {}
+			(2.25,2.75) circle [radius=0.1] node (O6e) {}
+			(2.75,2.75) circle [radius=0.1] node (O6f) {}
+			(3.25,2.75) circle [radius=0.1] node (O6g) {}
+			(3.75,2.75) circle [radius=0.1] node (O6h) {}
+			(4.25,2.75) circle [radius=0.1] node (O6i) {}
+			(4.75,2.75) circle [radius=0.1] node (O6j) {}
+			(5.25,2.75) circle [radius=0.1] node (O6k) {}
+			(5.75,2.75) circle [radius=0.1] node (O6l) {}
+			(6.25,2.75) circle [radius=0.1] node (O6m) {}
+			(6.75,2.75) circle [radius=0.1] node (O6n) {}
+			
+			% Seventh Row (Output layer)		
+			(0.25,3.25) circle [radius=0.1] node (O7a) {}
+			(0.75,3.25) circle [radius=0.1] node (O7b) {}
+			(1.25,3.25) circle [radius=0.1] node (O7c) {}
+			(1.75,3.25) circle [radius=0.1] node (O7d) {}
+			(2.25,3.25) circle [radius=0.1] node (O7e) {}
+			(2.75,3.25) circle [radius=0.1] node (O7f) {}
+			(3.25,3.25) circle [radius=0.1] node (O7g) {}
+			(3.75,3.25) circle [radius=0.1] node (O7h) {}
+			(4.25,3.25) circle [radius=0.1] node (O7i) {}
+			(4.75,3.25) circle [radius=0.1] node (O7j) {}
+			(5.25,3.25) circle [radius=0.1] node (O7k) {}
+			(5.75,3.25) circle [radius=0.1] node (O7l) {}
+			(6.25,3.25) circle [radius=0.1] node (O7m) {}
+			(6.75,3.25) circle [radius=0.1] node (O7n) {}
+			
+			% Eighth Row (Output layer)		
+			(0.25,3.75) circle [radius=0.1] node (O8a) {}
+			(0.75,3.75) circle [radius=0.1] node (O8b) {}
+			(1.25,3.75) circle [radius=0.1] node (O8c) {}
+			(1.75,3.75) circle [radius=0.1] node (O8d) {}
+			(2.25,3.75) circle [radius=0.1] node (O8e) {}
+			(2.75,3.75) circle [radius=0.1] node (O8f) {}
+			(3.25,3.75) circle [radius=0.1] node (O8g) {}
+			(3.75,3.75) circle [radius=0.1] node (O8h) {}
+			(4.25,3.75) circle [radius=0.1] node (O8i) {}
+			(4.75,3.75) circle [radius=0.1] node (O8j) {}
+			(5.25,3.75) circle [radius=0.1] node (O8k) {}
+			(5.75,3.75) circle [radius=0.1] node (O8l) {}
+			(6.25,3.75) circle [radius=0.1] node (O8m) {}
+			(6.75,3.75) circle [radius=0.1] node (O8n) {}
+			
+			% Ninth Row (Output layer)		
+			(0.25,4.25) circle [radius=0.1] node (O9a) {}
+			(0.75,4.25) circle [radius=0.1] node (O9b) {}
+			(1.25,4.25) circle [radius=0.1] node (O9c) {}
+			(1.75,4.25) circle [radius=0.1] node (O9d) {}
+			(2.25,4.25) circle [radius=0.1] node (O9e) {}
+			(2.75,4.25) circle [radius=0.1] node (O9f) {}
+			(3.25,4.25) circle [radius=0.1] node (O9g) {}
+			(3.75,4.25) circle [radius=0.1] node (O9h) {}
+			(4.25,4.25) circle [radius=0.1] node (O9i) {}
+			(4.75,4.25) circle [radius=0.1] node (O9j) {}
+			(5.25,4.25) circle [radius=0.1] node (O9k) {}
+			(5.75,4.25) circle [radius=0.1] node (O9l) {}
+			(6.25,4.25) circle [radius=0.1] node (O9m) {}
+			(6.75,4.25) circle [radius=0.1] node (O9n) {}			
+			
+			% Tenth Row (Output layer)		
+			(0.25,4.75) circle [radius=0.1] node (O10a) {}
+			(0.75,4.75) circle [radius=0.1] node (O10b) {}
+			(1.25,4.75) circle [radius=0.1] node (O10c) {}
+			(1.75,4.75) circle [radius=0.1] node (O10d) {}
+			(2.25,4.75) circle [radius=0.1] node (O10e) {}
+			(2.75,4.75) circle [radius=0.1] node (O10f) {}
+			(3.25,4.75) circle [radius=0.1] node (O10g) {}
+			(3.75,4.75) circle [radius=0.1] node (O10h) {}
+			(4.25,4.75) circle [radius=0.1] node (O10i) {}
+			(4.75,4.75) circle [radius=0.1] node (O10j) {}
+			(5.25,4.75) circle [radius=0.1] node (O10k) {}
+			(5.75,4.75) circle [radius=0.1] node (O10l) {}
+			(6.25,4.75) circle [radius=0.1] node (O10m) {}
+			(6.75,4.75) circle [radius=0.1] node (O10n) {}
+			
+			% Eleventh Row (Output layer)		
+			(0.25,5.25) circle [radius=0.1] node (O11a) {}
+			(0.75,5.25) circle [radius=0.1] node (O11b) {}
+			(1.25,5.25) circle [radius=0.1] node (O11c) {}
+			(1.75,5.25) circle [radius=0.1] node (O11d) {}
+			(2.25,5.25) circle [radius=0.1] node (O11e) {}
+			(2.75,5.25) circle [radius=0.1] node (O11f) {}
+			(3.25,5.25) circle [radius=0.1] node (O11g) {}
+			(3.75,5.25) circle [radius=0.1] node (O11h) {}
+			(4.25,5.25) circle [radius=0.1] node (O11i) {}
+			(4.75,5.25) circle [radius=0.1] node (O11j) {}
+			(5.25,5.25) circle [radius=0.1] node (O11k) {}
+			(5.75,5.25) circle [radius=0.1] node (O11l) {}
+			(6.25,5.25) circle [radius=0.1] node (O11m) {}
+			(6.75,5.25) circle [radius=0.1] node (O11n) {}
+			
+			% Twelfth Row (Output layer)		
+			(0.25,5.75) circle [radius=0.1] node (O12a) {}
+			(0.75,5.75) circle [radius=0.1] node (O12b) {}
+			(1.25,5.75) circle [radius=0.1] node (O12c) {}
+			(1.75,5.75) circle [radius=0.1] node (O12d) {}
+			(2.25,5.75) circle [radius=0.1] node (O12e) {}
+			(2.75,5.75) circle [radius=0.1] node (O12f) {}
+			(3.25,5.75) circle [radius=0.1] node (O12g) {}
+			(3.75,5.75) circle [radius=0.1] node (O12h) {}
+			(4.25,5.75) circle [radius=0.1] node (O12i) {}
+			(4.75,5.75) circle [radius=0.1] node (O12j) {}
+			(5.25,5.75) circle [radius=0.1] node (O12k) {}
+			(5.75,5.75) circle [radius=0.1] node (O12l) {}
+			(6.25,5.75) circle [radius=0.1] node (O12m) {}
+			(6.75,5.75) circle [radius=0.1] node (O12n) {}
+			
+			% Thirteenth Row (Output layer)		
+			(0.25,6.25) circle [radius=0.1] node (O13a) {}
+			(0.75,6.25) circle [radius=0.1] node (O13b) {}
+			(1.25,6.25) circle [radius=0.1] node (O13c) {}
+			(1.75,6.25) circle [radius=0.1] node (O13d) {}
+			(2.25,6.25) circle [radius=0.1] node (O13e) {}
+			(2.75,6.25) circle [radius=0.1] node (O13f) {}
+			(3.25,6.25) circle [radius=0.1] node (O13g) {}
+			(3.75,6.25) circle [radius=0.1] node (O13h) {}
+			(4.25,6.25) circle [radius=0.1] node (O13i) {}
+			(4.75,6.25) circle [radius=0.1] node (O13j) {}
+			(5.25,6.25) circle [radius=0.1] node (O13k) {}
+			(5.75,6.25) circle [radius=0.1] node (O13l) {}
+			(6.25,6.25) circle [radius=0.1] node (O13m) {}
+			(6.75,6.25) circle [radius=0.1] node (O13n) {}
+
+			% Fourteenth Row (Output layer)		
+			(0.25,6.75) circle [radius=0.1] node (O14a) {}
+			(0.75,6.75) circle [radius=0.1] node (O14b) {}
+			(1.25,6.75) circle [radius=0.1] node (O14c) {}
+			(1.75,6.75) circle [radius=0.1] node (O14d) {}
+			(2.25,6.75) circle [radius=0.1] node (O14e) {}
+			(2.75,6.75) circle [radius=0.1] node (O14f) {}
+			(3.25,6.75) circle [radius=0.1] node (O14g) {}
+			(3.75,6.75) circle [radius=0.1] node (O14h) {}
+			(4.25,6.75) circle [radius=0.1] node (O14i) {}
+			(4.75,6.75) circle [radius=0.1] node (O14j) {}
+			(5.25,6.75) circle [radius=0.1] node (O14k) {}
+			(5.75,6.75) circle [radius=0.1] node (O14l) {}
+			(6.25,6.75) circle [radius=0.1] node (O14m) {}
+			(6.75,6.75) circle [radius=0.1] node (O14n) {};
+			
+		 % Labels:
+		\fill[black]
+			(0.5,7.2) node[right, scale=.7] {\OutputSubstrate};	
+	\end{scope}
+	
+	% Hidden-Output lines
+	\draw[ultra thin,color=gray,opacity=.5]
+		(H1a) -- (O1a)
+		(H1a) -- (O1b)
+		(H1a) -- (O1c)
+		(H1a) -- (O1d)
+		(H1a) -- (O1e)
+		(H1a) -- (O1f)
+		(H1a) -- (O1g)
+		(H1a) -- (O1h)
+		(H1a) -- (O1i)
+		(H1a) -- (O1j)
+		(H1a) -- (O1k)
+		(H1a) -- (O1l)
+		(H1a) -- (O1m)
+		(H1a) -- (O1n)
+		
+		(H1b) -- (O1a)
+		(H1b) -- (O1b)
+		(H1b) -- (O1c)
+		(H1b) -- (O1d)
+		(H1b) -- (O1e)
+		(H1b) -- (O1f)
+		(H1b) -- (O1g)
+		(H1b) -- (O1h)
+		(H1b) -- (O1i)
+		(H1b) -- (O1j)
+		(H1b) -- (O1k)
+		(H1b) -- (O1l)
+		(H1b) -- (O1m)
+		(H1b) -- (O1n)
+		
+		(H1c) -- (O1a)
+		(H1c) -- (O1b)
+		(H1c) -- (O1c)
+		(H1c) -- (O1d)
+		(H1c) -- (O1e)
+		(H1c) -- (O1f)
+		(H1c) -- (O1g)
+		(H1c) -- (O1h)
+		(H1c) -- (O1i)
+		(H1c) -- (O1j)
+		(H1c) -- (O1k)
+		(H1c) -- (O1l)
+		(H1c) -- (O1m)
+		(H1c) -- (O1n)
+		
+		(H1d) -- (O1a)
+		(H1d) -- (O1b)
+		(H1d) -- (O1c)
+		(H1d) -- (O1d)
+		(H1d) -- (O1e)
+		(H1d) -- (O1f)
+		(H1d) -- (O1g)
+		(H1d) -- (O1h)
+		(H1d) -- (O1i)
+		(H1d) -- (O1j)
+		(H1d) -- (O1k)
+		(H1d) -- (O1l)
+		(H1d) -- (O1m)
+		(H1d) -- (O1n)
+		
+		(H1e) -- (O1a)
+		(H1e) -- (O1b)
+		(H1e) -- (O1c)
+		(H1e) -- (O1d)
+		(H1e) -- (O1e)
+		(H1e) -- (O1f)
+		(H1e) -- (O1g)
+		(H1e) -- (O1h)
+		(H1e) -- (O1i)
+		(H1e) -- (O1j)
+		(H1e) -- (O1k)
+		(H1e) -- (O1l)
+		(H1e) -- (O1m)
+		(H1e) -- (O1n)
+		
+		(H1f) -- (O1a)
+		(H1f) -- (O1b)
+		(H1f) -- (O1c)
+		(H1f) -- (O1d)
+		(H1f) -- (O1e)
+		(H1f) -- (O1f)
+		(H1f) -- (O1g)
+		(H1f) -- (O1h)
+		(H1f) -- (O1i)
+		(H1f) -- (O1j)
+		(H1f) -- (O1k)
+		(H1f) -- (O1l)
+		(H1f) -- (O1m)
+		(H1f) -- (O1n)
+		
+		(H1a) -- (O2a)
+		(H1a) -- (O2b)
+		(H1a) -- (O2c)
+		(H1a) -- (O2d)
+		(H1a) -- (O2e)
+		(H1a) -- (O2f)
+		(H1a) -- (O2g)
+		(H1a) -- (O2h)
+		(H1a) -- (O2i)
+		(H1a) -- (O2j)
+		(H1a) -- (O2k)
+		(H1a) -- (O2l)
+		(H1a) -- (O2m)
+		(H1a) -- (O2n)
+		
+		(H1b) -- (O2a)
+		(H1b) -- (O2b)
+		(H1b) -- (O2c)
+		(H1b) -- (O2d)
+		(H1b) -- (O2e)
+		(H1b) -- (O2f)
+		(H1b) -- (O2g)
+		(H1b) -- (O2h)
+		(H1b) -- (O2i)
+		(H1b) -- (O2j)
+		(H1b) -- (O2k)
+		(H1b) -- (O2l)
+		(H1b) -- (O2m)
+		(H1b) -- (O2n)
+		
+		(H1c) -- (O2a)
+		(H1c) -- (O2b)
+		(H1c) -- (O2c)
+		(H1c) -- (O2d)
+		(H1c) -- (O2e)
+		(H1c) -- (O2f)
+		(H1c) -- (O2g)
+		(H1c) -- (O2h)
+		(H1c) -- (O2i)
+		(H1c) -- (O2j)
+		(H1c) -- (O2k)
+		(H1c) -- (O2l)
+		(H1c) -- (O2m)
+		(H1c) -- (O2n)
+		
+		(H1d) -- (O2a)
+		(H1d) -- (O2b)
+		(H1d) -- (O2c)
+		(H1d) -- (O2d)
+		(H1d) -- (O2e)
+		(H1d) -- (O2f)
+		(H1d) -- (O2g)
+		(H1d) -- (O2h)
+		(H1d) -- (O2i)
+		(H1d) -- (O2j)
+		(H1d) -- (O2k)
+		(H1d) -- (O2l)
+		(H1d) -- (O2m)
+		(H1d) -- (O2n)
+		
+		(H1e) -- (O2a)
+		(H1e) -- (O2b)
+		(H1e) -- (O2c)
+		(H1e) -- (O2d)
+		(H1e) -- (O2e)
+		(H1e) -- (O2f)
+		(H1e) -- (O2g)
+		(H1e) -- (O2h)
+		(H1e) -- (O2i)
+		(H1e) -- (O2j)
+		(H1e) -- (O2k)
+		(H1e) -- (O2l)
+		(H1e) -- (O2m)
+		(H1e) -- (O2n)
+
+		(H1f) -- (O2a)
+		(H1f) -- (O2b)
+		(H1f) -- (O2c)
+		(H1f) -- (O2d)
+		(H1f) -- (O2e)
+		(H1f) -- (O2f)
+		(H1f) -- (O2g)
+		(H1f) -- (O2h)
+		(H1f) -- (O2i)
+		(H1f) -- (O2j)
+		(H1f) -- (O2k)
+		(H1f) -- (O2l)
+		(H1f) -- (O2m)
+		(H1f) -- (O2n)
+		
+		(H1a) -- (O3a)
+		(H1a) -- (O3b)
+		(H1a) -- (O3c)
+		(H1a) -- (O3d)
+		(H1a) -- (O3e)
+		(H1a) -- (O3f)
+		(H1a) -- (O3g)
+		(H1a) -- (O3h)
+		(H1a) -- (O3i)
+		(H1a) -- (O3j)
+		(H1a) -- (O3k)
+		(H1a) -- (O3l)
+		(H1a) -- (O3m)
+		(H1a) -- (O3n)
+		
+		(H1b) -- (O3a)
+		(H1b) -- (O3b)
+		(H1b) -- (O3c)
+		(H1b) -- (O3d)
+		(H1b) -- (O3e)
+		(H1b) -- (O3f)
+		(H1b) -- (O3g)
+		(H1b) -- (O3h)
+		(H1b) -- (O3i)
+		(H1b) -- (O3j)
+		(H1b) -- (O3k)
+		(H1b) -- (O3l)
+		(H1b) -- (O3m)
+		(H1b) -- (O3n)
+		
+		(H1c) -- (O3a)
+		(H1c) -- (O3b)
+		(H1c) -- (O3c)
+		(H1c) -- (O3d)
+		(H1c) -- (O3e)
+		(H1c) -- (O3f)
+		(H1c) -- (O3g)
+		(H1c) -- (O3h)
+		(H1c) -- (O3i)
+		(H1c) -- (O3j)
+		(H1c) -- (O3k)
+		(H1c) -- (O3l)
+		(H1c) -- (O3m)
+		(H1c) -- (O3n)
+		
+		(H1d) -- (O3a)
+		(H1d) -- (O3b)
+		(H1d) -- (O3c)
+		(H1d) -- (O3d)
+		(H1d) -- (O3e)
+		(H1d) -- (O3f)
+		(H1d) -- (O3g)
+		(H1d) -- (O3h)
+		(H1d) -- (O3i)
+		(H1d) -- (O3j)
+		(H1d) -- (O3k)
+		(H1d) -- (O3l)
+		(H1d) -- (O3m)
+		(H1d) -- (O3n)
+		
+		(H1e) -- (O3a)
+		(H1e) -- (O3b)
+		(H1e) -- (O3c)
+		(H1e) -- (O3d)
+		(H1e) -- (O3e)
+		(H1e) -- (O3f)
+		(H1e) -- (O3g)
+		(H1e) -- (O3h)
+		(H1e) -- (O3i)
+		(H1e) -- (O3j)
+		(H1e) -- (O3k)
+		(H1e) -- (O3l)
+		(H1e) -- (O3m)
+		(H1e) -- (O3n)
+
+		(H1f) -- (O3a)
+		(H1f) -- (O3b)
+		(H1f) -- (O3c)
+		(H1f) -- (O3d)
+		(H1f) -- (O3e)
+		(H1f) -- (O3f)
+		(H1f) -- (O3g)
+		(H1f) -- (O3h)
+		(H1f) -- (O3i)
+		(H1f) -- (O3j)
+		(H1f) -- (O3k)
+		(H1f) -- (O3l)
+		(H1f) -- (O3m)
+		(H1f) -- (O3n)
+		
+		(H2a) -- (O4a)
+		(H2a) -- (O4b)
+		(H2a) -- (O4c)
+		(H2a) -- (O4d)
+		(H2a) -- (O4e)
+		(H2a) -- (O4f)
+		(H2a) -- (O4g)
+		(H2a) -- (O4h)
+		(H2a) -- (O4i)
+		(H2a) -- (O4j)
+		(H2a) -- (O4k)
+		(H2a) -- (O4l)
+		(H2a) -- (O4m)
+		(H2a) -- (O4n)
+		
+		(H2b) -- (O4a)
+		(H2b) -- (O4b)
+		(H2b) -- (O4c)
+		(H2b) -- (O4d)
+		(H2b) -- (O4e)
+		(H2b) -- (O4f)
+		(H2b) -- (O4g)
+		(H2b) -- (O4h)
+		(H2b) -- (O4i)
+		(H2b) -- (O4j)
+		(H2b) -- (O4k)
+		(H2b) -- (O4l)
+		(H2b) -- (O4m)
+		(H2b) -- (O4n)
+		
+		(H2c) -- (O4a)
+		(H2c) -- (O4b)
+		(H2c) -- (O4c)
+		(H2c) -- (O4d)
+		(H2c) -- (O4e)
+		(H2c) -- (O4f)
+		(H2c) -- (O4g)
+		(H2c) -- (O4h)
+		(H2c) -- (O4i)
+		(H2c) -- (O4j)
+		(H2c) -- (O4k)
+		(H2c) -- (O4l)
+		(H2c) -- (O4m)
+		(H2c) -- (O4n)
+		
+		(H2d) -- (O4a)
+		(H2d) -- (O4b)
+		(H2d) -- (O4c)
+		(H2d) -- (O4d)
+		(H2d) -- (O4e)
+		(H2d) -- (O4f)
+		(H2d) -- (O4g)
+		(H2d) -- (O4h)
+		(H2d) -- (O4i)
+		(H2d) -- (O4j)
+		(H2d) -- (O4k)
+		(H2d) -- (O4l)
+		(H2d) -- (O4m)
+		(H2d) -- (O4n)
+		
+		(H2e) -- (O4a)
+		(H2e) -- (O4b)
+		(H2e) -- (O4c)
+		(H2e) -- (O4d)
+		(H2e) -- (O4e)
+		(H2e) -- (O4f)
+		(H2e) -- (O4g)
+		(H2e) -- (O4h)
+		(H2e) -- (O4i)
+		(H2e) -- (O4j)
+		(H2e) -- (O4k)
+		(H2e) -- (O4l)
+		(H2e) -- (O4m)
+		(H2e) -- (O4n)
+
+		(H2f) -- (O4a)
+		(H2f) -- (O4b)
+		(H2f) -- (O4c)
+		(H2f) -- (O4d)
+		(H2f) -- (O4e)
+		(H2f) -- (O4f)
+		(H2f) -- (O4g)
+		(H2f) -- (O4h)
+		(H2f) -- (O4i)
+		(H2f) -- (O4j)
+		(H2f) -- (O4k)
+		(H2f) -- (O4l)
+		(H2f) -- (O4m)
+		(H2f) -- (O4n)
+		
+		(H2a) -- (O5a)
+		(H2a) -- (O5b)
+		(H2a) -- (O5c)
+		(H2a) -- (O5d)
+		(H2a) -- (O5e)
+		(H2a) -- (O5f)
+		(H2a) -- (O5g)
+		(H2a) -- (O5h)
+		(H2a) -- (O5i)
+		(H2a) -- (O5j)
+		(H2a) -- (O5k)
+		(H2a) -- (O5l)
+		(H2a) -- (O5m)
+		(H2a) -- (O5n)
+		
+		(H2b) -- (O5a)
+		(H2b) -- (O5b)
+		(H2b) -- (O5c)
+		(H2b) -- (O5d)
+		(H2b) -- (O5e)
+		(H2b) -- (O5f)
+		(H2b) -- (O5g)
+		(H2b) -- (O5h)
+		(H2b) -- (O5i)
+		(H2b) -- (O5j)
+		(H2b) -- (O5k)
+		(H2b) -- (O5l)
+		(H2b) -- (O5m)
+		(H2b) -- (O5n)
+		
+		(H2c) -- (O5a)
+		(H2c) -- (O5b)
+		(H2c) -- (O5c)
+		(H2c) -- (O5d)
+		(H2c) -- (O5e)
+		(H2c) -- (O5f)
+		(H2c) -- (O5g)
+		(H2c) -- (O5h)
+		(H2c) -- (O5i)
+		(H2c) -- (O5j)
+		(H2c) -- (O5k)
+		(H2c) -- (O5l)
+		(H2c) -- (O5m)
+		(H2c) -- (O5n)
+		
+		(H2d) -- (O5a)
+		(H2d) -- (O5b)
+		(H2d) -- (O5c)
+		(H2d) -- (O5d)
+		(H2d) -- (O5e)
+		(H2d) -- (O5f)
+		(H2d) -- (O5g)
+		(H2d) -- (O5h)
+		(H2d) -- (O5i)
+		(H2d) -- (O5j)
+		(H2d) -- (O5k)
+		(H2d) -- (O5l)
+		(H2d) -- (O5m)
+		(H2d) -- (O5n)
+		
+		(H2e) -- (O5a)
+		(H2e) -- (O5b)
+		(H2e) -- (O5c)
+		(H2e) -- (O5d)
+		(H2e) -- (O5e)
+		(H2e) -- (O5f)
+		(H2e) -- (O5g)
+		(H2e) -- (O5h)
+		(H2e) -- (O5i)
+		(H2e) -- (O5j)
+		(H2e) -- (O5k)
+		(H2e) -- (O5l)
+		(H2e) -- (O5m)
+		(H2e) -- (O5n)
+
+		(H2f) -- (O5a)
+		(H2f) -- (O5b)
+		(H2f) -- (O5c)
+		(H2f) -- (O5d)
+		(H2f) -- (O5e)
+		(H2f) -- (O5f)
+		(H2f) -- (O5g)
+		(H2f) -- (O5h)
+		(H2f) -- (O5i)
+		(H2f) -- (O5j)
+		(H2f) -- (O5k)
+		(H2f) -- (O5l)
+		(H2f) -- (O5m)
+		(H2f) -- (O5n)
+		
+		(H2a) -- (O6a)
+		(H2a) -- (O6b)
+		(H2a) -- (O6c)
+		(H2a) -- (O6d)
+		(H2a) -- (O6e)
+		(H2a) -- (O6f)
+		(H2a) -- (O6g)
+		(H2a) -- (O6h)
+		(H2a) -- (O6i)
+		(H2a) -- (O6j)
+		(H2a) -- (O6k)
+		(H2a) -- (O6l)
+		(H2a) -- (O6m)
+		(H2a) -- (O6n)
+		
+		(H2b) -- (O6a)
+		(H2b) -- (O6b)
+		(H2b) -- (O6c)
+		(H2b) -- (O6d)
+		(H2b) -- (O6e)
+		(H2b) -- (O6f)
+		(H2b) -- (O6g)
+		(H2b) -- (O6h)
+		(H2b) -- (O6i)
+		(H2b) -- (O6j)
+		(H2b) -- (O6k)
+		(H2b) -- (O6l)
+		(H2b) -- (O6m)
+		(H2b) -- (O6n)
+		
+		(H2c) -- (O6a)
+		(H2c) -- (O6b)
+		(H2c) -- (O6c)
+		(H2c) -- (O6d)
+		(H2c) -- (O6e)
+		(H2c) -- (O6f)
+		(H2c) -- (O6g)
+		(H2c) -- (O6h)
+		(H2c) -- (O6i)
+		(H2c) -- (O6j)
+		(H2c) -- (O6k)
+		(H2c) -- (O6l)
+		(H2c) -- (O6m)
+		(H2c) -- (O6n)
+		
+		(H2d) -- (O6a)
+		(H2d) -- (O6b)
+		(H2d) -- (O6c)
+		(H2d) -- (O6d)
+		(H2d) -- (O6e)
+		(H2d) -- (O6f)
+		(H2d) -- (O6g)
+		(H2d) -- (O6h)
+		(H2d) -- (O6i)
+		(H2d) -- (O6j)
+		(H2d) -- (O6k)
+		(H2d) -- (O6l)
+		(H2d) -- (O6m)
+		(H2d) -- (O6n)
+		
+		(H2e) -- (O6a)
+		(H2e) -- (O6b)
+		(H2e) -- (O6c)
+		(H2e) -- (O6d)
+		(H2e) -- (O6e)
+		(H2e) -- (O6f)
+		(H2e) -- (O6g)
+		(H2e) -- (O6h)
+		(H2e) -- (O6i)
+		(H2e) -- (O6j)
+		(H2e) -- (O6k)
+		(H2e) -- (O6l)
+		(H2e) -- (O6m)
+		(H2e) -- (O6n)
+		
+		(H2f) -- (O6a)
+		(H2f) -- (O6b)
+		(H2f) -- (O6c)
+		(H2f) -- (O6d)
+		(H2f) -- (O6e)
+		(H2f) -- (O6f)
+		(H2f) -- (O6g)
+		(H2f) -- (O6h)
+		(H2f) -- (O6i)
+		(H2f) -- (O6j)
+		(H2f) -- (O6k)
+		(H2f) -- (O6l)
+		(H2f) -- (O6m)
+		(H2f) -- (O6n)
+
+		(H3a) -- (O7a)
+		(H3a) -- (O7b)
+		(H3a) -- (O7c)
+		(H3a) -- (O7d)
+		(H3a) -- (O7e)
+		(H3a) -- (O7f)
+		(H3a) -- (O7g)
+		(H3a) -- (O7h)
+		(H3a) -- (O7i)
+		(H3a) -- (O7j)
+		(H3a) -- (O7k)
+		(H3a) -- (O7l)
+		(H3a) -- (O7m)
+		(H3a) -- (O7n)
+		
+		(H3b) -- (O7a)
+		(H3b) -- (O7b)
+		(H3b) -- (O7c)
+		(H3b) -- (O7d)
+		(H3b) -- (O7e)
+		(H3b) -- (O7f)
+		(H3b) -- (O7g)
+		(H3b) -- (O7h)
+		(H3b) -- (O7i)
+		(H3b) -- (O7j)
+		(H3b) -- (O7k)
+		(H3b) -- (O7l)
+		(H3b) -- (O7m)
+		(H3b) -- (O7n)
+		
+		(H3c) -- (O7a)
+		(H3c) -- (O7b)
+		(H3c) -- (O7c)
+		(H3c) -- (O7d)
+		(H3c) -- (O7e)
+		(H3c) -- (O7f)
+		(H3c) -- (O7g)
+		(H3c) -- (O7h)
+		(H3c) -- (O7i)
+		(H3c) -- (O7j)
+		(H3c) -- (O7k)
+		(H3c) -- (O7l)
+		(H3c) -- (O7m)
+		(H3c) -- (O7n)
+		
+		(H3d) -- (O7a)
+		(H3d) -- (O7b)
+		(H3d) -- (O7c)
+		(H3d) -- (O7d)
+		(H3d) -- (O7e)
+		(H3d) -- (O7f)
+		(H3d) -- (O7g)
+		(H3d) -- (O7h)
+		(H3d) -- (O7i)
+		(H3d) -- (O7j)
+		(H3d) -- (O7k)
+		(H3d) -- (O7l)
+		(H3d) -- (O7m)
+		(H3d) -- (O7n)
+		
+		(H3e) -- (O7a)
+		(H3e) -- (O7b)
+		(H3e) -- (O7c)
+		(H3e) -- (O7d)
+		(H3e) -- (O7e)
+		(H3e) -- (O7f)
+		(H3e) -- (O7g)
+		(H3e) -- (O7h)
+		(H3e) -- (O7i)
+		(H3e) -- (O7j)
+		(H3e) -- (O7k)
+		(H3e) -- (O7l)
+		(H3e) -- (O7m)
+		(H3e) -- (O7n)
+
+		(H3f) -- (O7a)
+		(H3f) -- (O7b)
+		(H3f) -- (O7c)
+		(H3f) -- (O7d)
+		(H3f) -- (O7e)
+		(H3f) -- (O7f)
+		(H3f) -- (O7g)
+		(H3f) -- (O7h)
+		(H3f) -- (O7i)
+		(H3f) -- (O7j)
+		(H3f) -- (O7k)
+		(H3f) -- (O7l)
+		(H3f) -- (O7m)
+		(H3f) -- (O7n)
+		
+		(H3a) -- (O8a)
+		(H3a) -- (O8b)
+		(H3a) -- (O8c)
+		(H3a) -- (O8d)
+		(H3a) -- (O8e)
+		(H3a) -- (O8f)
+		(H3a) -- (O8g)
+		(H3a) -- (O8h)
+		(H3a) -- (O8i)
+		(H3a) -- (O8j)
+		(H3a) -- (O8k)
+		(H3a) -- (O8l)
+		(H3a) -- (O8m)
+		(H3a) -- (O8n)
+		
+		(H3b) -- (O8a)
+		(H3b) -- (O8b)
+		(H3b) -- (O8c)
+		(H3b) -- (O8d)
+		(H3b) -- (O8e)
+		(H3b) -- (O8f)
+		(H3b) -- (O8g)
+		(H3b) -- (O8h)
+		(H3b) -- (O8i)
+		(H3b) -- (O8j)
+		(H3b) -- (O8k)
+		(H3b) -- (O8l)
+		(H3b) -- (O8m)
+		(H3b) -- (O8n)
+		
+		(H3c) -- (O8a)
+		(H3c) -- (O8b)
+		(H3c) -- (O8c)
+		(H3c) -- (O8d)
+		(H3c) -- (O8e)
+		(H3c) -- (O8f)
+		(H3c) -- (O8g)
+		(H3c) -- (O8h)
+		(H3c) -- (O8i)
+		(H3c) -- (O8j)
+		(H3c) -- (O8k)
+		(H3c) -- (O8l)
+		(H3c) -- (O8m)
+		(H3c) -- (O8n)
+		
+		(H3d) -- (O8a)
+		(H3d) -- (O8b)
+		(H3d) -- (O8c)
+		(H3d) -- (O8d)
+		(H3d) -- (O8e)
+		(H3d) -- (O8f)
+		(H3d) -- (O8g)
+		(H3d) -- (O8h)
+		(H3d) -- (O8i)
+		(H3d) -- (O8j)
+		(H3d) -- (O8k)
+		(H3d) -- (O8l)
+		(H3d) -- (O8m)
+		(H3d) -- (O8n)
+		
+		(H3e) -- (O8a)
+		(H3e) -- (O8b)
+		(H3e) -- (O8c)
+		(H3e) -- (O8d)
+		(H3e) -- (O8e)
+		(H3e) -- (O8f)
+		(H3e) -- (O8g)
+		(H3e) -- (O8h)
+		(H3e) -- (O8i)
+		(H3e) -- (O8j)
+		(H3e) -- (O8k)
+		(H3e) -- (O8l)
+		(H3e) -- (O8m)
+		(H3e) -- (O8n)
+
+		(H3f) -- (O8a)
+		(H3f) -- (O8b)
+		(H3f) -- (O8c)
+		(H3f) -- (O8d)
+		(H3f) -- (O8e)
+		(H3f) -- (O8f)
+		(H3f) -- (O8g)
+		(H3f) -- (O8h)
+		(H3f) -- (O8i)
+		(H3f) -- (O8j)
+		(H3f) -- (O8k)
+		(H3f) -- (O8l)
+		(H3f) -- (O8m)
+		(H3f) -- (O8n)
+
+		(H4a) -- (O9a)
+		(H4a) -- (O9b)
+		(H4a) -- (O9c)
+		(H4a) -- (O9d)
+		(H4a) -- (O9e)
+		(H4a) -- (O9f)
+		(H4a) -- (O9g)
+		(H4a) -- (O9h)
+		(H4a) -- (O9i)
+		(H4a) -- (O9j)
+		(H4a) -- (O9k)
+		(H4a) -- (O9l)
+		(H4a) -- (O9m)
+		(H4a) -- (O9n)
+		
+		(H4b) -- (O9a)
+		(H4b) -- (O9b)
+		(H4b) -- (O9c)
+		(H4b) -- (O9d)
+		(H4b) -- (O9e)
+		(H4b) -- (O9f)
+		(H4b) -- (O9g)
+		(H4b) -- (O9h)
+		(H4b) -- (O9i)
+		(H4b) -- (O9j)
+		(H4b) -- (O9k)
+		(H4b) -- (O9l)
+		(H4b) -- (O9m)
+		(H4b) -- (O9n)
+		
+		(H4c) -- (O9a)
+		(H4c) -- (O9b)
+		(H4c) -- (O9c)
+		(H4c) -- (O9d)
+		(H4c) -- (O9e)
+		(H4c) -- (O9f)
+		(H4c) -- (O9g)
+		(H4c) -- (O9h)
+		(H4c) -- (O9i)
+		(H4c) -- (O9j)
+		(H4c) -- (O9k)
+		(H4c) -- (O9l)
+		(H4c) -- (O9m)
+		(H4c) -- (O9n)
+		
+		(H4d) -- (O9a)
+		(H4d) -- (O9b)
+		(H4d) -- (O9c)
+		(H4d) -- (O9d)
+		(H4d) -- (O9e)
+		(H4d) -- (O9f)
+		(H4d) -- (O9g)
+		(H4d) -- (O9h)
+		(H4d) -- (O9i)
+		(H4d) -- (O9j)
+		(H4d) -- (O9k)
+		(H4d) -- (O9l)
+		(H4d) -- (O9m)
+		(H4d) -- (O9n)
+		
+		(H4e) -- (O9a)
+		(H4e) -- (O9b)
+		(H4e) -- (O9c)
+		(H4e) -- (O9d)
+		(H4e) -- (O9e)
+		(H4e) -- (O9f)
+		(H4e) -- (O9g)
+		(H4e) -- (O9h)
+		(H4e) -- (O9i)
+		(H4e) -- (O9j)
+		(H4e) -- (O9k)
+		(H4e) -- (O9l)
+		(H4e) -- (O9m)
+		(H4e) -- (O9n)
+
+		(H4f) -- (O9a)
+		(H4f) -- (O9b)
+		(H4f) -- (O9c)
+		(H4f) -- (O9d)
+		(H4f) -- (O9e)
+		(H4f) -- (O9f)
+		(H4f) -- (O9g)
+		(H4f) -- (O9h)
+		(H4f) -- (O9i)
+		(H4f) -- (O9j)
+		(H4f) -- (O9k)
+		(H4f) -- (O9l)
+		(H4f) -- (O9m)
+		(H4f) -- (O9n)
+		
+		(H4a) -- (O10a)
+		(H4a) -- (O10b)
+		(H4a) -- (O10c)
+		(H4a) -- (O10d)
+		(H4a) -- (O10e)
+		(H4a) -- (O10f)
+		(H4a) -- (O10g)
+		(H4a) -- (O10h)
+		(H4a) -- (O10i)
+		(H4a) -- (O10j)
+		(H4a) -- (O10k)
+		(H4a) -- (O10l)
+		(H4a) -- (O10m)
+		(H4a) -- (O10n)
+		
+		(H4b) -- (O10a)
+		(H4b) -- (O10b)
+		(H4b) -- (O10c)
+		(H4b) -- (O10d)
+		(H4b) -- (O10e)
+		(H4b) -- (O10f)
+		(H4b) -- (O10g)
+		(H4b) -- (O10h)
+		(H4b) -- (O10i)
+		(H4b) -- (O10j)
+		(H4b) -- (O10k)
+		(H4b) -- (O10l)
+		(H4b) -- (O10m)
+		(H4b) -- (O10n)
+		
+		(H4c) -- (O10a)
+		(H4c) -- (O10b)
+		(H4c) -- (O10c)
+		(H4c) -- (O10d)
+		(H4c) -- (O10e)
+		(H4c) -- (O10f)
+		(H4c) -- (O10g)
+		(H4c) -- (O10h)
+		(H4c) -- (O10i)
+		(H4c) -- (O10j)
+		(H4c) -- (O10k)
+		(H4c) -- (O10l)
+		(H4c) -- (O10m)
+		(H4c) -- (O10n)
+		
+		(H4d) -- (O10a)
+		(H4d) -- (O10b)
+		(H4d) -- (O10c)
+		(H4d) -- (O10d)
+		(H4d) -- (O10e)
+		(H4d) -- (O10f)
+		(H4d) -- (O10g)
+		(H4d) -- (O10h)
+		(H4d) -- (O10i)
+		(H4d) -- (O10j)
+		(H4d) -- (O10k)
+		(H4d) -- (O10l)
+		(H4d) -- (O10m)
+		(H4d) -- (O10n)
+		
+		(H4e) -- (O10a)
+		(H4e) -- (O10b)
+		(H4e) -- (O10c)
+		(H4e) -- (O10d)
+		(H4e) -- (O10e)
+		(H4e) -- (O10f)
+		(H4e) -- (O10g)
+		(H4e) -- (O10h)
+		(H4e) -- (O10i)
+		(H4e) -- (O10j)
+		(H4e) -- (O10k)
+		(H4e) -- (O10l)
+		(H4e) -- (O10m)
+		(H4e) -- (O10n)
+
+		(H4f) -- (O10a)
+		(H4f) -- (O10b)
+		(H4f) -- (O10c)
+		(H4f) -- (O10d)
+		(H4f) -- (O10e)
+		(H4f) -- (O10f)
+		(H4f) -- (O10g)
+		(H4f) -- (O10h)
+		(H4f) -- (O10i)
+		(H4f) -- (O10j)
+		(H4f) -- (O10k)
+		(H4f) -- (O10l)
+		(H4f) -- (O10m)
+		(H4f) -- (O10n)
+		
+		(H5a) -- (O11a)
+		(H5a) -- (O11b)
+		(H5a) -- (O11c)
+		(H5a) -- (O11d)
+		(H5a) -- (O11e)
+		(H5a) -- (O11f)
+		(H5a) -- (O11g)
+		(H5a) -- (O11h)
+		(H5a) -- (O11i)
+		(H5a) -- (O11j)
+		(H5a) -- (O11k)
+		(H5a) -- (O11l)
+		(H5a) -- (O11m)
+		(H5a) -- (O11n)
+		
+		(H5b) -- (O11a)
+		(H5b) -- (O11b)
+		(H5b) -- (O11c)
+		(H5b) -- (O11d)
+		(H5b) -- (O11e)
+		(H5b) -- (O11f)
+		(H5b) -- (O11g)
+		(H5b) -- (O11h)
+		(H5b) -- (O11i)
+		(H5b) -- (O11j)
+		(H5b) -- (O11k)
+		(H5b) -- (O11l)
+		(H5b) -- (O11m)
+		(H5b) -- (O11n)
+		
+		(H5c) -- (O11a)
+		(H5c) -- (O11b)
+		(H5c) -- (O11c)
+		(H5c) -- (O11d)
+		(H5c) -- (O11e)
+		(H5c) -- (O11f)
+		(H5c) -- (O11g)
+		(H5c) -- (O11h)
+		(H5c) -- (O11i)
+		(H5c) -- (O11j)
+		(H5c) -- (O11k)
+		(H5c) -- (O11l)
+		(H5c) -- (O11m)
+		(H5c) -- (O11n)
+		
+		(H5d) -- (O11a)
+		(H5d) -- (O11b)
+		(H5d) -- (O11c)
+		(H5d) -- (O11d)
+		(H5d) -- (O11e)
+		(H5d) -- (O11f)
+		(H5d) -- (O11g)
+		(H5d) -- (O11h)
+		(H5d) -- (O11i)
+		(H5d) -- (O11j)
+		(H5d) -- (O11k)
+		(H5d) -- (O11l)
+		(H5d) -- (O11m)
+		(H5d) -- (O11n)
+		
+		(H5e) -- (O11a)
+		(H5e) -- (O11b)
+		(H5e) -- (O11c)
+		(H5e) -- (O11d)
+		(H5e) -- (O11e)
+		(H5e) -- (O11f)
+		(H5e) -- (O11g)
+		(H5e) -- (O11h)
+		(H5e) -- (O11i)
+		(H5e) -- (O11j)
+		(H5e) -- (O11k)
+		(H5e) -- (O11l)
+		(H5e) -- (O11m)
+		(H5e) -- (O11n)
+
+		(H5f) -- (O11a)
+		(H5f) -- (O11b)
+		(H5f) -- (O11c)
+		(H5f) -- (O11d)
+		(H5f) -- (O11e)
+		(H5f) -- (O11f)
+		(H5f) -- (O11g)
+		(H5f) -- (O11h)
+		(H5f) -- (O11i)
+		(H5f) -- (O11j)
+		(H5f) -- (O11k)
+		(H5f) -- (O11l)
+		(H5f) -- (O11m)
+		(H5f) -- (O11n)
+		
+		(H5a) -- (O12a)
+		(H5a) -- (O12b)
+		(H5a) -- (O12c)
+		(H5a) -- (O12d)
+		(H5a) -- (O12e)
+		(H5a) -- (O12f)
+		(H5a) -- (O12g)
+		(H5a) -- (O12h)
+		(H5a) -- (O12i)
+		(H5a) -- (O12j)
+		(H5a) -- (O12k)
+		(H5a) -- (O12l)
+		(H5a) -- (O12m)
+		(H5a) -- (O12n)
+		
+		(H5b) -- (O12a)
+		(H5b) -- (O12b)
+		(H5b) -- (O12c)
+		(H5b) -- (O12d)
+		(H5b) -- (O12e)
+		(H5b) -- (O12f)
+		(H5b) -- (O12g)
+		(H5b) -- (O12h)
+		(H5b) -- (O12i)
+		(H5b) -- (O12j)
+		(H5b) -- (O12k)
+		(H5b) -- (O12l)
+		(H5b) -- (O12m)
+		(H5b) -- (O12n)
+		
+		(H5c) -- (O12a)
+		(H5c) -- (O12b)
+		(H5c) -- (O12c)
+		(H5c) -- (O12d)
+		(H5c) -- (O12e)
+		(H5c) -- (O12f)
+		(H5c) -- (O12g)
+		(H5c) -- (O12h)
+		(H5c) -- (O12i)
+		(H5c) -- (O12j)
+		(H5c) -- (O12k)
+		(H5c) -- (O12l)
+		(H5c) -- (O12m)
+		(H5c) -- (O12n)
+		
+		(H5d) -- (O12a)
+		(H5d) -- (O12b)
+		(H5d) -- (O12c)
+		(H5d) -- (O12d)
+		(H5d) -- (O12e)
+		(H5d) -- (O12f)
+		(H5d) -- (O12g)
+		(H5d) -- (O12h)
+		(H5d) -- (O12i)
+		(H5d) -- (O12j)
+		(H5d) -- (O12k)
+		(H5d) -- (O12l)
+		(H5d) -- (O12m)
+		(H5d) -- (O12n)
+		
+		(H5e) -- (O12a)
+		(H5e) -- (O12b)
+		(H5e) -- (O12c)
+		(H5e) -- (O12d)
+		(H5e) -- (O12e)
+		(H5e) -- (O12f)
+		(H5e) -- (O12g)
+		(H5e) -- (O12h)
+		(H5e) -- (O12i)
+		(H5e) -- (O12j)
+		(H5e) -- (O12k)
+		(H5e) -- (O12l)
+		(H5e) -- (O12m)
+		(H5e) -- (O12n)
+
+		(H5f) -- (O12a)
+		(H5f) -- (O12b)
+		(H5f) -- (O12c)
+		(H5f) -- (O12d)
+		(H5f) -- (O12e)
+		(H5f) -- (O12f)
+		(H5f) -- (O12g)
+		(H5f) -- (O12h)
+		(H5f) -- (O12i)
+		(H5f) -- (O12j)
+		(H5f) -- (O12k)
+		(H5f) -- (O12l)
+		(H5f) -- (O12m)
+		(H5f) -- (O12n)
+		
+		(H6a) -- (O13a)
+		(H6a) -- (O13b)
+		(H6a) -- (O13c)
+		(H6a) -- (O13d)
+		(H6a) -- (O13e)
+		(H6a) -- (O13f)
+		(H6a) -- (O13g)
+		(H6a) -- (O13h)
+		(H6a) -- (O13i)
+		(H6a) -- (O13j)
+		(H6a) -- (O13k)
+		(H6a) -- (O13l)
+		(H6a) -- (O13m)
+		(H6a) -- (O13n)
+		
+		(H6b) -- (O13a)
+		(H6b) -- (O13b)
+		(H6b) -- (O13c)
+		(H6b) -- (O13d)
+		(H6b) -- (O13e)
+		(H6b) -- (O13f)
+		(H6b) -- (O13g)
+		(H6b) -- (O13h)
+		(H6b) -- (O13i)
+		(H6b) -- (O13j)
+		(H6b) -- (O13k)
+		(H6b) -- (O13l)
+		(H6b) -- (O13m)
+		(H6b) -- (O13n)
+		
+		(H6c) -- (O13a)
+		(H6c) -- (O13b)
+		(H6c) -- (O13c)
+		(H6c) -- (O13d)
+		(H6c) -- (O13e)
+		(H6c) -- (O13f)
+		(H6c) -- (O13g)
+		(H6c) -- (O13h)
+		(H6c) -- (O13i)
+		(H6c) -- (O13j)
+		(H6c) -- (O13k)
+		(H6c) -- (O13l)
+		(H6c) -- (O13m)
+		(H6c) -- (O13n)
+		
+		(H6d) -- (O13a)
+		(H6d) -- (O13b)
+		(H6d) -- (O13c)
+		(H6d) -- (O13d)
+		(H6d) -- (O13e)
+		(H6d) -- (O13f)
+		(H6d) -- (O13g)
+		(H6d) -- (O13h)
+		(H6d) -- (O13i)
+		(H6d) -- (O13j)
+		(H6d) -- (O13k)
+		(H6d) -- (O13l)
+		(H6d) -- (O13m)
+		(H6d) -- (O13n)
+		
+		(H6e) -- (O13a)
+		(H6e) -- (O13b)
+		(H6e) -- (O13c)
+		(H6e) -- (O13d)
+		(H6e) -- (O13e)
+		(H6e) -- (O13f)
+		(H6e) -- (O13g)
+		(H6e) -- (O13h)
+		(H6e) -- (O13i)
+		(H6e) -- (O13j)
+		(H6e) -- (O13k)
+		(H6e) -- (O13l)
+		(H6e) -- (O13m)
+		(H6e) -- (O13n)
+
+		(H6f) -- (O13a)
+		(H6f) -- (O13b)
+		(H6f) -- (O13c)
+		(H6f) -- (O13d)
+		(H6f) -- (O13e)
+		(H6f) -- (O13f)
+		(H6f) -- (O13g)
+		(H6f) -- (O13h)
+		(H6f) -- (O13i)
+		(H6f) -- (O13j)
+		(H6f) -- (O13k)
+		(H6f) -- (O13l)
+		(H6f) -- (O13m)
+		(H6f) -- (O13n)
+		
+		(H6a) -- (O14a)
+		(H6a) -- (O14b)
+		(H6a) -- (O14c)
+		(H6a) -- (O14d)
+		(H6a) -- (O14e)
+		(H6a) -- (O14f)
+		(H6a) -- (O14g)
+		(H6a) -- (O14h)
+		(H6a) -- (O14i)
+		(H6a) -- (O14j)
+		(H6a) -- (O14k)
+		(H6a) -- (O14l)
+		(H6a) -- (O14m)
+		(H6a) -- (O14n)
+		
+		(H6b) -- (O14a)
+		(H6b) -- (O14b)
+		(H6b) -- (O14c)
+		(H6b) -- (O14d)
+		(H6b) -- (O14e)
+		(H6b) -- (O14f)
+		(H6b) -- (O14g)
+		(H6b) -- (O14h)
+		(H6b) -- (O14i)
+		(H6b) -- (O14j)
+		(H6b) -- (O14k)
+		(H6b) -- (O14l)
+		(H6b) -- (O14m)
+		(H6b) -- (O14n)
+		
+		(H6c) -- (O14a)
+		(H6c) -- (O14b)
+		(H6c) -- (O14c)
+		(H6c) -- (O14d)
+		(H6c) -- (O14e)
+		(H6c) -- (O14f)
+		(H6c) -- (O14g)
+		(H6c) -- (O14h)
+		(H6c) -- (O14i)
+		(H6c) -- (O14j)
+		(H6c) -- (O14k)
+		(H6c) -- (O14l)
+		(H6c) -- (O14m)
+		(H6c) -- (O14n)
+		
+		(H6d) -- (O14a)
+		(H6d) -- (O14b)
+		(H6d) -- (O14c)
+		(H6d) -- (O14d)
+		(H6d) -- (O14e)
+		(H6d) -- (O14f)
+		(H6d) -- (O14g)
+		(H6d) -- (O14h)
+		(H6d) -- (O14i)
+		(H6d) -- (O14j)
+		(H6d) -- (O14k)
+		(H6d) -- (O14l)
+		(H6d) -- (O14m)
+		(H6d) -- (O14n)
+		
+		(H6e) -- (O14a)
+		(H6e) -- (O14b)
+		(H6e) -- (O14c)
+		(H6e) -- (O14d)
+		(H6e) -- (O14e)
+		(H6e) -- (O14f)
+		(H6e) -- (O14g)
+		(H6e) -- (O14h)
+		(H6e) -- (O14i)
+		(H6e) -- (O14j)
+		(H6e) -- (O14k)
+		(H6e) -- (O14l)
+		(H6e) -- (O14m)
+		(H6e) -- (O14n)
+
+		(H6f) -- (O14a)
+		(H6f) -- (O14b)
+		(H6f) -- (O14c)
+		(H6f) -- (O14d)
+		(H6f) -- (O14e)
+		(H6f) -- (O14f)
+		(H6f) -- (O14g)
+		(H6f) -- (O14h)
+		(H6f) -- (O14i)
+		(H6f) -- (O14j)
+		(H6f) -- (O14k)
+		(H6f) -- (O14l)
+		(H6f) -- (O14m)
+		(H6f) -- (O14n);
+		
+\end{tikzpicture}
+\end{document}
