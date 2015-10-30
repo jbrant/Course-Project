@@ -98,11 +98,20 @@ In this way, HyperNEAT is generating the autoencoder starting state and backprop
 %\balancecolumns
 
 \section{Discussion of Current State}
+The current state discussion includes the results observed thus far from initial experimentation, an analysis of those results (including alternate strategies in the event that experiment outcomes were poor), and final experiments that are planned to bring the project to a hopefully informative completion.
+
+\subsection{NEAT Results}
 During the initial stages of experimentation, standard NEAT was used to directly evolve autoencoders.  The result was slow evolution (due to the massive search space) and qualitatively poor image reconstruction.  Interestingly, while reconstruction error reached about 90\% accuracy form a quantitative standpoint, the qualitative result was a completely black image.  Intuitively, this was because most of the image was just empty, black space and the digit itself occupied a comparatively small number of pixels.
 
 However, the deeper problems was that NEAT was unable to generate a viable autoencoder starting state due to its inability to account for task geometry.  It was primarily this realization that led to the incorporation of HyperNEAT.
 
+\subsection{HyperNEAT Results}
+
 Add HyperNEAT results here...
+
+\subsection{Plan for Completion}
+
+Add additional experiments that we want to run here...
 
 \section{References}
 
