@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=latex 2015.10.25)  30 OCT 2015 02:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=latex 2015.10.25)  31 OCT 2015 01:29
 entering extended mode
 **\let \APPmakepictures \empty \input  MidtermReport.tex
 (MidtermReport.tex (acm_proc_article-sp.cls ("F:\Programs (x86)\MiKTeX 2.9\tex\
@@ -455,25 +455,44 @@ LaTeX Font Info:    Try loading font information for U+lasy on input line 25.
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 
-LaTeX Warning: Citation `Temp' on page \thepage  undefined on input line 28.
+LaTeX Warning: Citation `shapiro2001computer' on page \thepage  undefined on in
+put line 28.
 
 
-LaTeX Warning: Citation `Temp' on page \thepage  undefined on input line 28.
+LaTeX Warning: Citation `morris2004computer' on page \thepage  undefined on inp
+ut line 28.
 
 
-LaTeX Warning: Citation `Author' on page \thepage  undefined on input line 39.
+LaTeX Warning: Citation `sonka2008image' on page \thepage  undefined on input l
+ine 28.
 
 
-LaTeX Warning: Citation `Author' on page \thepage  undefined on input line 41.
+LaTeX Warning: Citation `DBLP:journals/corr/RussakovskyDSKSMHKKBBF14' on page \
+thepage  undefined on input line 28.
 
 
-LaTeX Warning: Citation `Author' on page \thepage  undefined on input line 44.
+LaTeX Warning: Citation `bourland1988' on page \thepage  undefined on input lin
+e 39.
 
 
-LaTeX Warning: Citation `Author' on page \thepage  undefined on input line 44.
+LaTeX Warning: Citation `baldi2012autoencoders' on page \thepage  undefined on 
+input line 39.
 
 
-LaTeX Warning: Citation `Author' on page \thepage  undefined on input line 50.
+LaTeX Warning: Citation `stanfordimage' on page \thepage  undefined on input li
+ne 41.
+
+
+LaTeX Warning: Citation `stanfordimage' on page \thepage  undefined on input li
+ne 44.
+
+
+LaTeX Warning: Citation `stanfordimage' on page \thepage  undefined on input li
+ne 44.
+
+
+LaTeX Warning: Citation `Stanley:2002:ENN:638553.638554' on page \thepage  unde
+fined on input line 50.
 
 
 Overfull \hbox (3.62485pt too wide) in paragraph at lines 56--57
@@ -482,22 +501,32 @@ mark-
  []
 
 
-LaTeX Warning: Citation `Author' on page \thepage  undefined on input line 61.
+LaTeX Warning: Citation `Stanley:2009:HEE:1516090.1516093' on page \thepage  un
+defined on input line 61.
 
 
-LaTeX Warning: Citation `Author' on page \thepage  undefined on input line 63.
+LaTeX Warning: Citation `Stanley:2007:CPP:1265496.1265517' on page \thepage  un
+defined on input line 63.
 
 
-LaTeX Warning: Citation `Author' on page \thepage  undefined on input line 66.
+LaTeX Warning: Citation `Stanley:2009:HEE:1516090.1516093' on page \thepage  un
+defined on input line 63.
 
 
-LaTeX Warning: Citation `Author' on page \thepage  undefined on input line 66.
+LaTeX Warning: Citation `Stanley:2009:HEE:1516090.1516093' on page \thepage  un
+defined on input line 66.
 
 
-LaTeX Warning: Citation `Author' on page \thepage  undefined on input line 74.
+LaTeX Warning: Citation `Stanley:2009:HEE:1516090.1516093' on page \thepage  un
+defined on input line 66.
 
 
-LaTeX Warning: Citation `Author' on page \thepage  undefined on input line 86.
+LaTeX Warning: Citation `bourland1988' on page \thepage  undefined on input lin
+e 74.
+
+
+LaTeX Warning: Citation `mnistdataset' on page \thepage  undefined on input lin
+e 86.
 
 
 Overfull \hbox (1.03961pt too wide) in paragraph at lines 96--97
@@ -505,15 +534,16 @@ Overfull \hbox (1.03961pt too wide) in paragraph at lines 96--97
 rt-
  []
 
+No file MidtermReport-autopp.bbl.
 
 Package pst-pdf Warning: Picture container needs cropping..
 
  ) 
 Here is how much of TeX's memory you used:
- 10787 strings out of 493674
- 185217 string characters out of 3143571
+ 10797 strings out of 493674
+ 185475 string characters out of 3143571
  255192 words of memory out of 3000000
- 13956 multiletter control sequences out of 15000+200000
+ 13965 multiletter control sequences out of 15000+200000
  38029 words of font info for 50 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  53i,11n,92p,830b,339s stack positions out of 5000i,500n,10000p,200000b,50000s
