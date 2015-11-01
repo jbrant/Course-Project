@@ -2,6 +2,11 @@
 
 \graphicspath{ {../Includes/} }
 
+\usepackage[export]{adjustbox}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage[labelfont=bf]{caption}
+\usepackage{array}
+
 \usetheme{Copenhagen}
 
 \newcommand\Fontvi{\fontsize{7}{10}\selectfont}
@@ -89,14 +94,19 @@
 				\item Backpropagation fine tunes autoencoder weights
 			\end{enumerate}
 			
-			\bigskip
-			
 			\item Results will be analyzed:
 			\begin{enumerate}
 				\item Quantitatively - reduction of reconstruction error
 				\item Qualitatively - how closely does reconstructed image resemble the original
 			\end{enumerate}
-		\end{itemize}				
+
+			\item MNIST handwritten digit dataset will be used for training/validation			
+		\end{itemize}
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=\textwidth,height=0.1\textheight,keepaspectratio]{MNIST_0s}
+			\includegraphics[width=\textwidth,height=0.1\textheight,keepaspectratio]{MNIST_9s}
+		\end{figure}
 	\end{frame}
 	
 	\begin{frame}{Substrate Configuration}
@@ -135,6 +145,31 @@
 		\end{center}
 	\end{frame}
 	
+	\begin{frame}{Experiment Configuration}
+		\begin{table}[b]
+			\small
+			\centering
+			\begin{tabular}{|p{4cm}|p{0.8cm}|p{5cm}|}
+				\hline\hline
+				\textbf{Parameter} & \textbf{Value} & \textbf{Description} \\
+		
+				\hline
+		
+				Training Sample Proportion & 80\% & Percentage of sample images used for training \\
+				\hline
+				Number of Backpropagation Iterations & 1 & Number of backpropagation iterations performed during training \\
+				\hline
+				Learning Rate & 0.01 & Learning Rate (to control backpropagation convergence speed) \\
+				\hline
+				Image Resolution Reduction Factor & 2 & Reduction factor of source image (i.e. a 28x28 image becomes 14x14 with a reduction factor of 2) \\
+				\hline
+				MNIST Digit & 0, 1 & MNIST handwritten digit dataset image used \\
+		
+				\hline
+			\end{tabular}
+		\end{table}
+	\end{frame}
+	
 	\section{Discussion}
 	\begin{frame}{Current State}
 		\begin{itemize}
@@ -143,9 +178,42 @@
 				\item Slow evolution due to massive search space
 				\item Qualitatively poor image reconstruction
 				\item Reconstruction reached 90\% accuracy, but only because most pixels were black
-			\end{itemize}
-			\item HyperNEAT results?
+			\end{itemize}			
 		\end{itemize}
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=\textwidth,height=0.35\textheight,keepaspectratio]{NeatStartingState}
+			\hfill
+			\includegraphics[width=\textwidth,height=0.35\textheight,keepaspectratio]{NeatEvolvedState}
+		\end{figure}
+	\end{frame}
+	
+	\begin{frame}{Current State - HyperNEAT}
+		\begin{itemize}
+			\item HyperNEAT achieved similar reconstruction accuracy, but qualitatively superior	
+			\item Attained over 90\% accuracy in a couple of generations
+		\end{itemize}
+		\begin{figure}[h]
+			\centering
+			\includegraphics[scale=0.16]{MinimallyConnectedCPPN}
+			\hfill
+			\includegraphics[scale=0.13]{FitnessOverGenerations}
+		\end{figure}
 	\end{frame}
 
+	\begin{frame}{Current State - HyperNEAT}
+		\begin{table}[h]
+			\small
+			\centering
+			\begin{tabular}{>{\centering}m{1.7cm} >{\centering}m{2.1cm} >{\centering}m{1.7cm} >{\centering\arraybackslash}m{1.5cm}}
+				\hline\hline
+				\textbf{Source} & \textbf{Reconstructed} & \textbf{Set} & \textbf{Index} \\
+				\hline
+				\includegraphics[scale=0.3]{One_Source_Training_Index30} & \includegraphics[scale=0.3]{One_Reconstructed_Training_Index30} & Training & 30 \\
+				\includegraphics[scale=0.3]{One_Source_Training_Index60} & \includegraphics[scale=0.3]{One_Reconstructed_Training_Index60} & Training & 60 \\
+				\includegraphics[scale=0.3]{One_Source_Validation_Index85} & \includegraphics[scale=0.3]{One_Reconstructed_Validation_Index85} & Validation & 85 \\
+				\includegraphics[scale=0.3]{One_Source_Validation_Index95} & 		\includegraphics[scale=0.3]{One_Reconstructed_Validation_Index95} & Validation & 95 \\
+			\end{tabular}
+		\end{table}
+	\end{frame}
 \end{document}

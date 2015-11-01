@@ -13,6 +13,8 @@
 \@writefile{toc}{\contentsline {section}{\numberline {2}Background}{\thepage }}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Autoencoders}{\thepage }}
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces An autoencoder with 6 visible units and 3 hidden units. The input is encoded from Layer L1 to Layer L2, and decoded from Layer L2 to Layer L3 \cite  {stanfordimage}.\relax }}{\thepage }}
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{figure:exampleautoencoder}{{1}{\thepage }}
 \citation{Stanley:2009:HEE:1516090.1516093}
 \citation{Stanley:2007:CPP:1265496.1265517}
 \citation{Stanley:2009:HEE:1516090.1516093}
@@ -22,20 +24,35 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2}NEAT}{\thepage }}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3}HyperNEAT}{\thepage }}
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces The "state-space sandiwch" substrate - ideal for visual mapping \cite  {Stanley:2009:HEE:1516090.1516093}.\relax }}{\thepage }}
+\newlabel{figure:examplesubstrate}{{2}{\thepage }}
 \@writefile{toc}{\contentsline {section}{\numberline {3}Approach}{\thepage }}
 \citation{mnistdataset}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces The "state-space sandwich" substrate used in the evolved autoencoder experiments. The hidden layer may vary depending on the experiment configuration, but the general three-tiered structure will remain.\relax }}{\thepage }}
+\newlabel{figure:autoencodersubstrate}{{3}{\thepage }}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces The minimal, starting-state (no hidden nodes) CPPN. The inputs to the CPPN are the X and Y coordinates on the source substrate and the X and Y coordinates on the target substrate. Depending on which layer the CPPN is querying, it will either output the weight of the connection between the input substrate and hidden substrate along with the weight of the bias connection between the same, or the weight of the connection between the hidden substrate and output substrate along with the weight of the bias connection between the same.\relax }}{\thepage }}
+\newlabel{figure:autoencodercppn}{{4}{\thepage }}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Discussion of Current State}{\thepage }}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Autoencoder Training/Evaluation Algorithm\relax }}{\thepage }}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces HyperNEAT Qualitative Results\relax }}{\thepage }}
+\newlabel{table:imageresults}{{1}{\thepage }}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}NEAT Results}{\thepage }}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces The starting state of a NEAT-evolved autoencoder.\relax }}{\thepage }}
+\newlabel{figure:neatstartingnetwork}{{5}{\thepage }}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}HyperNEAT Results}{\thepage }}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Configuration used for Initial NEAT and HyperNEAT experiments\relax }}{\thepage }}
+\newlabel{table:initialconfiguration}{{2}{\thepage }}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces A NEAT-evolved autoencoder after 1,000 generations of evolution. Structure has been added in order to aid in reducing training error, but the qualitative results were not quite as expected, resulting in mostly black images.\relax }}{\thepage }}
+\newlabel{figure:neatevolvednetwork}{{6}{\thepage }}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces A CPPN evolved in 136 generations with a fitness of 0.937 (i.e. 93.7\% reconstruction accuracy).\relax }}{\thepage }}
+\newlabel{figure:minimallyconnectedcppn}{{7}{\thepage }}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Fitness of an evolved CPPN over 136 generations. Notice the sharp increase with the first couple of generations followed by relatively stable dynamics.\relax }}{\thepage }}
+\newlabel{figure:fitnessovergenerations}{{8}{\thepage }}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Plan for Completion}{\thepage }}
 \bibstyle{ieeetran}
 \bibdata{MidtermReport}
 \bibcite{shapiro2001computer}{1}
 \bibcite{morris2004computer}{2}
 \bibcite{sonka2008image}{3}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces The "state-space sandwich" substrate used in the evolved autoencoder experiments. The hidden layer may vary depending on the experiment configuration, but the general three-tiered structure will remain.\relax }}{\thepage }}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces The minimal, starting-state (no hidden nodes) CPPN. The inputs to the CPPN are the X and Y coordinates on the source substrate and the X and Y coordinates on the target substrate. Depending on which layer the CPPN is querying, it will either output the weight of the connection between the input substrate and hidden substrate along with the weight of the bias connection between the same, or the weight of the connection between the hidden substrate and output substrate along with the weight of the bias connection between the same.\relax }}{\thepage }}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Discussion of Current State}{\thepage }}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}NEAT Results}{\thepage }}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}HyperNEAT Results}{\thepage }}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Plan for Completion}{\thepage }}
-\@writefile{toc}{\contentsline {section}{\numberline {5}References}{\thepage }}
 \bibcite{DBLP:journals/corr/RussakovskyDSKSMHKKBBF14}{4}
 \bibcite{bourland1988}{5}
 \bibcite{baldi2012autoencoders}{6}
@@ -44,3 +61,4 @@
 \bibcite{Stanley:2009:HEE:1516090.1516093}{9}
 \bibcite{Stanley:2007:CPP:1265496.1265517}{10}
 \bibcite{mnistdataset}{11}
+\@writefile{toc}{\contentsline {section}{\numberline {5}References}{\thepage }}

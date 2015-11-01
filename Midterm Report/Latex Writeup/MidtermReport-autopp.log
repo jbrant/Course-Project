@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=latex 2015.10.25)  31 OCT 2015 01:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=latex 2015.10.25)  1 NOV 2015 03:16
 entering extended mode
 **\let \APPmakepictures \empty \input  MidtermReport.tex
 (MidtermReport.tex (acm_proc_article-sp.cls ("F:\Programs (x86)\MiKTeX 2.9\tex\
@@ -425,127 +425,248 @@ Package caption Info: \@makecaption = \long macro:#1#2-> \vskip \baselineskip \
 setbox \@tempboxa \hbox {\textbf {#1: #2}} \ifdim \wd \@tempboxa >\hsize \textb
 f {#1: #2}\par \else \hbox to\hsize {\hfil \box \@tempboxa \hfil }\par \fi .
 \c@ContinuedFloat=\count144
+) ("F:\Programs (x86)\MiKTeX 2.9\tex\latex\tools\array.sty"
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen169
+\extrarowheight=\dimen170
+\NC@list=\toks51
+\extratabsurround=\skip46
+\backup@length=\skip47
+)
+(C:\Users\Jonathan\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithms\algorithm.st
+y
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+("F:\Programs (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count145
+\float@exts=\toks52
+\float@box=\box35
+\@float@everytoks=\toks53
+\@floatcapt=\box36
+) ("F:\Programs (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\@float@every@algorithm=\toks54
+\c@algorithm=\count146
+)
+(C:\Users\Jonathan\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithmicx\algpseudoc
+ode.sty
+Package: algpseudocode 
+
+(C:\Users\Jonathan\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithmicx\algorithmi
+cx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count147
+\c@ALG@rem=\count148
+\c@ALG@nested=\count149
+\ALG@tlm=\skip48
+\ALG@thistlm=\skip49
+\c@ALG@Lnr=\count150
+\c@ALG@blocknr=\count151
+\c@ALG@storecount=\count152
+\c@ALG@tmpcounter=\count153
+\ALG@tmplength=\skip50
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
 )
 No file MidtermReport-autopp.aux.
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
 Preview: Fontsize 9pt
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for U+msa on input line 25.
+LaTeX Font Info:    Try loading font information for U+msa on input line 28.
 ("F:\Programs (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 25.
+LaTeX Font Info:    Try loading font information for U+msb on input line 28.
 ("F:\Programs (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 25.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 28.
 ("F:\Programs (x86)\MiKTeX 2.9\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 
 LaTeX Warning: Citation `shapiro2001computer' on page \thepage  undefined on in
-put line 28.
+put line 31.
 
 
 LaTeX Warning: Citation `morris2004computer' on page \thepage  undefined on inp
-ut line 28.
+ut line 31.
 
 
 LaTeX Warning: Citation `sonka2008image' on page \thepage  undefined on input l
-ine 28.
+ine 31.
 
 
 LaTeX Warning: Citation `DBLP:journals/corr/RussakovskyDSKSMHKKBBF14' on page \
-thepage  undefined on input line 28.
+thepage  undefined on input line 31.
 
 
 LaTeX Warning: Citation `bourland1988' on page \thepage  undefined on input lin
-e 39.
+e 42.
 
 
 LaTeX Warning: Citation `baldi2012autoencoders' on page \thepage  undefined on 
-input line 39.
+input line 42.
 
 
-LaTeX Warning: Citation `stanfordimage' on page \thepage  undefined on input li
-ne 41.
-
-
-LaTeX Warning: Citation `stanfordimage' on page \thepage  undefined on input li
-ne 44.
+LaTeX Warning: Reference `figure:exampleautoencoder' on page \thepage  undefine
+d on input line 42.
 
 
 LaTeX Warning: Citation `stanfordimage' on page \thepage  undefined on input li
 ne 44.
+
+
+LaTeX Warning: Citation `stanfordimage' on page \thepage  undefined on input li
+ne 47.
+
+
+LaTeX Warning: Citation `stanfordimage' on page \thepage  undefined on input li
+ne 47.
 
 
 LaTeX Warning: Citation `Stanley:2002:ENN:638553.638554' on page \thepage  unde
-fined on input line 50.
+fined on input line 54.
 
 
-Overfull \hbox (3.62485pt too wide) in paragraph at lines 56--57
+Overfull \hbox (3.62485pt too wide) in paragraph at lines 60--61
 \T1/aer/m/n/9 uniquely iden-tify each struc-tural in-no-va-tion. His-tor-i-cal 
 mark-
  []
 
 
 LaTeX Warning: Citation `Stanley:2009:HEE:1516090.1516093' on page \thepage  un
-defined on input line 61.
+defined on input line 65.
 
 
 LaTeX Warning: Citation `Stanley:2007:CPP:1265496.1265517' on page \thepage  un
-defined on input line 63.
+defined on input line 67.
 
 
 LaTeX Warning: Citation `Stanley:2009:HEE:1516090.1516093' on page \thepage  un
-defined on input line 63.
+defined on input line 67.
 
 
 LaTeX Warning: Citation `Stanley:2009:HEE:1516090.1516093' on page \thepage  un
-defined on input line 66.
+defined on input line 70.
 
 
 LaTeX Warning: Citation `Stanley:2009:HEE:1516090.1516093' on page \thepage  un
-defined on input line 66.
+defined on input line 70.
+
+
+LaTeX Warning: Reference `figure:examplesubstrate' on page \thepage  undefined 
+on input line 76.
 
 
 LaTeX Warning: Citation `bourland1988' on page \thepage  undefined on input lin
-e 74.
+e 79.
+
+
+LaTeX Warning: Reference `figure:autoencodersubstrate' on page \thepage  undefi
+ned on input line 81.
 
 
 LaTeX Warning: Citation `mnistdataset' on page \thepage  undefined on input lin
-e 86.
+e 92.
 
+LaTeX Font Info:    Try loading font information for T1+aett on input line 108.
 
-Overfull \hbox (1.03961pt too wide) in paragraph at lines 96--97
+("F:\Programs (x86)\MiKTeX 2.9\tex\latex\ae\t1aett.fd"
+File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
+)
+Overfull \hbox (1.03961pt too wide) in paragraph at lines 128--129
 []\T1/aer/m/n/9 In this way, Hy-per-NEAT is gen-er-at-ing the au-toen-coder sta
 rt-
+ []
+
+
+Overfull \hbox (1.99234pt too wide) in paragraph at lines 141--141
+ []|\T1/aer/bx/n/8 Reconstructed| 
+ []
+
+
+Overfull \hbox (2.36919pt too wide) in paragraph at lines 139--149
+ [][] 
+ []
+
+
+Overfull \hbox (1.20549pt too wide) in paragraph at lines 159--159
+[]|\T1/aer/bx/n/8 Value| 
+ []
+
+
+LaTeX Warning: Reference `figure:neatstartingnetwork' on page \thepage  undefin
+ed on input line 179.
+
+
+LaTeX Warning: Reference `figure:neatevolvednetwork' on page \thepage  undefine
+d on input line 179.
+
+
+LaTeX Warning: Reference `figure:autoencodercppn' on page \thepage  undefined o
+n input line 201.
+
+
+LaTeX Warning: Reference `figure:minimallyconnectedcppn' on page \thepage  unde
+fined on input line 203.
+
+
+LaTeX Warning: Reference `figure:fitnessovergenerations' on page \thepage  unde
+fined on input line 203.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `table:initialconfiguration' on page \thepage  undefin
+ed on input line 219.
+
+
+LaTeX Warning: Reference `table:imageresults' on page \thepage  undefined on in
+put line 219.
+
+
+Overfull \hbox (3.22171pt too wide) in paragraph at lines 227--228
+[]\T1/aer/m/n/9 The num-ber of
+ []
+
+
+Overfull \hbox (3.58951pt too wide) in paragraph at lines 228--229
+\T1/aer/m/n/9 im-ages that are half the res-o-lu-tion of the orig-i-nal. These
  []
 
 No file MidtermReport-autopp.bbl.
 
 Package pst-pdf Warning: Picture container needs cropping..
 
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 10797 strings out of 493674
- 185475 string characters out of 3143571
- 255192 words of memory out of 3000000
- 13965 multiletter control sequences out of 15000+200000
- 38029 words of font info for 50 fonts, out of 3000000 for 9000
+ 11527 strings out of 493674
+ 196246 string characters out of 3143571
+ 265911 words of memory out of 3000000
+ 14648 multiletter control sequences out of 15000+200000
+ 47659 words of font info for 63 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 53i,11n,92p,830b,339s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 53i,12n,92p,967b,453s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 No pages of output.
