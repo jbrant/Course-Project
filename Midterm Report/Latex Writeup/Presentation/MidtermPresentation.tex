@@ -11,8 +11,8 @@
 
 \newcommand\Fontvi{\fontsize{7}{10}\selectfont}
 
-\title{A Farewell to Structural Rigidity}
-\subtitle{Evolving the Starting State of Autoencoders}
+\title{Evolving Autoencoders}
+%\subtitle{Evolving the Starting State of Autoencoders}
 \author[Ross \and Brant \and Roessler]{Christopher Ross \and Jonathan Brant \and Zak Roessler}
 
 \begin{document}
@@ -36,7 +36,7 @@
 			
 			\item Our approach evolves autoencoder structure that can then be optimized			
 			\begin{enumerate}
-				\item Hidden layer of autoencoders evolved (using HyperNEAT)
+				\item Connection weights between input/hidden and hidden/output substrate evolved using HyperNEAT
 				\item Backpropagation optimizes evolved autoencoder
 			\end{enumerate}
 		\end{itemize}
@@ -68,15 +68,18 @@
 		\begin{columns}[T]
 			\begin{column}{.5\textwidth}
 				\begin{itemize}
-					\item Indirect encoding of HyperNEAT through CPPNs substantially reduces search space
-					\begin{enumerate}\Fontvi
-						\item We're no longer looking at each pixel individually
-					\end{enumerate}
+					\item Indirect encoding substantially reduces search space
+					\begin{itemize}\Fontvi
+						\item We're no longer evolving connection weight for each pixel individually
+					\end{itemize}
 					\item Substrate configuration hand-designed to capture domain geometry
-					\begin{enumerate}\Fontvi
+					\begin{itemize}\Fontvi
 						\item State-space sandwich substrate ideal for visual mapping
-					\end{enumerate}
-					\item Ability to scale with little-to-no loss of function ideal for image processing at varying resolutions
+					\end{itemize}
+					\item Ability to scale with little-to-no loss of functionality 
+					\begin{itemize}\Fontvi
+						\item Ideal for image processing at varying resolutions
+					\end{itemize}					
 				\end{itemize}
 			\end{column}
 			\begin{column}{.5\textwidth}
@@ -90,7 +93,7 @@
 		\begin{itemize}
 			\item Two-phase process:
 			\begin{enumerate}
-				\item HyperNEAT evolves initial autoencoder
+				\item HyperNEAT evolves initial autoencoder connection weights
 				\item Backpropagation fine tunes autoencoder weights
 			\end{enumerate}
 			
@@ -133,15 +136,21 @@
 			\begin{itemize}\Fontvi
 				\item $X_1$ and $Y_1$ is point on source sheet
 				\item $X_2$ and $Y_2$ is point on target sheet
+				\item ${\Delta}X$ and ${\Delta}Y$ are difference between $X$ and $Y$ components on source and target sheet
+				\item $dist_{source->target}$ is euclidean distance between source and target point
 			\end{itemize}
+			\bigskip
 			\item CPPN queries the substrate twice:
 			\begin{itemize}\Fontvi
-				\item Once for connection weight and bias weight between input and hidden sheet
-				\item Once for connection weight and bias weight between hidden and output sheet
+				\item Once for connection weight, bias weight, and expression threshold between input and hidden sheet
+				\item Once for connection weight, bias weight, and expression threshold between hidden and output sheet
 			\end{itemize}
-		\end{itemize}
+		\end{itemize}		
+	\end{frame}
+	
+	\begin{frame}{Minimal CPPN}
 		\begin{center}
-			\includegraphics[width=\textwidth,height=0.4\textheight,keepaspectratio]{MinimalCppn/MinimalCppn}
+			\includegraphics[width=\textwidth,height=0.7\textheight,keepaspectratio]{MinimalCppn/MinimalCppn}
 		\end{center}
 	\end{frame}
 	
@@ -157,13 +166,13 @@
 		
 				Training Sample Proportion & 80\% & Percentage of sample images used for training \\
 				\hline
-				Number of Backpropagation Iterations & 1 & Number of backpropagation iterations performed during training \\
+				Number of Backpropagation Iterations & 100 & Number of backpropagation iterations performed during training \\
 				\hline
-				Learning Rate & 0.01 & Learning Rate (to control backpropagation convergence speed) \\
+				Learning Rate & 1 & Learning Rate (to control backpropagation convergence speed) \\
 				\hline
 				Image Resolution Reduction Factor & 2 & Reduction factor of source image (i.e. a 28x28 image becomes 14x14 with a reduction factor of 2) \\
 				\hline
-				MNIST Digit & 0, 1 & MNIST handwritten digit dataset image used \\
+				MNIST Digit & 1 & MNIST handwritten digit dataset image used \\
 		
 				\hline
 			\end{tabular}
@@ -176,8 +185,8 @@
 			\item Standard NEAT initially attempted
 			\begin{itemize}
 				\item Slow evolution due to massive search space
-				\item Qualitatively poor image reconstruction
-				\item Reconstruction reached 90\% accuracy, but only because most pixels were black
+				\item Quantitative reconstruction accuracy rarely exceeded 60\%
+				\item Prone to getting stuck in local optima, yielding to minimal improvements
 			\end{itemize}			
 		\end{itemize}
 		\begin{figure}[h]
@@ -190,8 +199,11 @@
 	
 	\begin{frame}{Current State - HyperNEAT}
 		\begin{itemize}
-			\item HyperNEAT achieved similar reconstruction accuracy, but qualitatively superior	
-			\item Attained over 90\% accuracy in a couple of generations
+			\item HyperNEAT achieved much better reconstruction accuracy
+			\begin{itemize}
+				\item Attained over 90\% accuracy in a couple of generations
+			\end{itemize}
+			\item Matched source images quite closely from a qualitative standpoint
 		\end{itemize}
 		\begin{figure}[h]
 			\centering

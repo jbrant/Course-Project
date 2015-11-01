@@ -12,7 +12,7 @@
 
 \begin{document}
 
-\title{A Farewell to Structural Rigidity}
+\title{Evolving the Starting State of Autoencoders}
 \subtitle{Midterm Project Report}
 
 \numberofauthors{3}
@@ -32,7 +32,7 @@ Image recognition and classification problems have long captured the interest of
 
 Perhaps the most straightforward method of processing images is to consider each pixel as a separate input into an artificial neural network (ANN) classifier, with the image resolution defining the distinct number of pixels.  As image resolution increases, however, the number of classifier inputs will similarly grow exponentially, easily reaching inputs in the millions.  Considering each pixel separately quickly becomes an inefficient approach and necessitates a method for dimensionality reduction.
 
-In order to tackle such large problems, this project proposes the use of an evolved autoencoder. Unlike traditional autoencoders wherein the hidden layers (i.e. compressed feature vectors) are specified apriori, the research presented herein uses HyperNEAT to evolve connective CPPNs which in turn produces autoencoders that are, for all practical purposes, scale invariant and whose hidden structure are decided in a more principled manner.
+In order to tackle such large problems, this project proposes the use of an evolved autoencoder. Unlike traditional autoencoders wherein the hidden layers (i.e. compressed feature vectors) are specified a priori, the research presented herein uses HyperNEAT to evolve connective CPPNs which in turn produces autoencoders that are, for all practical purposes, scale invariant and whose weights are decided in a more principled manner.
 
 
 \section{Background}
@@ -50,6 +50,7 @@ After the compressed feature vector outputs have been decoded into the full feat
 	\label{figure:exampleautoencoder}
 \end{figure}
 
+\newpage %Force heading to next page
 \subsection{NEAT}
 In order to automatically determine the autoencoder's hidden layer topology, techniques are borrowed from the field of neuroevolution.  One of the most successful and widely-used genetic algorithms for ANN evolution is the NeuroEvolution of Augmenting Topologies (NEAT).  Three primary components separated NEAT from algorithms that preceded it: growth from minimal structure, speciation, and perhaps most importantly, historical markings \cite{Stanley:2002:ENN:638553.638554}.
 
@@ -76,7 +77,7 @@ As an indirect encoding, HyperNEAT does not impose a one-to-one mapping between 
 The substrate configuration is hand-designed in order to accurately represent the geometry of the task-domain.  Among the many possible substrate configurations, one of the most widely used is the "state-space sandwich" substrate wherein a source sheet of neurons is fully connected to a target sheet, as shown in Figure \ref{figure:examplesubstrate}.  A modified version of the state-space sandwich will be used to represent the visible and hidden layers of the desired autoencoder.  HyperNEAT's ability to efficiently generate extremely large scale networks that exhibit virtually no loss of function while using a highly compressed representation that accounts for domain geometry makes it an ideal candidate for the image image processing tasks considered in this paper.
 
 \section{Approach}
-While autoencoders have been considered viable methods for data compression or dimensionality reduction since their introduction in 1988 \cite{bourland1988}, they have, to the author's knowledge, always been statically constructed such that their hidden layer is fully specified apriori.  This paper seeks to evaluate the potential of leveraging HyperNEAT for the evolution of autoencoder hidden layer topology.  Results of such an approach will be analyzed both quantitatively (i.e. the efficacy of evolved topology toward reducing reconstruction error) and qualitatively (i.e. how closely does the reconstructed image resemble the original).
+While autoencoders have been considered viable methods for data compression or dimensionality reduction since their introduction in 1988 \cite{bourland1988}, they have, to the author's knowledge, always been statically constructed such that their hidden layer is fully specified a priori.  This paper seeks to evaluate the potential of leveraging HyperNEAT for the evolution of autoencoders.  Results of such an approach will be analyzed both quantitatively (i.e. the efficacy of evolved connection weights toward reducing reconstruction error) and qualitatively (i.e. how closely does the reconstructed image resemble the original).
 
 The substrate configuration should be chosen to match that of a typical autoencoder structure in order to capture the encode/decode concept.  This includes a two-dimensional sheet of neurons representing each pixel in the given image, a hidden layer sheet with fewer (typically half) neurons, which will in turn be connected to a sheet the same size as the input sheet.  The "hidden layer" sheet effectively represents the hidden layer of a traditional autoencoder.  This "stacked" state-space sandwich is depicted in figure \ref{figure:autoencodersubstrate}.
 
@@ -87,18 +88,20 @@ The substrate configuration should be chosen to match that of a typical autoenco
 	\label{figure:autoencodersubstrate}
 \end{figure}
 
-A HyperNEAT-evolved CPPN will query each possible connection between the input sheet and the hidden sheet as well as between the hidden sheet and the output sheet, outputting the weight for that connection (assuming the weight is of high enough magnitude for the connection to be expressed).  Evolution will begin with a minimally connected CPPN (no hidden nodes) with five input nodes and four output nodes.  The input nodes accept the Cartesian coordinates (x and y position values) for each line segment endpoint and a bias, while the output nodes express the connection weight for the line segment and the bias between the input sheet and the hidden sheet, as well as the same between the hidden sheet and the output sheet.  One such minimal CPPN is shown in figure 4.
+A HyperNEAT-evolved CPPN will query each possible connection between the input sheet and the hidden sheet as well as between the hidden sheet and the output sheet, in order to determine the weight and existence of every possible connection.
+
+Evolution will begin with a minimally connected CPPN (no hidden nodes) with seven input nodes and six output nodes.  The input nodes accept the Cartesian coordinates (x and y position values) for each line segment endpoint, the deltas between the $x$ and $y$ components for each connection endpoint, and the euclidean distance between the source and target nodes.  The output nodes express the connection weight, bias weight, and the link expression output (LEO) indicator from both the input sheet to the hidden sheet and the hidden sheet to the output sheet (outputs are duplicated for each connection layer).  One such minimal CPPN is shown in figure \ref{figure:autoencodercppn}.
 
 The resulting connectivity pattern will be interpreted as an autoencoder and will be both trained and evaluated on samples from the Mixed National Institute of Standards and Technology (MNIST) handwritten digit dataset \cite{mnistdataset}, which is often used as a benchmark dataset for image classification problems.  The handwritten digits in the MNIST dataset are greyscale and each pixel is encoded as an integer in the range 0 to 255 (which represents the intensity of the greyscale pixel).  Reconstruction error for each sample image will be computed based on the difference between the output pixel greyscale intensity compared to its respective input pixel intensity. 
 
 \begin{figure}[h]
-	\caption{The minimal, starting-state (no hidden nodes) CPPN.  The inputs to the CPPN are the X and Y coordinates on the source substrate and the X and Y coordinates on the target substrate.  Depending on which layer the CPPN is querying, it will either output the weight of the connection between the input substrate and hidden substrate along with the weight of the bias connection between the same, or the weight of the connection between the hidden substrate and output substrate along with the weight of the bias connection between the same.}
+	\caption{The minimal, starting-state (no hidden nodes) CPPN.  The inputs to the CPPN include the X and Y coordinates on the source substrate, the X and Y coordinates on the target substrate, the delta between the X-components and Y-components, and the euclidean distance between the source and target points.  If the CPPN is querying the connections between the input and hidden sheets, it will output (for every combination of points) the connection weight between the sheets, the weight from the bias to the target sheet, and the link expression (i.e. whether the connection will be expressed in the phenotype).  Similarly, if the CPPN is querying the connections between the hidden and output sheets, it will output the same for every combination of points.}
 	\centering
 	\includegraphics[scale=0.8]{MinimalCppn/MinimalCppn}
 	\label{figure:autoencodercppn}
 \end{figure}
 
-The training process will use traditional backpropagation (though over arbitrary hidden layer topologies), modifying the autoencoder weights in order to reduce reconstruction error.  After backpropagation has been run for the specified number of iterations (which will vary based on the experiment configuration), the overall reconstruction error will be taken as the score of the CPPN that generated the autoencoder under evaluation.  The maximum fitness attainable is equivalent to the product of the number of validation samples and their resolution (i.e. setting the correct greyscale intensity for each pixel in every validation sample).  Therefore, the fitness score for a given autoencoder evaluation is calculated by subtracting the sum of the reconstruction errors for all validation samples from the maximum fitness, and then dividing by the maximum fitness.  Algorithm 1 describes the full process.
+The training process will use traditional backpropagation, modifying the autoencoder weights in order to reduce reconstruction error.  After backpropagation has been run for the specified number of iterations (which will vary based on the experiment configuration), the overall reconstruction error will be taken as the score of the CPPN that generated the autoencoder under evaluation.  The maximum fitness attainable is equivalent to the product of the number of validation samples and their resolution (i.e. setting the correct greyscale intensity for each pixel in every validation sample).  Therefore, the fitness score for a given autoencoder evaluation is calculated by subtracting the sum of the reconstruction errors for all validation samples from the maximum fitness, and then dividing by the maximum fitness.  Algorithm 1 describes the full process.
 
 \begin{algorithm*}
 	\caption{Autoencoder Training/Evaluation Algorithm}
@@ -130,7 +133,7 @@ In this way, HyperNEAT is generating the autoencoder starting state and backprop
 \section{Discussion of Current State}
 The current state discussion includes the results observed thus far from initial experimentation, an analysis of those results (including alternate strategies in the event that experiment outcomes were poor), and final experiments that are planned to bring the project to a hopefully informative completion.
 
-Recall that results will be analyzed from both a quantitative and qualitative standpoint.  Quantitative analysis is concerned with the final reconstruction error of the networks after evolution and backpropagation while the qualitative analysis is based on a subjective assessment of how closely the reconstructed image matches the original.  Table 1 enumerates the experiment parameters used in both the NEAT and HyperNEAT experiments presented in this section.
+Recall that results will be analyzed from both a quantitative and qualitative standpoint.  Quantitative analysis is concerned with the final reconstruction error of the networks after evolution and backpropagation while the qualitative analysis is based on a subjective assessment of how closely the reconstructed image matches the original.  Table \ref{table:initialconfiguration} enumerates the experiment parameters used in both the NEAT and HyperNEAT experiments presented in this section while table \ref{table:neatparameters} lists the NEAT-specific evolution parameters.
 
 \begin{table}[h]
 	\caption{HyperNEAT Qualitative Results}
@@ -148,7 +151,7 @@ Recall that results will be analyzed from both a quantitative and qualitative st
 	\label{table:imageresults}
 \end{table}
 
-The original images were scaled down from 28x28 pixels (greyscale) to 14x14 for training efficiency.  In order to evaluate the qualitative results, both source and reconstructed images were written to bitmap files and scaled to 800\%. 
+The original images were scaled down from 28x28 pixels (greyscale) to 14x14 for training efficiency.  In order to evaluate the qualitative results, both source and reconstructed images were written to bitmap files and scaled to 800\% (so that they're easier to view).
 
 \begin{table*}[t]
 	\caption{Configuration used for Initial NEAT and HyperNEAT experiments}
@@ -168,15 +171,37 @@ The original images were scaled down from 28x28 pixels (greyscale) to 14x14 for 
 		\hline
 		Image Resolution Reduction Factor & 2 & Reduction factor of source image (i.e. a 28x28 image becomes 14x14 with a reduction factor of 2) \\
 		\hline
-		MNIST Digit & 0, 1 & MNIST handwritten digit dataset image used \\
+		MNIST Digit & 1 & MNIST handwritten digit dataset image used \\
 		
 		\hline
 	\end{tabular}
 	\label{table:initialconfiguration}
 \end{table*}
 
+\begin{table}[h]
+	\caption{NEAT Parameters}
+	\small
+	\centering
+	\begin{tabular}{l c}
+		\hline\hline
+		\textbf{Parameter Name} & \textbf{Parameter Value} \\
+		\hline
+		Population Size & 250 \\
+		Connection Proportion & 0.05 \\
+		Number of Species & 10 \\
+		Crossover Probability & 0.5 \\
+		Interspecies Mating Rate & 0.001 \\
+		Mutate Link Weights Probability & 0.9 \\
+		Mutate Add Connection Probability & 0.1 \\
+		Mutate Add Node Probability & 0.1 \\
+		Mutate Delete Connection Probability & 0.001 \\
+		\hline
+	\end{tabular}
+	\label{table:neatparameters}
+\end{table}
+
 \subsection{NEAT Results}
-During the initial stages of experimentation, standard NEAT was used to directly evolve autoencoders.  The result was slow evolution (due to the massive search space) and qualitatively poor image reconstruction.  Figure \ref{figure:neatstartingnetwork} depicts the starting state of a NEAT-evolved autoencoder, with inputs fully connected to a single hidden node, and that hidden node fully connected to the output nodes.  It's state after 1,000 generations is shown in figure \ref{figure:neatevolvednetwork}, with the non-linearities introduced by the additional hidden layer structure aiding in the reduction of training error (though not in the manner hoped for, as described below).
+During the initial stages of experimentation, standard NEAT was used to directly evolve autoencoders.  The result was slow evolution (due to the massive search space) and poor reconstruction performance.  Figure \ref{figure:neatstartingnetwork} depicts the starting state of a NEAT-evolved autoencoder, with inputs fully connected to a single hidden node, and that hidden node fully connected to the output nodes.  The evolved network topology after 1,000 generations is shown in figure \ref{figure:neatevolvednetwork}, with the non-linearities introduced by the additional hidden layer structure aiding in the reduction of training error (though not in the manner hoped for, as described below).
 
 \begin{figure}[h]
 	\caption{The starting state of a NEAT-evolved autoencoder.}
@@ -192,15 +217,17 @@ During the initial stages of experimentation, standard NEAT was used to directly
 	\label{figure:neatevolvednetwork}
 \end{figure}
 
-Interestingly, while reconstruction error reached about 90\% accuracy form a quantitative standpoint, the qualitative result was a completely black image.  Intuitively, this was because most of the image was just empty, black space and the digit itself occupied a comparatively small number of pixels.
+Quantitative reconstruction accuracy rarely exceeded 60\% accuracy, after which improvements were extremely slow due to consistently getting stuck in local optima.  Due to the poor reconstruction performance, qualitative results were not closely analyzed because the reconstructed image would have been fairly amorphous and unrecognizable.
 
-However, the deeper problems was that NEAT was unable to generate a viable autoencoder starting state due to its inability to account for task geometry.  It was primarily this realization that led to the incorporation of HyperNEAT.
+However, the deeper problems was that NEAT was unable to generate a viable autoencoder starting state due to its inability to account for task geometry and the vast dimensionality of its search space.  It was primarily these realizations that led to the incorporation of HyperNEAT.
 
 \subsection{HyperNEAT Results}
 
-After the fairly underwhelming results with NEAT, HyperNEAT was incorporated in the hopes that incorporating information about the domain geometry would boost qualitative performance.  Figure \ref{figure:autoencodercppn} depicts a fully connected, minimal CPPN (i.e. no hidden nodes) of the form that was used in the below experiments; however, most runs started with a CPPN that was 5\% and connections added as they were found beneficial with regard to reducing training error.  
+After the fairly underwhelming results with NEAT, HyperNEAT was incorporated in the hopes that incorporating information about the domain geometry would boost qualitative performance.  Figure \ref{figure:autoencodercppn} depicts a fully connected, minimal CPPN (i.e. no hidden nodes) of the form that was used in the below experiments; however, most runs started with a CPPN that was 5\% connected and connections were added as they were found beneficial with regard to reducing training error.  
 
 Figure \ref{figure:minimallyconnectedcppn} depicts such a CPPN, which was evolved in 136 generations and had a fitness of 0.937 (93.7\% accuracy).  Note that the trial that produced this CPPN ran for 136 generations, but it exhibited a very steep increase in fitness in just the first couple of generations as shown in figure \ref{figure:fitnessovergenerations}.  This may be due to the fine-tuning of backpropagation and the highly specific manner in which it rewards networks that are more easily tunable; however, more experimentation is needed in order to determine whether such an assertion is merited.
+
+TODO: ADD PROOF THAT NODE ACTIVATIONS ARE CHOSEN PROBABILISTICALLY AND FUNCTIONS ARE INHERITED (not sure how to do the latter)
 
 \begin{figure}[h]
 	\caption{A CPPN evolved in 136 generations with a fitness of 0.937 (i.e. 93.7\% reconstruction accuracy).}
@@ -223,15 +250,15 @@ Interestingly, quantitative results for HyperNEAT were quite similar to that of 
 The initial experiments consisted only of two digits from the MNIST dataset using a similarly limited parameter set.  Future experiments will include the following:
 
 \begin{description}
-	\item[Training/Validation Proportion:] The proportion of the image sample set used for training versus validation will be varied in order to get an idea of the minimum training sample size required in order to produce acceptance results.
+	\item[Training/Validation Proportion:] The proportion of the image sample set used for training versus validation will be varied in order to get an idea of the minimum training sample size required in order to produce acceptable results.
 	\item[Maximum Backpropagation Iterations:] The number of iterations of backpropagation that is run will be both increased and decreased in order to determine the right balance between evolution of the autoencoder starting state and the extent to which it needs to be trained following evolution.  Perhaps the most interesting question here is whether evolution can produce robust autoencoders with minimal intervention from gradient-based optimization.
 	\item[Image scaling:] Currently, experiments are being run with images that are half the resolution of the original.  These images will be increased to full resolution (28x28 pixels) in order to confirm the ability of HyperNEAT-evolved autoencoders to scale.
 	\item[MNIST Generalization:] The experiments run thus far have been limited to the first two digits of the MNIST dataset.  Higher order digits vary significantly in geometric structure and will be a good indication of the evolved autoencoder's ability to reconstruct a wider range of shapes.
 \end{description}
 
-\balancecolumns
-
 \bibliographystyle{ieeetran}
 \bibliography{MidtermReport}
+
+\balancecolumns
 
 \end{document}

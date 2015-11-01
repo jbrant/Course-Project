@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=latex 2015.10.25)  1 NOV 2015 03:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=latex 2015.10.25)  1 NOV 2015 18:04
 entering extended mode
 **\let \APPmakepictures \empty \input  MidtermReport.tex
 (MidtermReport.tex (acm_proc_article-sp.cls ("F:\Programs (x86)\MiKTeX 2.9\tex\
@@ -542,113 +542,136 @@ ne 47.
 
 
 LaTeX Warning: Citation `Stanley:2002:ENN:638553.638554' on page \thepage  unde
-fined on input line 54.
+fined on input line 55.
 
 
-Overfull \hbox (3.62485pt too wide) in paragraph at lines 60--61
+Overfull \hbox (3.62485pt too wide) in paragraph at lines 61--62
 \T1/aer/m/n/9 uniquely iden-tify each struc-tural in-no-va-tion. His-tor-i-cal 
 mark-
  []
 
 
 LaTeX Warning: Citation `Stanley:2009:HEE:1516090.1516093' on page \thepage  un
-defined on input line 65.
+defined on input line 66.
 
 
 LaTeX Warning: Citation `Stanley:2007:CPP:1265496.1265517' on page \thepage  un
-defined on input line 67.
+defined on input line 68.
 
 
 LaTeX Warning: Citation `Stanley:2009:HEE:1516090.1516093' on page \thepage  un
-defined on input line 67.
+defined on input line 68.
 
 
 LaTeX Warning: Citation `Stanley:2009:HEE:1516090.1516093' on page \thepage  un
-defined on input line 70.
+defined on input line 71.
 
 
 LaTeX Warning: Citation `Stanley:2009:HEE:1516090.1516093' on page \thepage  un
-defined on input line 70.
-
-
-LaTeX Warning: Reference `figure:examplesubstrate' on page \thepage  undefined 
-on input line 76.
-
-
-LaTeX Warning: Citation `bourland1988' on page \thepage  undefined on input lin
-e 79.
-
-
-LaTeX Warning: Reference `figure:autoencodersubstrate' on page \thepage  undefi
-ned on input line 81.
-
-
-LaTeX Warning: Citation `mnistdataset' on page \thepage  undefined on input lin
-e 92.
-
-LaTeX Font Info:    Try loading font information for T1+aett on input line 108.
-
-("F:\Programs (x86)\MiKTeX 2.9\tex\latex\ae\t1aett.fd"
-File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
-)
-Overfull \hbox (1.03961pt too wide) in paragraph at lines 128--129
-[]\T1/aer/m/n/9 In this way, Hy-per-NEAT is gen-er-at-ing the au-toen-coder sta
-rt-
- []
-
-
-Overfull \hbox (1.99234pt too wide) in paragraph at lines 141--141
- []|\T1/aer/bx/n/8 Reconstructed| 
- []
-
-
-Overfull \hbox (2.36919pt too wide) in paragraph at lines 139--149
- [][] 
- []
-
-
-Overfull \hbox (1.20549pt too wide) in paragraph at lines 159--159
-[]|\T1/aer/bx/n/8 Value| 
- []
-
-
-LaTeX Warning: Reference `figure:neatstartingnetwork' on page \thepage  undefin
-ed on input line 179.
-
-
-LaTeX Warning: Reference `figure:neatevolvednetwork' on page \thepage  undefine
-d on input line 179.
-
-
-LaTeX Warning: Reference `figure:autoencodercppn' on page \thepage  undefined o
-n input line 201.
-
-
-LaTeX Warning: Reference `figure:minimallyconnectedcppn' on page \thepage  unde
-fined on input line 203.
-
-
-LaTeX Warning: Reference `figure:fitnessovergenerations' on page \thepage  unde
-fined on input line 203.
+defined on input line 71.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
+LaTeX Warning: Reference `figure:examplesubstrate' on page \thepage  undefined 
+on input line 77.
+
+
+LaTeX Warning: Citation `bourland1988' on page \thepage  undefined on input lin
+e 80.
+
+
+LaTeX Warning: Reference `figure:autoencodersubstrate' on page \thepage  undefi
+ned on input line 82.
+
+
+LaTeX Warning: Reference `figure:autoencodercppn' on page \thepage  undefined o
+n input line 93.
+
+
+LaTeX Warning: Citation `mnistdataset' on page \thepage  undefined on input lin
+e 95.
+
+LaTeX Font Info:    Try loading font information for T1+aett on input line 111.
+
+("F:\Programs (x86)\MiKTeX 2.9\tex\latex\ae\t1aett.fd"
+File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
+)
+Overfull \hbox (1.03961pt too wide) in paragraph at lines 131--132
+[]\T1/aer/m/n/9 In this way, Hy-per-NEAT is gen-er-at-ing the au-toen-coder sta
+rt-
+ []
+
+
 LaTeX Warning: Reference `table:initialconfiguration' on page \thepage  undefin
-ed on input line 219.
+ed on input line 136.
+
+
+LaTeX Warning: Reference `table:neatparameters' on page \thepage  undefined on 
+input line 136.
+
+
+Overfull \hbox (1.99234pt too wide) in paragraph at lines 144--144
+ []|\T1/aer/bx/n/8 Reconstructed| 
+ []
+
+
+Overfull \hbox (2.36919pt too wide) in paragraph at lines 142--152
+ [][] 
+ []
+
+
+Overfull \hbox (1.20549pt too wide) in paragraph at lines 162--162
+[]|\T1/aer/bx/n/8 Value| 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `figure:neatstartingnetwork' on page \thepage  undefin
+ed on input line 204.
+
+
+LaTeX Warning: Reference `figure:neatevolvednetwork' on page \thepage  undefine
+d on input line 204.
+
+
+LaTeX Warning: Reference `figure:autoencodercppn' on page \thepage  undefined o
+n input line 226.
+
+
+LaTeX Warning: Reference `figure:minimallyconnectedcppn' on page \thepage  unde
+fined on input line 228.
+
+
+LaTeX Warning: Reference `figure:fitnessovergenerations' on page \thepage  unde
+fined on input line 228.
+
+
+Underfull \vbox (badness 3884) has occurred while \output is active []
+
+
+Overfull \hbox (3.08328pt too wide) in paragraph at lines 230--231
+\T1/aer/m/n/9 CHO-SEN PROB-A-BILIS-TI-CALLY AND FUNC-TIONS ARE
+ []
+
+
+LaTeX Warning: Reference `table:initialconfiguration' on page \thepage  undefin
+ed on input line 246.
 
 
 LaTeX Warning: Reference `table:imageresults' on page \thepage  undefined on in
-put line 219.
+put line 246.
 
 
-Overfull \hbox (3.22171pt too wide) in paragraph at lines 227--228
+Overfull \hbox (3.22171pt too wide) in paragraph at lines 254--255
 []\T1/aer/m/n/9 The num-ber of
  []
 
 
-Overfull \hbox (3.58951pt too wide) in paragraph at lines 228--229
+Overfull \hbox (3.58951pt too wide) in paragraph at lines 255--256
 \T1/aer/m/n/9 im-ages that are half the res-o-lu-tion of the orig-i-nal. These
  []
 
@@ -661,12 +684,12 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 11527 strings out of 493674
- 196246 string characters out of 3143571
- 265911 words of memory out of 3000000
- 14648 multiletter control sequences out of 15000+200000
+ 11528 strings out of 493674
+ 196268 string characters out of 3143571
+ 265912 words of memory out of 3000000
+ 14649 multiletter control sequences out of 15000+200000
  47659 words of font info for 63 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 53i,12n,92p,967b,453s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 53i,12n,92p,919b,453s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 No pages of output.

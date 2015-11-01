@@ -2,4 +2,4 @@
 \beamer@sectionintoc {1}{Introduction}{2}{0}{1}
 \beamer@sectionintoc {2}{Background}{3}{0}{2}
 \beamer@sectionintoc {3}{Approach}{5}{0}{3}
-\beamer@sectionintoc {4}{Discussion}{9}{0}{4}
+\beamer@sectionintoc {4}{Discussion}{10}{0}{4}

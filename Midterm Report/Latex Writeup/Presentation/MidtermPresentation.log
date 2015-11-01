@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.13)  1 NOV 2015 03:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.13)  1 NOV 2015 16:45
 entering extended mode
 **MidtermPresentation.tex
 (MidtermPresentation.tex
@@ -1032,211 +1032,213 @@ Package pdftex.def Info: ../Includes/ExampleAutoencoder.png used on input line
  [3
 
  <../Includes/ExampleAutoencoder.png>]
-<../Includes/StateSpaceSandwichSubstrate.png, id=134, 197.98969pt x 219.06844pt
+<../Includes/StateSpaceSandwichSubstrate.png, id=136, 197.98969pt x 219.06844pt
 >
 File: ../Includes/StateSpaceSandwichSubstrate.png Graphic file (type png)
  <use ../Includes/StateSpaceSandwichSubstrate.png>
 Package pdftex.def Info: ../Includes/StateSpaceSandwichSubstrate.png used on in
-put line 86.
+put line 89.
 (pdftex.def)             Requested size: 153.64493pt x 170.00357pt.
 
-Overfull \vbox (2.66263pt too high) detected at line 86
+Overfull \vbox (3.49454pt too high) detected at line 89
  []
 
 [4
 
  <../Includes/StateSpaceSandwichSubstrate.png>]
-<../Includes/MNIST_0s.png, id=164, 141.52875pt x 34.62938pt>
+<../Includes/MNIST_0s.png, id=166, 141.52875pt x 34.62938pt>
 File: ../Includes/MNIST_0s.png Graphic file (type png)
 
 <use ../Includes/MNIST_0s.png>
-Package pdftex.def Info: ../Includes/MNIST_0s.png used on input line 110.
+Package pdftex.def Info: ../Includes/MNIST_0s.png used on input line 113.
 (pdftex.def)             Requested size: 93.43948pt x 22.86284pt.
 
-<../Includes/MNIST_9s.png, id=165, 152.82094pt x 35.38219pt>
+<../Includes/MNIST_9s.png, id=167, 152.82094pt x 35.38219pt>
 File: ../Includes/MNIST_9s.png Graphic file (type png)
 
 <use ../Includes/MNIST_9s.png>
-Package pdftex.def Info: ../Includes/MNIST_9s.png used on input line 110.
+Package pdftex.def Info: ../Includes/MNIST_9s.png used on input line 113.
 (pdftex.def)             Requested size: 98.74945pt x 22.86316pt.
  [5
 
  <../Includes/MNIST_0s.png> <../Includes/MNIST_9s.png>]
-<../Includes/SubstrateConfiguration/AutoencoderSubstrate.pdf, id=197, 371.02617
+<../Includes/SubstrateConfiguration/AutoencoderSubstrate.pdf, id=199, 371.02617
 pt x 542.27092pt>
 File: ../Includes/SubstrateConfiguration/AutoencoderSubstrate.pdf Graphic file 
 (type pdf)
 
 <use ../Includes/SubstrateConfiguration/AutoencoderSubstrate.pdf>
 Package pdftex.def Info: ../Includes/SubstrateConfiguration/AutoencoderSubstrat
-e.pdf used on input line 128.
+e.pdf used on input line 131.
 (pdftex.def)             Requested size: 125.13383pt x 182.88855pt.
  [6
 
  <../Includes/SubstrateConfiguration/AutoencoderSubstrate.pdf>]
-LaTeX Font Info:    Try loading font information for U+msa on input line 146.
+LaTeX Font Info:    Try loading font information for U+msa on input line 149.
 
 ("F:\Programs (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 146.
+LaTeX Font Info:    Try loading font information for U+msb on input line 149.
 
 ("F:\Programs (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 146.
+line 149.
 
 (C:\Users\Jonathan\AppData\Roaming\MiKTeX\2.9\tex\latex\sansmathaccent\ot1mathk
 erncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
-)
-<../Includes/MinimalCppn/MinimalCppn.pdf, id=236, 244.382pt x 136.03322pt>
+) [7
+
+]
+<../Includes/MinimalCppn/MinimalCppn.pdf, id=270, 331.81667pt x 221.39111pt>
 File: ../Includes/MinimalCppn/MinimalCppn.pdf Graphic file (type pdf)
 
 <use ../Includes/MinimalCppn/MinimalCppn.pdf>
 Package pdftex.def Info: ../Includes/MinimalCppn/MinimalCppn.pdf used on input 
-line 146.
-(pdftex.def)             Requested size: 164.27951pt x 91.44481pt.
- [7
+line 155.
+(pdftex.def)             Requested size: 239.86473pt x 160.03993pt.
+ [8
 
  <../Includes/MinimalCppn/MinimalCppn.pdf>]
-Overfull \hbox (2.79338pt too wide) in paragraph at lines 171--171
+Overfull \hbox (2.79338pt too wide) in paragraph at lines 180--180
 []|\OT1/cmss/bx/n/10 Value| 
  []
 
 
-Underfull \hbox (badness 1577) in paragraph at lines 171--171
+Underfull \hbox (badness 1577) in paragraph at lines 180--180
 []|\OT1/cmss/m/n/10 Number of Back-prop-a-ga-
  []
 
 
-Underfull \hbox (badness 2460) in paragraph at lines 171--171
+Underfull \hbox (badness 2460) in paragraph at lines 180--180
 []|\OT1/cmss/m/n/10 Image Res-o-lu-tion Re-duc-
  []
 
 
-Underfull \hbox (badness 1057) in paragraph at lines 171--171
+Underfull \hbox (badness 1057) in paragraph at lines 180--180
 \OT1/cmss/m/n/10 (i.e. a 28x28 im-age be-comes
  []
 
 
-Overfull \hbox (9.14719pt too wide) in paragraph at lines 171--171
+Overfull \hbox (9.14719pt too wide) in paragraph at lines 180--180
  [] 
  []
 
-[8
+[9
 
-] <../Includes/NeatStartingState.png, id=322, 1445.4pt x 782.925pt>
+] <../Includes/NeatStartingState.png, id=354, 1445.4pt x 782.925pt>
 File: ../Includes/NeatStartingState.png Graphic file (type png)
 
 <use ../Includes/NeatStartingState.png>
 Package pdftex.def Info: ../Includes/NeatStartingState.png used on input line 1
-89.
+98.
 (pdftex.def)             Requested size: 147.70233pt x 80.00542pt.
 
-<../Includes/NeatEvolvedState.png, id=323, 1445.4pt x 782.925pt>
+<../Includes/NeatEvolvedState.png, id=355, 1445.4pt x 782.925pt>
 File: ../Includes/NeatEvolvedState.png Graphic file (type png)
 
 <use ../Includes/NeatEvolvedState.png>
-Package pdftex.def Info: ../Includes/NeatEvolvedState.png used on input line 18
-9.
+Package pdftex.def Info: ../Includes/NeatEvolvedState.png used on input line 19
+8.
 (pdftex.def)             Requested size: 147.70233pt x 80.00542pt.
- [9
+ [10
 
  <../Includes/NeatStartingState.png> <../Includes/NeatEvolvedState.png>]
-<../Includes/MinimallyConnectedCPPN.png, id=354, 666.99188pt x 569.12625pt>
+<../Includes/MinimallyConnectedCPPN.png, id=386, 666.99188pt x 569.12625pt>
 File: ../Includes/MinimallyConnectedCPPN.png Graphic file (type png)
 
 <use ../Includes/MinimallyConnectedCPPN.png>
 Package pdftex.def Info: ../Includes/MinimallyConnectedCPPN.png used on input l
-ine 202.
+ine 214.
 (pdftex.def)             Requested size: 106.72087pt x 91.06206pt.
 
-<../Includes/FitnessOverGenerations.png, id=356, 1440.88312pt x 764.10469pt>
+<../Includes/FitnessOverGenerations.png, id=388, 1440.88312pt x 764.10469pt>
 File: ../Includes/FitnessOverGenerations.png Graphic file (type png)
 
 <use ../Includes/FitnessOverGenerations.png>
 Package pdftex.def Info: ../Includes/FitnessOverGenerations.png used on input l
-ine 202.
+ine 214.
 (pdftex.def)             Requested size: 187.32138pt x 99.3371pt.
- [10
+ [11
 
  <../Includes/MinimallyConnectedCPPN.png> <../Includes/FitnessOverGenerations.p
 ng>]
-Overfull \hbox (5.63269pt too wide) in paragraph at lines 218--218
+Overfull \hbox (5.63269pt too wide) in paragraph at lines 230--230
  []|\OT1/cmss/bx/n/10 Reconstructed| 
  []
 
-<../Includes/One_Source_Training_Index30.png, id=388, 84.315pt x 85.06781pt>
+<../Includes/One_Source_Training_Index30.png, id=420, 84.315pt x 85.06781pt>
 File: ../Includes/One_Source_Training_Index30.png Graphic file (type png)
 
 <use ../Includes/One_Source_Training_Index30.png>
 Package pdftex.def Info: ../Includes/One_Source_Training_Index30.png used on in
-put line 218.
+put line 230.
 (pdftex.def)             Requested size: 25.29468pt x 25.52054pt.
 
-<../Includes/One_Reconstructed_Training_Index30.png, id=389, 84.315pt x 83.5622
+<../Includes/One_Reconstructed_Training_Index30.png, id=421, 84.315pt x 83.5622
 pt>
 File: ../Includes/One_Reconstructed_Training_Index30.png Graphic file (type png
 )
  <use ../Includes/One_Reconstructed_Training_Index30.png>
 Package pdftex.def Info: ../Includes/One_Reconstructed_Training_Index30.png use
-d on input line 218.
+d on input line 230.
 (pdftex.def)             Requested size: 25.29468pt x 25.06885pt.
 
-<../Includes/One_Source_Training_Index60.png, id=390, 82.05656pt x 84.315pt>
+<../Includes/One_Source_Training_Index60.png, id=422, 82.05656pt x 84.315pt>
 File: ../Includes/One_Source_Training_Index60.png Graphic file (type png)
 
 <use ../Includes/One_Source_Training_Index60.png>
 Package pdftex.def Info: ../Includes/One_Source_Training_Index60.png used on in
-put line 218.
+put line 230.
 (pdftex.def)             Requested size: 24.61714pt x 25.29468pt.
 
-<../Includes/One_Reconstructed_Training_Index60.png, id=391, 87.32625pt x 86.57
+<../Includes/One_Reconstructed_Training_Index60.png, id=423, 87.32625pt x 86.57
 344pt>
 File: ../Includes/One_Reconstructed_Training_Index60.png Graphic file (type png
 )
  <use ../Includes/One_Reconstructed_Training_Index60.png>
 Package pdftex.def Info: ../Includes/One_Reconstructed_Training_Index60.png use
-d on input line 218.
+d on input line 230.
 (pdftex.def)             Requested size: 26.19807pt x 25.97221pt.
 
-<../Includes/One_Source_Validation_Index85.png, id=392, 84.315pt x 85.82062pt>
+<../Includes/One_Source_Validation_Index85.png, id=424, 84.315pt x 85.82062pt>
 File: ../Includes/One_Source_Validation_Index85.png Graphic file (type png)
 
 <use ../Includes/One_Source_Validation_Index85.png>
 Package pdftex.def Info: ../Includes/One_Source_Validation_Index85.png used on 
-input line 218.
+input line 230.
 (pdftex.def)             Requested size: 25.29468pt x 25.74637pt.
 
-<../Includes/One_Reconstructed_Validation_Index85.png, id=393, 82.80937pt x 84.
+<../Includes/One_Reconstructed_Validation_Index85.png, id=425, 82.80937pt x 84.
 315pt>
 File: ../Includes/One_Reconstructed_Validation_Index85.png Graphic file (type p
 ng)
  <use ../Includes/One_Reconstructed_Validation_Index85.png>
 Package pdftex.def Info: ../Includes/One_Reconstructed_Validation_Index85.png u
-sed on input line 218.
+sed on input line 230.
 (pdftex.def)             Requested size: 24.84299pt x 25.29468pt.
 
-<../Includes/One_Source_Validation_Index95.png, id=394, 83.5622pt x 84.315pt>
+<../Includes/One_Source_Validation_Index95.png, id=426, 83.5622pt x 84.315pt>
 File: ../Includes/One_Source_Validation_Index95.png Graphic file (type png)
 
 <use ../Includes/One_Source_Validation_Index95.png>
 Package pdftex.def Info: ../Includes/One_Source_Validation_Index95.png used on 
-input line 218.
+input line 230.
 (pdftex.def)             Requested size: 25.06885pt x 25.29468pt.
 
-<../Includes/One_Reconstructed_Validation_Index95.png, id=395, 85.06781pt x 82.
+<../Includes/One_Reconstructed_Validation_Index95.png, id=427, 85.06781pt x 82.
 05656pt>
 File: ../Includes/One_Reconstructed_Validation_Index95.png Graphic file (type p
 ng)
  <use ../Includes/One_Reconstructed_Validation_Index95.png>
 Package pdftex.def Info: ../Includes/One_Reconstructed_Validation_Index95.png u
-sed on input line 218.
+sed on input line 230.
 (pdftex.def)             Requested size: 25.52054pt x 24.61714pt.
- [11
+ [12
 
  <../Includes/One_Source_Training_Index30.png> <../Includes/One_Reconstructed_T
 raining_Index30.png> <../Includes/One_Source_Training_Index60.png> <../Includes
@@ -1247,11 +1249,11 @@ ex95.png>]
 \tf@nav=\write6
 \tf@toc=\write7
 \tf@snm=\write8
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 219.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 219.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 231.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 231.
  (MidtermPresentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 219.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 219.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 231.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 231.
 Package rerunfilecheck Info: File `MidtermPresentation.out' has not changed.
 (rerunfilecheck)             Checksum: 5D3DA9E63677B210BA8470D5EAF59620;184.
 
@@ -1259,29 +1261,30 @@ Package rerunfilecheck Info: File `MidtermPresentation.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 219.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 231.
  ) 
 Here is how much of TeX's memory you used:
- 18650 strings out of 493673
- 362190 string characters out of 3143546
- 430608 words of memory out of 3000000
- 21516 multiletter control sequences out of 15000+200000
+ 18646 strings out of 493673
+ 362048 string characters out of 3143546
+ 430383 words of memory out of 3000000
+ 21510 multiletter control sequences out of 15000+200000
  9240 words of font info for 34 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 57i,19n,96p,400b,1003s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 57i,19n,96p,400b,997s stack positions out of 5000i,500n,10000p,200000b,50000s
 <F:/Programs (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><F:/P
-rograms (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><F:/Programs 
-(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><F:/Programs (x86)/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><F:/Programs (x86)/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmss10.pfb><F:/Programs (x86)/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmss12.pfb><F:/Programs (x86)/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmss8.pfb><F:/Programs (x86)/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmssbx10.pfb><F:/Programs (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmssi8.pfb><F:/Programs (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cms
-y10.pfb>
-Output written on MidtermPresentation.pdf (11 pages, 2807052 bytes).
+rograms (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><F:/Programs 
+(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><F:/Programs (x86)/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><F:/Programs (x86)/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmr7.pfb><F:/Programs (x86)/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmss10.pfb><F:/Programs (x86)/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmss12.pfb><F:/Programs (x86)/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmss8.pfb><F:/Programs (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmssbx10.pfb><F:/Programs (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss
+i8.pfb><F:/Programs (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><
+F:/Programs (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on MidtermPresentation.pdf (12 pages, 2836965 bytes).
 PDF statistics:
- 455 PDF objects out of 1000 (max. 8388607)
- 27 named destinations out of 1000 (max. 500000)
+ 493 PDF objects out of 1000 (max. 8388607)
+ 29 named destinations out of 1000 (max. 500000)
  177 words of extra memory for PDF output out of 10000 (max. 10000000)
 
