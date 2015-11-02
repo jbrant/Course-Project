@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.13)  1 NOV 2015 18:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.13)  1 NOV 2015 20:52
 entering extended mode
 **MidtermReport.tex
 (MidtermReport.tex
@@ -786,16 +786,12 @@ ne_Reconstructed_Training_Index60.png> <./Includes/One_Source_Validation_Index8
 5.png> <./Includes/One_Reconstructed_Validation_Index85.png> <./Includes/One_So
 urce_Validation_Index95.png> <./Includes/One_Reconstructed_Validation_Index95.p
 ng> <./Includes/NeatStartingState.png>]
-Overfull \hbox (3.08328pt too wide) in paragraph at lines 230--231
-\T1/aer/m/n/9 CHO-SEN PROB-A-BILIS-TI-CALLY AND FUNC-TIONS ARE
- []
-
 <Includes/MinimallyConnectedCPPN.png, id=69, 666.99188pt x 569.12625pt>
 File: Includes/MinimallyConnectedCPPN.png Graphic file (type png)
 
 <use Includes/MinimallyConnectedCPPN.png>
 Package pdftex.def Info: Includes/MinimallyConnectedCPPN.png used on input line
- 235.
+ 233.
 (pdftex.def)             Requested size: 200.0991pt x 170.73918pt.
 
 <Includes/FitnessOverGenerations.png, id=71, 1440.88312pt x 764.10469pt>
@@ -803,21 +799,21 @@ File: Includes/FitnessOverGenerations.png Graphic file (type png)
 
 <use Includes/FitnessOverGenerations.png>
 Package pdftex.def Info: Includes/FitnessOverGenerations.png used on input line
- 242.
+ 240.
 (pdftex.def)             Requested size: 244.94688pt x 129.89607pt.
 
-Overfull \hbox (4.94688pt too wide) in paragraph at lines 242--244
+Overfull \hbox (4.94688pt too wide) in paragraph at lines 240--242
  [][] 
  []
 
 [5 <./Includes/NeatEvolvedState.png> <./Includes/MinimallyConnectedCPPN.png> <.
 /Includes/FitnessOverGenerations.png>]
-Overfull \hbox (3.22171pt too wide) in paragraph at lines 254--255
+Overfull \hbox (3.22171pt too wide) in paragraph at lines 252--253
 []\T1/aer/m/n/9 The num-ber of
  []
 
 
-Overfull \hbox (3.58951pt too wide) in paragraph at lines 255--256
+Overfull \hbox (3.58951pt too wide) in paragraph at lines 253--254
 \T1/aer/m/n/9 im-ages that are half the res-o-lu-tion of the orig-i-nal. These
  []
 
@@ -834,11 +830,7 @@ Overfull \hbox (59.02759pt too wide) in paragraph at lines 60--64
 y  
  []
 
-) [6] (MidtermReport.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+) [6] (MidtermReport.aux) ) 
 Here is how much of TeX's memory you used:
  12059 strings out of 493673
  205628 string characters out of 3143546
@@ -847,23 +839,24 @@ Here is how much of TeX's memory you used:
  60679 words of font info for 89 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  53i,16n,92p,882b,490s stack positions out of 5000i,500n,10000p,200000b,50000s
-{F:/Programs (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<F:/Programs (x
-86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><F:/Programs (x86)/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><F:/Programs (x86)/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmcsc10.pfb><F:/Programs (x86)/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmmi10.pfb><F:/Programs (x86)/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmmi7.pfb><F:/Programs (x86)/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmmi9.pfb><F:/Programs (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmr10.pfb><F:/Programs (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pf
-b><F:/Programs (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><F:/Pro
-grams (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><F:/Programs (x8
-6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><F:/Programs (x86)/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><F:/Programs (x86)/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmti9.pfb><F:/Programs (x86)/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmtt9.pfb><F:/Programs (x86)/MiKTeX 2.9/fonts/type1/urw/he
-lvetic/uhvb8a.pfb><F:/Programs (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a
-.pfb><F:/Programs (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb>
-Output written on MidtermReport.pdf (6 pages, 2852169 bytes).
+{F:/Programs (x86)/MiKTeX 2.9/fonts/enc/dvips/fontna
+me/8r.enc}<F:/Programs (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pf
+b><F:/Programs (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><F:/Pr
+ograms (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><F:/Programs
+ (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><F:/Programs (x86)/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><F:/Programs (x86)/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><F:/Programs (x86)/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmr10.pfb><F:/Programs (x86)/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmr7.pfb><F:/Programs (x86)/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmr8.pfb><F:/Programs (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmr9.pfb><F:/Programs (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb
+><F:/Programs (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><F:/Pro
+grams (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti9.pfb><F:/Programs (x
+86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb><F:/Programs (x86)/MiKT
+eX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><F:/Programs (x86)/MiKTeX 2.9/fonts/
+type1/urw/helvetic/uhvr8a.pfb><F:/Programs (x86)/MiKTeX 2.9/fonts/type1/urw/tim
+es/utmb8a.pfb>
+Output written on MidtermReport.pdf (6 pages, 2851776 bytes).
 PDF statistics:
  124 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

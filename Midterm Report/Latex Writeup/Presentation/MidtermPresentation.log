@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.13)  1 NOV 2015 16:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.13)  1 NOV 2015 20:48
 entering extended mode
 **MidtermPresentation.tex
 (MidtermPresentation.tex
@@ -1188,13 +1188,13 @@ Package pdftex.def Info: ../Includes/One_Reconstructed_Training_Index30.png use
 d on input line 230.
 (pdftex.def)             Requested size: 25.29468pt x 25.06885pt.
 
-<../Includes/One_Source_Training_Index60.png, id=422, 82.05656pt x 84.315pt>
+<../Includes/One_Source_Training_Index60.png, id=422, 82.80937pt x 84.315pt>
 File: ../Includes/One_Source_Training_Index60.png Graphic file (type png)
 
 <use ../Includes/One_Source_Training_Index60.png>
 Package pdftex.def Info: ../Includes/One_Source_Training_Index60.png used on in
 put line 230.
-(pdftex.def)             Requested size: 24.61714pt x 25.29468pt.
+(pdftex.def)             Requested size: 24.84299pt x 25.29468pt.
 
 <../Includes/One_Reconstructed_Training_Index60.png, id=423, 87.32625pt x 86.57
 344pt>
@@ -1230,14 +1230,14 @@ Package pdftex.def Info: ../Includes/One_Source_Validation_Index95.png used on
 input line 230.
 (pdftex.def)             Requested size: 25.06885pt x 25.29468pt.
 
-<../Includes/One_Reconstructed_Validation_Index95.png, id=427, 85.06781pt x 82.
-05656pt>
+<../Includes/One_Reconstructed_Validation_Index95.png, id=427, 85.82062pt x 84.
+315pt>
 File: ../Includes/One_Reconstructed_Validation_Index95.png Graphic file (type p
 ng)
  <use ../Includes/One_Reconstructed_Validation_Index95.png>
 Package pdftex.def Info: ../Includes/One_Reconstructed_Validation_Index95.png u
 sed on input line 230.
-(pdftex.def)             Requested size: 25.52054pt x 24.61714pt.
+(pdftex.def)             Requested size: 25.74637pt x 25.29468pt.
  [12
 
  <../Includes/One_Source_Training_Index30.png> <../Includes/One_Reconstructed_T
@@ -1251,7 +1251,7 @@ ex95.png>]
 \tf@snm=\write8
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 231.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 231.
- (MidtermPresentation.aux)
+(MidtermPresentation.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 231.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 231.
 Package rerunfilecheck Info: File `MidtermPresentation.out' has not changed.
@@ -1282,7 +1282,7 @@ fonts/cm/cmss8.pfb><F:/Programs (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
 /cmssbx10.pfb><F:/Programs (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss
 i8.pfb><F:/Programs (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><
 F:/Programs (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on MidtermPresentation.pdf (12 pages, 2836965 bytes).
+Output written on MidtermPresentation.pdf (12 pages, 2839305 bytes).
 PDF statistics:
  493 PDF objects out of 1000 (max. 8388607)
  29 named destinations out of 1000 (max. 500000)

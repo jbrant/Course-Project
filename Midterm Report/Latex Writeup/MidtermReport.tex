@@ -165,9 +165,9 @@ The original images were scaled down from 28x28 pixels (greyscale) to 14x14 for 
 		
 		Training Sample Proportion & 80\% & Percentage of sample images used for training \\
 		\hline
-		Number of Backpropagation Iterations & 1 & Number of backpropagation iterations performed during training \\
+		Number of Backpropagation Iterations & 100 & Number of backpropagation iterations performed during training \\
 		\hline
-		Learning Rate & 0.01 & Learning Rate (to control backpropagation convergence speed) \\
+		Learning Rate & 1 & Learning Rate (to control backpropagation convergence speed) \\
 		\hline
 		Image Resolution Reduction Factor & 2 & Reduction factor of source image (i.e. a 28x28 image becomes 14x14 with a reduction factor of 2) \\
 		\hline
@@ -226,8 +226,6 @@ However, the deeper problems was that NEAT was unable to generate a viable autoe
 After the fairly underwhelming results with NEAT, HyperNEAT was incorporated in the hopes that incorporating information about the domain geometry would boost qualitative performance.  Figure \ref{figure:autoencodercppn} depicts a fully connected, minimal CPPN (i.e. no hidden nodes) of the form that was used in the below experiments; however, most runs started with a CPPN that was 5\% connected and connections were added as they were found beneficial with regard to reducing training error.  
 
 Figure \ref{figure:minimallyconnectedcppn} depicts such a CPPN, which was evolved in 136 generations and had a fitness of 0.937 (93.7\% accuracy).  Note that the trial that produced this CPPN ran for 136 generations, but it exhibited a very steep increase in fitness in just the first couple of generations as shown in figure \ref{figure:fitnessovergenerations}.  This may be due to the fine-tuning of backpropagation and the highly specific manner in which it rewards networks that are more easily tunable; however, more experimentation is needed in order to determine whether such an assertion is merited.
-
-TODO: ADD PROOF THAT NODE ACTIVATIONS ARE CHOSEN PROBABILISTICALLY AND FUNCTIONS ARE INHERITED (not sure how to do the latter)
 
 \begin{figure}[h]
 	\caption{A CPPN evolved in 136 generations with a fitness of 0.937 (i.e. 93.7\% reconstruction accuracy).}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=latex 2015.10.25)  1 NOV 2015 18:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=latex 2015.10.25)  1 NOV 2015 20:52
 entering extended mode
 **\let \APPmakepictures \empty \input  MidtermReport.tex
 (MidtermReport.tex (acm_proc_article-sp.cls ("F:\Programs (x86)\MiKTeX 2.9\tex\
@@ -653,25 +653,20 @@ fined on input line 228.
 Underfull \vbox (badness 3884) has occurred while \output is active []
 
 
-Overfull \hbox (3.08328pt too wide) in paragraph at lines 230--231
-\T1/aer/m/n/9 CHO-SEN PROB-A-BILIS-TI-CALLY AND FUNC-TIONS ARE
- []
-
-
 LaTeX Warning: Reference `table:initialconfiguration' on page \thepage  undefin
-ed on input line 246.
+ed on input line 244.
 
 
 LaTeX Warning: Reference `table:imageresults' on page \thepage  undefined on in
-put line 246.
+put line 244.
 
 
-Overfull \hbox (3.22171pt too wide) in paragraph at lines 254--255
+Overfull \hbox (3.22171pt too wide) in paragraph at lines 252--253
 []\T1/aer/m/n/9 The num-ber of
  []
 
 
-Overfull \hbox (3.58951pt too wide) in paragraph at lines 255--256
+Overfull \hbox (3.58951pt too wide) in paragraph at lines 253--254
 \T1/aer/m/n/9 im-ages that are half the res-o-lu-tion of the orig-i-nal. These
  []
 
